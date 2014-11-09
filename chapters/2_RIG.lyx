@@ -1,0 +1,1833 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrbook
+\options a4paper,titlepage
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 4cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Para melhor contextualizar o problema alvo deste trabalho, é preciso compreender
+ como Informação Geográfica Voluntária (
+\shape italic
+Volunteered Geographic Information
+\shape default
+, VGI) pode ser utilizada no contexto da biodiversidade e como é realizado
+ o processo de identificação de entidades geográficas.
+ Assim, este capítulo aborda os principais conceitos referentes a utilização
+ de VGI no contexto da biodiversidade na Seção 2.1.
+ Na seção 2.2 os conceitos sobre Recuperação de Informações Geográficas (RIG)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RIG"
+description "Recuperação de Informação Geográfica"
+
+\end_inset
+
+ são descritos.
+ Na Seção (2.3 e 2.4) é demonstrado o conceito de 
+\shape italic
+Gazetteer
+\shape default
+ e Informação Geográfica Voluntária.
+ A Seção (2.5, 2.6 e 2.7) descreve os processos para extrair e demarcar entidades
+ geográficas.
+ E por fim, na Seção (2.8) é contextualizada a Resolução de Topônimos, buscando
+ compreender as características e estratégias associadas ao georreferenciamento
+ de textos.
+\end_layout
+
+\begin_layout Section
+Utilização de VGI no contexto da biodiversidade
+\end_layout
+
+\begin_layout Standard
+Informação Geográfica Voluntária atualmente é uma área em constante crescimento,
+ devido a sua versatilidade.
+ Embora o termo, descrito por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "GoodchildH08"
+
+\end_inset
+
+, seja relativamente novo e fortemente adotado para práticas de geração
+ de conteúdo por usuários na web, há uma longa tradição de pessoas contribuindo
+ com informação geográfica de forma voluntária como, por exemplo, o relato
+ da ocorrência e números de espécimes populacionais ao longo das décadas
+ na área de biodiversidade 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brian2014"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Nesse contexto, a VGI assume um importante papel na área de biodiversidade,
+ pois permite o monitoramento de espécies que estão em extinção, podendo
+ fornecer um apoio substancial para a pesquisa em biodiversidade 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brian2014"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As questões emergentes em VGI atualmente se acercam em: i) quão confiável
+ são suas informações ii) como pesquisadores podem utiliza-las iii) como
+ VGI pode ajudar a monitorar espécies envolvendo aspectos de distribuição
+ iv) como a tecnologia da informação pode ajudar na prática de VGI v) como
+ manter e aprimorar as bases de conhecimento geradas vi) quão válido são
+ as informações geográficas voluntárias para pesquisas em biodiversidade
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brian2014"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+As respostas para essas questões possuem várias implicações e dependem da
+ precisão das informações fornecidas e quão útil elas serão no futuro.
+ A precisão das informações é de extrema importância.
+ A capacidade de mapeamento têm se alterado rapidamente com o advento das
+ ferramentas on-line e smartphones com GPS.
+ A obtenção de informações localmente precisas e a documentação das mesmas
+ permitem aos pesquisadores reverem registros de dados originais, mantidos
+ em museus e herbários, que são comumente utilizados como fontes de dados
+ para pesquisas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brian2014"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Museus e herbários possuem centenas de registros, contendo coleções de plantas
+ e animais.
+ A maioria desses registros representam os esforços voluntários de centenas
+ de pessoas ao longo dos anos.
+ Embora muitas coleções tenham começado há mais de 100 anos atrás, elas
+ fornecem dados valiosos para os pesquisadores compreenderem a linha de
+ vida das espécies 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brian2014"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Nesse contexto, existem diversas razões pelas quais as coletas voluntárias
+ são historicamente úteis para os pesquisadores, dentre elas 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Brian2014"
+
+\end_inset
+
+ cita:
+\end_layout
+
+\begin_layout Itemize
+As coleções de espécies possuem informações geográficas que permitem ao
+ pesquisador localizar o registro em um mapa interativo; 
+\end_layout
+
+\begin_layout Itemize
+As informações sobre as coletas podem ser inseridas em banco de dados;
+\end_layout
+
+\begin_layout Itemize
+A precisão espacial, mesmo sendo limitada, ou seja, com representações de
+ coleta referindo-se apenas a cidades mais próximas, em geral estão dentro
+ dos limites de incerteza e precisão aceitáveis pelo pesquisador;
+\end_layout
+
+\begin_layout Itemize
+A precisão temporal é alta, ou seja, a data da coleta é gravada e pode ser
+ utilizada para pesquisas sobre comportamento e linha de vida das espécies;
+\end_layout
+
+\begin_layout Itemize
+A precisão semântica acerca do nome de uma espécie é alta, uma vez que qualquer
+ alteração no nome científico é documentada na própria coleção.
+\end_layout
+
+\begin_layout Standard
+Nesse contexto, alguns projetos atuais que envolvem VGI enfatizaram a necessidad
+e de precisão, como por exemplo, o projeto eBird, um dos maiores projetos
+ de VGI na área de biodiversidade em curso.
+ Segundo
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Ebird"
+
+\end_inset
+
+ um banco de dados somente é tão bom quanto o seu registro mais impreciso.
+ Se alguns registros podem ser considerados questionáveis, todo o conjunto
+ de dados pode ser rotulado como tal.
+\end_layout
+
+\begin_layout Standard
+Atualmente existem várias iniciativas de VGI importantes que fornecem informaçõe
+s críticas para serem utilizadas por pesquisadores.
+ Elas possuem alta "credibilidade", pois abordam a necessidade de precisão
+ e confiabilidade 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brian2014"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dentre essas iniciativas
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Brian2014"
+
+\end_inset
+
+relata os seguintes projetos:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+eBird
+\series default
+: Iniciado em 2002, o projeto acumula um dos maiores recursos de dados sobre
+ biodiversidade, em 2006 os participantes relataram mais de 4,3 milhões
+ de observações voluntárias de aves em toda a América do Norte.
+ Os coordenadores do eBird tem como objetivo construir um banco de dados
+ que permita a busca por informações passadas e verificação de tendências
+ e comportamentos das espécies através de uma escala geográfica ampla, como,
+ por exemplo, a linha de vida de uma determinada espécie nos últimos 100
+ anos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Audubon Christmas Bird Count
+\series default
+: Iniciado em 1900, este projeto é baseado na identificação visual de observaçõe
+s de espécies, com dados coletados por várias equipes de voluntários.
+ A precisão geográfica dos dados é relativamente baixa, pois um círculo
+ de contagem de 15 km de diâmetro é utilizado.
+ Assim como a precisão temporal, onde todas as aves avistadas em um prazo
+ de um dia são catalogadas.
+ No entanto, a precisão da observação é relativamente alta, pois a confirmação
+ de observado/não observado é relatada.
+ Ao longo dos anos, as observações veem sendo comparadas e usadas por muitos
+ pesquisadores em trabalhos científicos.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Breeding Bird Survey
+\series default
+: É um projeto internacional que começou em 1966 para acompanhar o estado
+ e as tendências das populações de aves norte-americanas.
+ O projeto baseia-se principalmente na identificação do som emitido pelas
+ espécies e os resultados são normalmente coletados por um ou dois indivíduos
+ que percorrem mais de 4100 rotas de pesquisa com 24,5 quilômetros de extensão
+ cada, onde as espécies dos EUA e Canadá são observadas.
+ Embora os resultados sejam de precisão espacial média, as informações sobre
+ as coletas são altamente confiáveis, uma vez que os pesquisadores possuem
+ mecanismos para identificar o canto dos pássaros.
+ Os resultados desse projeto veem sendo comparados ao longo dos anos e utilizado
+s em vários trabalhos de pesquisa.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+E-Flora BC
+\series default
+:
+\shape italic
+ The Atlas of the Plants of British Columbia: E-Flora BC
+\shape default
+ é um projeto que descreve um atlas regional biogeográfico e ecológico sobre
+ as espécies de plantas, liquens e fungos em 
+\shape italic
+British Columbia
+\shape default
+, Canadá.
+ As páginas do atlas incluem mapeamento, ilustrações, descrições de espécies
+ e informações ecológicas.
+ O E-Flora BC faz parte de uma iniciativa de VGI, pois conta com informações
+ coletadas por botânicos que, em grande parte, são voluntários e contribuem
+ com o envio de fotos dos espécimes, para serem armazenadas em bancos de
+ dados.
+\end_layout
+
+\begin_layout Standard
+Atualmente, mesmo com a perda de espécies em ritmo acelerado, diversas espécies
+ ainda não estão documentadas e novas espécies continuam a ser descobertas.
+ Esse fato ressalta a necessidade crítica da coleta de dados para estudos
+ em biodiversidade.
+ Além disso, existe a necessidade de se compreender mais sobre a abundância
+ das espécies e as tendências de cada população.
+ Desse modo, é necessário que um número significativo de voluntários se
+ tornem aliados dos biólogos na investigação das mudanças ocorridas na biodivers
+idade, verificando se os principais componentes de precisão, confiabilidade
+ e durabilidade são cumpridos para tornar a prática de VIG viável 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brian2014"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Para auxiliar a prática de VIG e fornecer mecanismos para suprir as necessidades
+ de precisão, confiabilidade e durabilidade das informações, a área de Recuperaç
+ão de Informação Geográfica é a base usada para promover suporte para a
+ representação das informações geográficas, temporais e espaciais.
+\end_layout
+
+\begin_layout Section
+Recuperação de Informação Geográfica
+\end_layout
+
+\begin_layout Standard
+A Recuperação de Informações na Web é uma tarefa laboriosa, mas por meio
+ de mecanismos de busca automáticos é possível obter informações rapidamente.
+ Tais mecanismos consultam os sites e analisam seu conteúdo, classificando
+ de maneira geral as páginas por meio de métodos como o PageRank 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pagee1998"
+
+\end_inset
+
+ ou focados em conteúdos, como por exemplo, o CiteSeer 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Giles1998"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+No entanto, os sistemas de busca tradicionais não apresentam suporte para
+ informações contextuais, como, por exemplo, a verificação de informações
+ semânticas analisando as ligações entre seus hiperlinks ou a localidade
+ referenciada pelos textos.
+ Isso impede uma análise com precisão de informações dentro ou próximas
+ a determinadas regiões geográficas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Buyukokkten1999"
+
+\end_inset
+
+ tornando difícil a recuperação de informações relevantes para o usuário
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jones2001"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Uma grande quantidade da informação, presente na Web, tem conteúdos descrevendo
+ espaços geográficos e, como consequência, muitos usuários gostariam de
+ especificar nomes de lugares como parte de suas consultas
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jones2001"
+
+\end_inset
+
+.
+ Atualmente, um conjunto significativo das consultas submetidas aos mecanismos
+ de busca na Web se referem a nomes de lugares e acidentes geográficos (ex:
+ 
+\begin_inset Quotes eld
+\end_inset
+
+praia
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+serra
+\begin_inset Quotes erd
+\end_inset
+
+), tais pesquisas representam um subconjunto significativo das consultas
+ submetidas aos mecanismos de busca 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+ Web sites que contém, por exemplo, informações sobre restaurantes, teatros
+ e cinemas são mais interessantes para usuários vizinhos dessas localidades
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Buyukokkten1999"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+No entanto, a forma semi-estruturada da Web dificulta o acesso a esse tipo
+ de informação.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Jones2008"
+
+\end_inset
+
+ evidenciam as principais dificuldades no uso da Web como fonte de informações
+ geográficas:
+\end_layout
+
+\begin_layout Itemize
+Descrições por meio de linguagem natural para representar contextos geográficos
+\end_layout
+
+\begin_layout Itemize
+Nomes de lugares podem ser homônimos e confundidos com nomes de organizações,
+ pessoas, construções e ruas.
+\end_layout
+
+\begin_layout Itemize
+Dificuldade em interpretar relações espaciais como, por exemplo, “próximo”,
+ “ao oeste”, dentre outras.
+ 
+\end_layout
+
+\begin_layout Itemize
+Construção de ranking específico para definição da relevância geográfica.
+\end_layout
+
+\begin_layout Standard
+Com o intuito de solucionar esses problemas e utilizar as vantagens relacionadas
+ à descrição semântica e geográfica das informações na Web, diversas técnicas
+ têm sido desenvolvidas, tanto em ambiente acadêmico como comercial, com
+ o objetivo de acessar recursos que possuem contextos geográficos (
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gey2006"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jones2002"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Seguindo esse contexto 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Larson1996"
+
+\end_inset
+
+ define que a RIG está relacionada com a Recuperação de Informação Geográfica
+ em dois tipos: i) buscas determinísticas, onde é possível encontrar todos
+ os documentos relacionados à determinada coordenada geográfica ii) consultas
+ probabilísticas, onde é possível, realizar buscas por pontos de referencia
+ como, por exemplo, encontrar todos os rios próximos a Manaus.
+\end_layout
+
+\begin_layout Standard
+Diferente dos modelos tradicionais de recuperação de informação, como o
+ modelo Vetorial 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Salton1989"
+
+\end_inset
+
+, que associa documentos por meio de índices de termos utilizando o conteúdo
+ presente no texto para recuperar e organizar documentos de acordo com a
+ posição e frequência das palavras, na RIG os termos extraídos devem ser
+ relacionados a descrições espaciais, ou seja, a entidades geometricamente
+ definidas e localizadas no espaço 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O componente principal em um Sistema de Recuperação de Informações Geográficas
+ é o 
+\shape italic
+Gazetteer
+\shape default
+.
+ Ele busca estruturar relacionamentos semânticos presentes nas localidades,
+ sendo organizado geralmente em uma hierárquica com o tipo, a localização
+ geográfica e outras descrições relacionadas
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Hill2000"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A partir da utilização de 
+\shape italic
+Gazetteers
+\shape default
+ é possível, por exemplo, reconhecer palavras e frases que se relacionam
+ a alguma localidade, podendo o mesmo auxiliar na desambiguação desses termos,
+ resolvendo as localidades ambíguas e descrevendo a localidade a ser referenciad
+a de forma precisa.
+\end_layout
+
+\begin_layout Section
+
+\shape italic
+Gazetteers
+\end_layout
+
+\begin_layout Standard
+Um 
+\shape italic
+Gazetteer
+\shape default
+ é um diretório geográfico que associa nomes de lugares a coordenadas geográfica
+s.
+ Eles são geralmente implementados como diretórios que contém triplas de
+ nomes de lugares (
+\shape italic
+place names
+\shape default
+) (N), entidades (
+\shape italic
+feature types
+\shape default
+) como, por exemplo, serra, praia, (T) e representações geométricas (
+\shape italic
+geographic footprints
+\shape default
+) (F) com coordenadas geográficas
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KeBler:2009:ANG:1653771.1653787"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Eles oferecem funções para mapear nomes de lugares para entidades (N - F)
+ e nomes de lugares para tipos de lugares (N - T).
+ 
+\shape italic
+Gazetteers
+\shape default
+ são fundamentais para aplicações de serviços de mapeamento baseados na
+ web, motores de busca espaciais e geo-parsing, pois, quando trabalham em
+ conjunto com esses serviços, eles provêem recursos para acesso e manipulação
+ de dados geográficos, permitindo que consultas sejam realizadas por RIGs
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KeBler:2009:ANG:1653771.1653787"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+Gazetteers
+\shape default
+ são comumente construídos a partir da extração de informações de textos.
+ No entanto, atualmente um nova forma de contribuir com informações geográficas
+ vem sendo amplamente difundida, prática essa que se da o nome de 
+\shape italic
+Volunteered Geographic Information
+\shape default
+.
+\end_layout
+
+\begin_layout Section
+
+\shape italic
+Volunteered Geographic Information
+\shape default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "VGI"
+description "Volunteered Geogrphic Information"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A variedade e quantidade da informação geográfica disponível na Web para
+ uso comum tem crescido rapidamente.
+ Desde a introdução do Google Earth, em 2004, e do Google Maps, em 2006,
+ tem aumentado rapidamente o interesse em se criar ferramentas que permitam
+ pessoas localizar pontos de interesse em aplicativos que forneçam serviços
+ geográficos, tais como, encontrar endereços e selecionar rotas para veículos
+ em mapas, especificamente em áreas urbanas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DavisVP13"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Com o advento da Web 2.0, muitos exemplos de situações em que usuários podem
+ contribuir com atualizações e novos registros, através de Web Sites e aplicativ
+os como Geonames, Wikimapia, Open Street Map e o Flickr, vêm aparecendo.
+ Esse fenômeno é comumente chamado de Informação Geográfica Voluntária 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DavisVP13"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dispositivos habilitados com GPS tornam possível o georreferenciamento e
+ permitem aos usuários conectar facilmente coordenadas de latitude e longitude
+ a fotos, vídeos, tweets, entre outros.
+ Com o auxílio de tais dispositivos, usuários podem criar recursos geoespaciais
+ mais complexos utilizando ferramentas como o Open Street Map, Wikimapia,
+ ou o Google Maps.
+ 
+\end_layout
+
+\begin_layout Standard
+Atualmente, o Open Street Map é a principal fonte de VGI.
+ Ele permite que usuários contribuam com conteúdo geográfico expressando
+ coordenadas geográficas e criando anotações para marcação de recursos,
+ possibilitando que cidadãos, cientistas ou pessoas especializadas contribuam
+ com informações para o enriquecimento dos 
+\shape italic
+Gazetteers
+\shape default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Beard:2012"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A VGI tem mostrado um grande potencial para diversos contextos, abrangendo
+ áreas que necessitam tanto de informações geograficamente mais detalhadas,
+ como as oferecidas por organizações nacionais tais como o IBGE, como informaçõe
+s mais comuns, como locais e anotações sobre paisagens, locais de lazer
+ (por exemplo, locais para caminhadas, ciclismo, canoagem, pesca, etc),
+ flora e fauna locais, eventos locais, entre outros conteúdos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Beard:2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Além disso, a utilização de VGI permite que coleções de informações geográficas,
+ que estão em constante crescimento, sejam manipuladas por vários usuários,
+ como, por exemplo, na área de biologia, onde os dados de coletas biológicas
+ podem ser atualizados por todos os envolvidos e não apenas por uma pessoa
+ ou um especialista, reduzindo assim a sobrecarga de trabalho e a quantidade
+ de dados nulos ou ausentes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Beard:2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A prática de VGI permite que o conteúdo inserido e recuperado comumente
+ em um 
+\shape italic
+Gazetteer
+\shape default
+ seja feito por meio de marcações ou GeoTAGs, realizados por usuários.
+\end_layout
+
+\begin_layout Section
+GeoTAGs 
+\end_layout
+
+\begin_layout Standard
+Humanos adicionam diversos itens, como fotos ou livros, em suas coleções
+ individuais por meio de esquemas de ordenação individual com o objetivo
+ de agrupar itens semelhantes e manter itens distintos à parte, para facilitar
+ a recuperação de informação.
+ Um exemplo dessa forma de classificação pode ser representada pela forma
+ que organizamos nossos livros em uma estante, separando-os de acordo com
+ vários critérios, como tema, idade, espessura, ou até mesmo cor.
+ Tais preferências por organizar itens em formato individual também ocorrem
+ em coleções virtuais 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kessler2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O uso de tags - palavras ou combinações de palavras, por pessoas permite
+ a associação de itens virtuais.
+ Essa abordagem também é aceita para classificar itens, como por exemplo,
+ em uma prateleira virtual.
+ No entanto, tais marcações, 
+\shape italic
+tags
+\shape default
+, podem possuir diversos significados de pessoa para pessoa, necessitando
+ assim de uma definição 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kessler2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A definição formal de uma 
+\shape italic
+tag,
+\shape default
+ portanto, deve incluir tanto o usuário quanto a informação do objeto a
+ ser etiquetado.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gruber2005"
+
+\end_inset
+
+ sugere para modelar a marcação (
+\shape italic
+tag
+\shape default
+ging) como um processo onde 
+\begin_inset Formula $Tagging=\left\{ L,U,I,S\right\} $
+\end_inset
+
+, o qual estabelece uma relação imediata ente o rótulo (L), vindo de um
+ usuário (U), o vocabulário associado a informação do Item (I) e uma fonte
+ (S) que permite o compartilhamento entre aplicações.
+\end_layout
+
+\begin_layout Standard
+O processo de marcação estabiliza a relação entre o usuário, a informação
+ do item e o rótulo.
+ Caso a informação do item represente um ou mais objetos geográficos, o
+ rótulo associado pode se referir tanto a dimensão do objeto representado
+ quanto a sua semântica, incluindo um nome próprio do indivíduo, categoria
+ ou a sua extensão espaço-temporal (nomeação, por exemplo, a região que
+ contém) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kessler2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Uma GeoTAG estende a noção de 
+\shape italic
+tag
+\shape default
+ por adicionar uma localização explicita no espaço e tempo para a informação
+ do item.
+ No caso de fotografias digitais, uma marcação de tempo com a data de criação
+ é comumente adicionada pela câmera automaticamente.
+ As coordenadas geográficas são fornecidas por módulos GPS embutidos ou
+ adicionadas manualmente por um usuário 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kessler2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Com base nessa definição de marcação, proposta por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gruber2005"
+
+\end_inset
+
+, o rótulo T e as coordenadas C para a relação, omitindo a fonte S, são
+ adicionados.
+ Dessa forma, o processo de marcação geográfica pode ser representado como:
+ 
+\begin_inset Formula $Geotagging=\{L,U,C,I,T\}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kessler2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Além da utilização de GeoTAGs para inserir e recuperar nomes de lugares,
+ é possível extrair informações geográficas de registros que já possuem
+ essa informação no texto.
+ Para realizar a extração desses nomes é preciso realizar o GeoParsing de
+ tais entidades geográficas.
+\end_layout
+
+\begin_layout Section
+GeoParsing
+\end_layout
+
+\begin_layout Standard
+Para compreender o processo de extração do contexto geográfico de textos
+ é necessário analisar seu conteúdo e como as relações espaciais são determinada
+s para especificar lugares ou espaços geográficos na Terra.
+ Comumente as relações espaciais são divididas em três categorias 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Egenhofer2002"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Topológicas: Relações que descrevem os conceitos de vizinhança, incidência,
+ sobreposição sem variar com escalas e rotações (ex.
+ 
+\emph on
+dentro de
+\emph default
+).
+\end_layout
+
+\begin_layout Itemize
+Métricas: Relações que descrevem os termos das direções como, por exemplo,
+ 
+\emph on
+ao norte
+\emph default
+ e 
+\emph on
+ao sul
+\emph default
+, e que descrevem distâncias como, por exemplo, 
+\emph on
+perto de
+\emph default
+ e 
+\emph on
+próximo de
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+De Ordem: Relações que expressam a ordem, total ou parcial, dos objetos
+ espaciais, como, por exemplo, 
+\emph on
+em frente a
+\emph default
+ e 
+\emph on
+acima de
+\emph default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Para denotar relacionamentos espaciais entre objetos no espaço é necessário
+ utilizar 
+\shape italic
+spatial reasoning
+\shape default
+.
+ Esse tipo de raciocínio permite fazer predições e diagnósticos usando um
+ subconjunto conhecido de relações espaciais.
+ Podendo ele ser classificado como qualitativo ou quantitativo, de acordo
+ com o tipo de informação utilizada no processo de 
+\shape italic
+reasoning
+\shape default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O método de inferência espacial quantitativo realiza a diferenciação de
+ diversas relações espaciais, por exemplo, relações topológicas e métricas,
+ e é tipicamente formalizado usando um sistema de coordenadas geográficas.
+ Esse tipo de processamento é claramente distinto da forma como as pessoas
+ interpretam a representação de lugares, por formatos textuais.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "BorgesLMD07"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As pessoas se comunicam e pensam a respeito de representações geográficas
+ por meio de termos vagos, que são imprecisos ou probabilísticos, como,
+ por exemplo, “centro da cidade”, “perto de”, “ao lado de”.
+ Raramente referências como “o restaurante está a 35,93 metros a oeste”
+ são utilizadas para representar a direção de algum lugar 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Mesmo que vagos e imprecisos esses termos necessitam ter suas representações
+ de entidades (
+\shape italic
+features
+\shape default
+) (T) associadas aos Gazetteers.
+ Exemplos de 
+\shape italic
+features
+\shape default
+ são “Reserva Adolpho Ducke” , “Ilha da Marchantaria”, entre outros, os
+ quais são representados pelos nomes de lugares (
+\shape italic
+place names
+\shape default
+) (N) “Adolpho Ducke” e “Marchantaria” e pelas 
+\shape italic
+features
+\shape default
+ de tipo “Reserva” e “Ilha” respectivamente 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Após a verificação das entidades geográficas contidas nos textos é necessário
+ reconhecer o correto contexto geográfico representado por elas.
+ Para realizar tal tarefa é necessário fazer o GeoCoding das entidades geográfic
+as.
+\end_layout
+
+\begin_layout Section
+GeoCoding
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Davis2003"
+
+\end_inset
+
+ a fase de geocodificação, ou seja, 
+\shape italic
+geocoding,
+\shape default
+ é a localização de pontos na superfície da terra a partir de informações
+ alfanuméricas, envolvendo as seguintes etapas: 
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Parsing
+\shape default
+: Esta fase consiste na analise dos caracteres que contém informações de
+ lugares e sua transformação em uma tupla de dados estruturada e padronizada
+ para ser utilizada na fase de 
+\shape italic
+matching
+\shape default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Matching
+\shape default
+: Tenta encontrar, na base de dados, informações de referência geográfica
+ mais precisa que podem ser positivamente associadas com um dado lugar.
+\end_layout
+
+\begin_layout Itemize
+
+\shape italic
+Locating
+\shape default
+: Após determinar, na fase anterior, quais são as informações de referência
+ geográfica mais precisas, coordenadas geográficas (
+\shape italic
+footprint
+\shape default
+) são atribuídas ao lugar.
+\end_layout
+
+\begin_layout Standard
+Um 
+\shape italic
+footprint
+\shape default
+ é uma representação geométrica de alguma entidade geográfica, sendo expresso
+ em coordenadas do tipo, latitude e longitude.
+ A localização referida por um 
+\shape italic
+footprint
+\shape default
+ é geralmente definida segundo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Larson2004"
+
+\end_inset
+
+ por: 
+\end_layout
+
+\begin_layout Itemize
+Pontos: Mantém um senso geral da localização sem extensões ou formas.
+ 
+\end_layout
+
+\begin_layout Itemize
+Polígonos: Ocorre a identificação da localização, extensão e forma com grau
+ variável de precisão.
+\end_layout
+
+\begin_layout Standard
+Para se realizar a conversão dos nomes de localidades para a sua respectiva
+ posição espacial, torna-se necessário a utilização de Gazetteers.
+ Associados aos Gazetteers, há a necessidade de adoção de estratégias com
+ objetivo de desambiguar localidades, pois mesmo nomes iguais podem representar
+ espaços geográficos distintos, ou podem conter uma referência para mais
+ que uma localidade.
+ Para isso é necessário realizar a Resolução de Topônimos.
+\end_layout
+
+\begin_layout Section
+Resolução de Topônimos
+\end_layout
+
+\begin_layout Standard
+Devido à multiplicidade de representações para espaços geográficos existentes
+ em formas textuais, que podem conter homônimos, sinônimos, entre outros
+ fatores, surge a necessidade de lidar com a ambiguidade ocasionada no texto
+ para se identificar corretamente um topônimo.
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Garbin2005"
+
+\end_inset
+
+, um topônimo é o nome de uma entidade geográfica na superfície da Terra
+ que pode ser representada por alguma especificação geométrica como, por
+ exemplo, uma linha, um ponto ou polígono.
+\end_layout
+
+\begin_layout Standard
+No aspecto geográfico, por exemplo, um topônimo pode representar uma entidade
+ geopolítica e mudar de nome ou extensão ao longo do tempo.
+ Já no aspecto textual, lugares distintos na Terra podem ter o mesmo nome.
+ Para lidar com esse problema, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Leidner2004"
+
+\end_inset
+
+ define a área de Resolução de Topônimos (RT)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RT"
+description "Resolução de Topônimos"
+
+\end_inset
+
+, a qual tem o objetivo de possibilitar o mapeamento correto das localidades
+ referenciadas pelos textos, a partir da resolução dos vários tipos de ambiguida
+des relacionadas a elas.
+\end_layout
+
+\begin_layout Standard
+Para entender como aplicar a RT em textos, é necessário compreender como
+ pessoas referenciam lugares e quais tipos de ambigüidades podem acontecer.
+ Normalmente, nomes de lugares são descritos em uma linguagem natural denotados
+ de expressões vagas com relações imprecisas, como por exemplo, “Norte do
+ Rio Grande do Norte”, “Centro de Manaus” ou “próximo a Rio Grande” 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gouvea2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Os trabalhos presentes na área de RT em geral buscam desambiguar textos
+ considerando seu aspecto linguístico e a extensão espacial, não compreendendo
+ o nível de refinamento necessário para o georreferenciamento.
+ Portanto, do ponto de vista linguístico, a principal dificuldade para desambigu
+ação é a superação das seguintes ambiguidades representadas na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "AmbiguidadeRT"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gouvea2009"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Ambiguidades Geo/Geo:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ambiguidade da Referência (ARC - 
+\shape italic
+Reference Ambiguity
+\shape default
+) 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ARC"
+description "Ambiguidade da Referência"
+
+\end_inset
+
+– quando uma determinada localidade pode ser referenciada por vários nomes
+ diferentes.
+\end_layout
+
+\begin_layout Itemize
+Ambiguidade do Referente (ART - 
+\shape italic
+Referent Ambiguity
+\shape default
+) 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ART"
+description "Ambiguidade do Referente"
+
+\end_inset
+
+– quando o nome pode ser usado para referenciar outras localidades.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ambiguidades Geo/Não Geo:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Ambiguidade da Classe do Referente (ACR - 
+\shape italic
+Referent Class Ambiguity
+\shape default
+)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ACR"
+description "Ambiguidade da Classe do Referente"
+
+\end_inset
+
+ – quando o nome pode ser usado para referenciar outros tipos de entidades.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/ambiguidades.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "AmbiguidadeRT"
+
+\end_inset
+
+Exemplos de tipos de ambiguidades.
+ Fonte: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gouvea2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esses tipos de ambiguidade ocorrem com frequência nos nomes de lugares para
+ representar entidades geográficas.
+ Nesse contexto, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Smith2003"
+
+\end_inset
+
+) quantificaram o tipo e o grau de ambiguidade dos topônimos examinando
+ a ontologia geográfica TGN (
+\shape italic
+Getty Thesaurus of Geographic Names
+\shape default
+)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TGN"
+description "Getty Thesaurus of Geographic Names"
+
+\end_inset
+
+, conforme ilustrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ambiguidadeRT2"
+
+\end_inset
+
+, ficando assim evidente que é necessário tratar a ambiguidade dos nomes
+ de lugares 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gouvea2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/Ambiguidades_Toponimos.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "ambiguidadeRT2"
+
+\end_inset
+
+Ambiguidade presente nas entidades geográficas do TGN.
+ Fonte: 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gouvea2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A utilização de dicionários toponímicos (Gazetteers), para a resolução deste
+ tipo de ambigüidade, demanda portanto a correta representação dos Indicadores
+ de Localidade e sua associação com as localidades identificadas por eles.
+ Para isso é necessário aplicar estratégias para resolução de topônimos.
+\end_layout
+
+\begin_layout Subsection
+Estratégias para Resolução de Topônimos
+\end_layout
+
+\begin_layout Standard
+A Resolução de Topônimos compreende dois processos a identificação e desambiguaç
+ão.
+ Inicialmente as referências geográficas devem ser identificadas de acordo
+ com o seu tipo, por exemplo, cidade ou país, de forma a resolver o problema
+ de ambiguidades 
+\shape italic
+Geo/Não-Geo
+\shape default
+.
+ Posteriormente é necessário desambiguar as referencias 
+\shape italic
+Geo-Geo
+\shape default
+, para que os topônimos sejam descritos com uma extensão espacial única,
+ para assim serem associados a sua localização geográfica em um Gazetteer
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para cada uma dessas etapas, são necessárias técnicas específicas.
+ A etapa de identificação está relacionada ao Reconhecimento de Entidades
+ Mencionadas (REM)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "REM"
+description "Reconhecimento de Entidades Mencionadas"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Leveling2007"
+
+\end_inset
+
+, que tem como propósito representar cada palavra ou grupo de palavras em
+ uma determinada categoria pré-definida.
+ Já a segunda etapa, desambiguação, necessita de técnicas de Desambiguação
+ Lexical de Sentido (
+\shape italic
+Word Sense Disambiguation
+\shape default
+ ou WSD)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "WSD"
+description "Word Sense Disambiguation"
+
+\end_inset
+
+ que busca considerar tanto ambiguidades relacionadas à homonímia quanto
+ à polissemia, sendo possível assim resolver localidades de acordo com um
+ contexto particular, por exemplo, “Banco de areia” ou “Banco do Brasil”
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+De forma geral, as estratégias de identificação são agrupadas dentro das
+ seguintes categorias:
+\end_layout
+
+\begin_layout Standard
+Baseada em Regras (
+\shape italic
+Rule-Based
+\shape default
+) – Para reconhecer e desambiguar as entidades geográficas utilizam se regras
+ e heurísticas definidas manualmente.
+ Tratando os dois tipos de evidências exemplificas na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "AmbiguidadeRT3.1"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "McDonald1996"
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Itemize
+Internas: baseia-se no próprio nome da localidade, por exemplo, procurar
+ no conteúdo do texto todos os nomes de cidades, ou padrões relacionados
+ a letras maiúsculas, siglas, entre outros.
+ 
+\end_layout
+
+\begin_layout Itemize
+Externas: busca identificar expressões relacionadas ao contexto no qual
+ a localidade aparece, por exemplo, na cidade de, no município de, etc.).
+ Uma visão geral dos tipos de expressões de contexto utilizadas para desambiguar
+ localidades externas, utilizadas por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Gouvea2009"
+
+\end_inset
+
+, pode ser vista na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "AmbiguidadeRT3"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/expressoesRT.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "AmbiguidadeRT3.1"
+
+\end_inset
+
+Expressões de Contexto em Português.
+ Fonte: 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../figures/expressoes2RT.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "AmbiguidadeRT3"
+
+\end_inset
+
+Exemplo de tipos de evidências para desambiguação de topônimos.
+ Fonte: 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O problema de se utilizar a abordagem baseada em regras é a necessidade
+ de defini-las manualmente e o fato de que regras fixas são úteis apenas
+ para domínios específicos
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+ Para uma melhor eficácia, outra estratégia que capture automaticamente
+ palavras e expressões para desambiguação de localidades, como a abordagem
+ denominada 
+\shape italic
+Data-Driven,
+\shape default
+ pode ser utilizada.
+ Essa técnica utiliza aprendizado de máquina e aplica análises estatísticas,
+ em um corpus de treino com o objetivo de identificar regras e classificadores
+ úteis para a desambiguação de topônimos.
+ Contudo, os custos associados a construção de um corpus de treino com qualidade
+ e ampla cobertura podem ser muito significativos, necessitando abordagens
+ mais aprimoradas onde outros métodos podem ser aplicados, como por exemplo,
+ 
+\shape italic
+bootstrapping, 
+\shape default
+onde existe uma pequena quantidade de dados classificados com diversos dados
+ não-classificados 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gouvea2009"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Como o foco do trabalho é a construção de um 
+\shape italic
+Gazetteer
+\shape default
+ Colaborativo para um determinado domínio, neste caso os dados geográficos
+ referente a coleções biológicas, será utilizado, por simplicidade, a primeira
+ estratégia de resolução de topônimos, que é a abordagem baseada em regras.
+ Devido ao fato do domínio ser mais restrito, a extração das regras para
+ reconhecer e desambiguar as entidades geográficas pode ser realizada em
+ um tempo razoável.
+ Casos mais genéricos, como, por exemplo, textos sobre notícias, podem exigir
+ uma quantidade maior de esforço.
+ 
+\end_layout
+
+\begin_layout Section
+Considerações Finais
+\end_layout
+
+\begin_layout Standard
+Este capítulo apresentou a utilização da prática de informação geográfica
+ voluntária na área de biodiversidade e os conceitos bases da área de Recuperaçã
+o de Informação Geográfica, para o desenvolvimento do 
+\shape italic
+Gazetteer
+\shape default
+ Colaborativo proposto por esse trabalho.
+ Inicialmente foi feita uma breve introdução sobre RIG na Web, evidenciando
+ a forma como as pessoas representam e se referem à conteúdos geográficos.
+ Logo após, o conceito de Gazetteer foi explicado e, em seguida, a nova
+ prática de contribuir com atualizações e novos registros para Gazetteers,
+ também denominada de 
+\shape italic
+Volunteered Geographic Information, 
+\shape default
+foi descrita.
+ 
+\end_layout
+
+\begin_layout Standard
+As demais seções compreenderam questões sobre a inserção de conteúdos geográfico
+s por usuários (utilizando GeoTAGs), a extração de lugares realizando o
+ GeoParsing de textos e a codificação de suas coordenadas no processo de
+ GeoCoding.
+\end_layout
+
+\begin_layout Standard
+Por fim, para dar suporte a todos esses processos, foram discutidas a necessidad
+e e as formas de como aplicar a Resolução de Topônimos em textos e a utilização
+ da Web Semântica para desenvolver o 
+\shape italic
+Gazetter
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Estes conceitos serão utilizados no trabalho proposto para desenvolver o
+ 
+\shape italic
+Gazetteer
+\shape default
+.
+ Sendo necessário abordar a prática de VIG para permitir a usuários e biólogos
+ inserirem informações por meio de GeoTAGs e desambiguar os nomes de locais
+ contidos nos dados das coleções biológicas disponíveis no SpeciesLink e
+ no GBIF.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+E o que esse capítulo tem haver com o seu trabalho? Nesse resumo que você
+ fez, aponte alguma conexao entre os pontos apresentados e o seu trabalho!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

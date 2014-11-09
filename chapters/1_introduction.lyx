@@ -1,0 +1,650 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrbook
+\options a4paper,titlepage
+\use_default_options false
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 4cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip bigskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Com o crescimento e popularização da Web, ela tem se tornando uma das formas
+ mais difundidas para se obter e compartilhar dados científicos.
+ Um grande volume de informações em praticamente todas as áreas do conhecimento
+ vem sendo gerado constantemente.
+ Para que esses dados sejam úteis, é necessário dispor de ferramentas para
+ que eles sejam analisados e organizados, permitindo assim que usuários
+ possam acessar e buscar informações relevantes para suas tarefas.
+ 
+\end_layout
+
+\begin_layout Standard
+Na área de biodiversidade isso não é diferente.
+ Atualmente, vários estudos sobre formas de uso, recuperação e acesso a
+ informações sobre biodiversidade vem sendo discutidos amplamente dentro
+ das agendas acadêmicas de pesquisa.
+ Esse grande interesse pela área de biodiversidade se dá pelo fato da mesma
+ ser uma importante fonte econômica, abrangendo atividades agrícolas, pesqueiras
+, florestais e ainda por permitir várias possibilidades de pesquisas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "ALHO2008"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Devido a esse fato, várias iniciativas de investigação para possíveis soluções
+ de como lidar com essas informações biológicas tem surgido através de várias
+ instituições de pesquisa ao redor do mundo.
+ A essa aplicação de técnicas de informática a informações sobre biodiversidade
+ para melhorar seu gerenciamento, apresentação, descoberta, exploração e
+ análise se dá o nome de 
+\shape italic
+Biodiversity Informatics
+\shape default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bisby2000"
+
+\end_inset
+
+.
+ Além de apresentarem uma grande variedade de informações, dados sobre biodivers
+idade também têm um alto nível de complexidade, apresentando parâmetros
+ espaço-temporais, falta de uma estrutura bem definida para representação,
+ vocabulário expresso por uma linguagem particular aos biólogos, ausência
+ de informações, entre outros 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Amanqui2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Observando esse quadro e consultando informações na literatura é possível
+ ver que os principais desafios enfrentados pela área de biodiversidade,
+ utilizando-se da computação, são: (i) lidar com grandes volumes de informações,
+ (ii) realizar a interoperabilidade de informações de diferentes fontes
+ e formatos, (iii) manipular dados e imagens, (iv) manipular informações
+ geográficas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gil2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Com o intuito de amenizar os problemas gerados pelo grande volume de informações
+ e a tarefa laboriosa de recuperar e acessar essas informações manualmente,
+ repositórios de dados que integram informações primárias sobre biodiversidade
+ de museus, herbários e coleções microbiológicas vêm sendo criados e disponibili
+zados gratuitamente na internet.
+ Uma falha importante desses repositórios, é a falta de informações geográficas
+ espaciais sobre a ocorrência de espécies em determinadas regiões.
+ Isso acarreta vários problemas como, por exemplo, a inviabilidade de realização
+ de planos sistemáticos para a conservação de espécies.
+ Esses planos visam, entre outras coisas, propor os melhores locais para
+ a conservação e manejo da biodiversidade dentre aqueles disponíveis, satisfazen
+do requisitos como adequação, abrangência, eficiência e representatividade
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lemes"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+A principal lacuna em realizar esse planejamento é o fato de que, para uma
+ infinidade de espécies, as distribuições geográficas são pouco conhecidas
+ e possuem inúmeras lacunas, como, por exemplo, a imprecisão do seu georreferenc
+iamento, problema esse conhecido como déficit Wallaceano 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lemes"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Uma abordagem para lidar com esse problema, é a construção de um 
+\shape italic
+Gazetteer 
+\shape default
+colaborativo (Dicionário que contém nome de lugares e pode ser atualizado
+ de maneira colaborativa) que visa possibilitar aos biólogos informarem
+ as localidades de ocorrência de espécies.
+\end_layout
+
+\begin_layout Standard
+A proposta deste 
+\shape italic
+Gazetteer
+\shape default
+ é que, com sua utilização, será possível tornar a busca por informação
+ referente a locais de coleta de espécimes mais precisa.
+ Isso será conseguido através da recuperação de coordenadas geográficas
+ ausentes e da contribuição de usuários com novos locais e coordenadas.
+\end_layout
+
+\begin_layout Section
+Justificativa
+\end_layout
+
+\begin_layout Standard
+Atualmente, diversas buscas na Web referem-se a entidades geográficas, como,
+ por exemplo, cidades, ruas e países, demandando assim ferramentas que trabalhem
+ para associar essas entidades a coordenadas geográficas, os 
+\shape italic
+Gazetteers
+\shape default
+.
+ Tal necessidade também existe na área de Biodiversidade, onde é necessário
+ verificar a ocorrência de populações de espécies ameaçadas de extinção
+ em determinados locais para protegê-las, por meio da realização de um planejame
+nto sistemático preciso.
+\end_layout
+
+\begin_layout Standard
+Para recuperar as informações georreferenciadas sobre coleções de espécimes,
+ é possível acessar repositórios sobre biodiversidade disponíveis na web
+ e obter dados de coletas de espécimes.
+ Dentre os repositórios de dados sobre biodiversidade disponíveis online,
+ podemos listar dois importantes o 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "SpeciesLink"
+
+\end_inset
+
+, que possui um grande número de coleções sobre as espécies brasileiras,
+ e o 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "GBIF"
+
+\end_inset
+
+, que contém coleções de vários países.
+ 
+\end_layout
+
+\begin_layout Standard
+O SpeciesLink é um sistema distribuído de Informação que integra, em tempo
+ real, dados primários de 310 coleções científicas nacionais e estrangeiras.
+ Diariamente, o SpeciesLink trás informações estatísticas sobre seus dados,
+ e, em outubro de 2013, o mesmo registrava 6.151.038 registros 
+\shape italic
+online.
+
+\shape default
+ Contudo, apenas 2.572.566 registros eram georreferenciados, ou seja, somente
+ 42% de todos os dados possuíam informações sobre referências geográficas.
+ Já o portal de dados do 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "GBIF"
+
+\end_inset
+
+ tem cerca de 416 milhões de registros sendo que 363 milhões possuem coordenadas.
+ Seriam só 13% dos dados sem informações geográficas, mas isso apenas reflete
+ o fato de que o GBIF contém mais registros recentes que o SpeciesLink.
+ Coletas feitas antes do advento da tecnologia GPS (portanto quase nunca
+ georreferenciadas) são importantíssimas para se entender o passado e a
+ evolução dos ecossistemas, deixando evidente a lacuna desse tipo de informação
+ e a necessidade de se recuperar os registros ausentes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SpeciesLink"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A importância de se realizar o planejamento sistemático com uma taxa de
+ precisão significativa é de que, ao demarcar uma reserva ou parque florestal
+ para preservação de uma espécie ameaçada de extinção, é importante verificar
+ se essa espécie realmente ocorre naquele local, pois caso ele seja demarcado
+ como zona protegida, e a espécie não ocorra lá, esse erro de julgamento
+ poderá levar à extinção de populações dessa espécie em regiões fora da
+ área demarcada para preservação, onde de fato a espécie ocorre 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lemes"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Outro cenário, que é ainda pior do que o mencionado anteriormente, é o da
+ 
+\begin_inset Quotes eld
+\end_inset
+
+extinção por ignorância
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Nesse caso, o número de locais evidenciados para a implementação do planejament
+o sistemático é substancialmente reduzido, pois os locais de ocorrência
+ da espécie são desconhecidos, levando a uma menor taxa de eficiência do
+ planejamento e possível extinção das populações desconhecidas 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lemes"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Utilizando um 
+\shape italic
+Gazetteer
+\shape default
+ colaborativo, é possível auxiliar os biólogos a realizar esse planejamento
+ sistemático com uma taxa de precisão significativa, pois usuários podem
+ colaborar para aperfeiçoar o conteúdo das informações geográficas e realizar
+ consultas em grandes bases de dados.
+ Além disso, é possível associar coordenadas geográficas a informações de
+ coletas realizadas antes do advento da tecnologia GPS
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GPS"
+description "Global Positioning System"
+
+\end_inset
+
+, sendo assim de grande utilidade para se entender o passado e a evolução
+ dos ecossistemas.
+\end_layout
+
+\begin_layout Standard
+A aplicação da Web Semântica no desenvolvimento desse 
+\shape italic
+Gazetteer
+\shape default
+ possibilita auxiliar na resolução de diversos problemas presentes na área
+ de Recuperação de Informações Geográficas (RIG), como a desambiguação de
+ localidades e a realização de consultas complexas que consistam em relações,
+ além da representação espacial ou administrativa.
+ Esses são problemas que requerem 
+\shape italic
+reasoning
+\shape default
+ sobre os locais, como, por exemplo, 
+\shape italic
+to find all lakes in wildlife reserves near Seattle 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KeBler:2009:ANG:1653771.1653787"
+
+\end_inset
+
+.
+
+\shape default
+ 
+\end_layout
+
+\begin_layout Standard
+Além disso, a Web Semântica possibilita a expansão de consultas geográficas,
+ ou seja, após uma consulta ser realizada num 
+\shape italic
+Gazetteer
+\shape default
+ e nenhum resultado relevante ser encontrado, tal consulta pode ser enviada
+ para outros 
+\shape italic
+Gazetteers
+\shape default
+, por meio de solicitações a 
+\shape italic
+endpoints
+\shape default
+ para consulta de informações.
+ Esse tipo de abordagem pode ajudar também na manutenção de 
+\shape italic
+Gazetteers
+\shape default
+, onde locais de um 
+\emph on
+Gazetteer
+\emph default
+ podem ser inseridos em outro e na resposta para usuários que precisam recuperar
+ resultados de vários repositórios 
+\shape italic
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KeBler:2009:ANG:1653771.1653787"
+
+\end_inset
+
+
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Com o intuito de auxiliar outros trabalhos, que já possuem projetos que
+ abordam problemas envolvidos na área de biodiversidade 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Amanqui2013"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lemes"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Farias2010"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "BIOTAFAPESP"
+
+\end_inset
+
+ e dar continuidade a algumas pesquisas iniciadas pelos mesmos, como, por
+ exemplo,
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Amanqui2013"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Farias2010"
+
+\end_inset
+
+, este projeto de mestrado, através de uma parceria iniciada entre o grupo
+ do Professor Dilvan Moreira do Laboratório Intermídia do ICMC-USP com o
+ grupo do Professor Laurindo Campos do Laboratório de Interoperabilidade
+ Semântica (LIS) – INPA, propõe a construção de um 
+\shape italic
+Gazetteer
+\shape default
+ Colaborativo para auxiliar a Recuperação de Informações Geográficas sobre
+ Biodiversidade.
+\end_layout
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Standard
+O objetivo deste projeto de mestrado é construir um 
+\shape italic
+Gazetteer
+\shape default
+ colaborativo, baseado em tecnologias da Web Semântica, para auxiliar a
+ Recuperação de Informações Geográficas sobre biodiversidade.
+ Para isso, serão usados os dados do acervo biológico do SpeciesLink e do
+ GBIF, sobre regiões de coletas de espécies realizadas na Amazônia, ou seja,
+ reservas, rios, lagos, igarapés, entre outros.
+\end_layout
+
+\begin_layout Standard
+O objetivo deste 
+\shape italic
+Gazetteer
+\shape default
+ é promover acesso online a informações geográficas (locais) relevantes
+ a catálogos de dados biológicos (coleções).
+ Ele ainda vai possibilitar que usuários colaborarem com informações para
+ o enriquecimento do 
+\shape italic
+Gazetteer
+\shape default
+, utilizem a semântica envolvida nas informações sobre localidades para
+ obter melhores resultados em buscas por informações geográficas e, por
+ fim, recuperem informações sobre coordenadas geográficas ausentes em registros
+ sobre localidades.
+ 
+\end_layout
+
+\begin_layout Standard
+Para atingir o objetivo proposto os seguintes objetivos específicos serão
+ realizados:
+\end_layout
+
+\begin_layout Enumerate
+Analise dos dados geográficos (locais referentes a reservas, rios, comunidades
+ indígenas, entre outros) de bancos de dados sobre coleções biológicas (serão
+ usados o SpeciesLink e o GBIF, como exemplos representativos);
+\end_layout
+
+\begin_layout Enumerate
+Desenvolvimento de uma arquitetura e uma ontologia (caso uma existente não
+ possa ser reusada) para que a construção do 
+\shape italic
+Gazetteer
+\shape default
+ possa ser realizada;
+\end_layout
+
+\begin_layout Enumerate
+Disponibilização de um protótipo do 
+\shape italic
+Gazetteer
+\shape default
+ onde será possível aos usuários buscarem, inserirem e recuperar informações;
+\end_layout
+
+\begin_layout Enumerate
+Analise do protótipo criado, por meio da averiguação das localidades recuperadas
+, desambiguação de localidades e suporte a prática de 
+\shape italic
+Volunteered Geographic Information
+\shape default
+;
+\end_layout
+
+\begin_layout Enumerate
+Disponibilização de um 
+\shape italic
+endpoint
+\shape default
+ 
+\shape italic
+GeoSPARQL
+\shape default
+ para utilização de terceiros e fácil proliferação dos princípios de 
+\shape italic
+Linked Open Data
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Tendo esses objetivos traçados, acreditamos que a utilização de tecnologias
+ da Web Semântica como ontologias, linguagens RDF, OWL e GeoSPARQL, descritas
+ no Capítulo 3, podem auxiliar a RIG e aos biólogos a recuperar informações
+ biológicas.
+ Como objetivo secundário, esse projeto visa fortalecer a colaboração entre
+ a Universidade de São Paulo-Instituto de Ciências Matemáticas e de Computação
+ (ICMC-USP) e o Instituto Nacional de Pesquisas da Amazônia (INPA)
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "INPA"
+description "Instituto Nacional de Pesquisas da Amazônia"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Organização
+\end_layout
+
+\begin_layout Standard
+Este trabalho está estruturado da seguinte forma:
+\end_layout
+
+\begin_layout Description
+Capítulo 2: Apresenta os conceitos referente a recuperação de informação
+ geográfica como, por exemplo, 
+\shape italic
+Gazetteers
+\shape default
+, 
+\shape italic
+Geoparses
+\shape default
+ e VGI (
+\shape italic
+Volunteered Geographic Information
+\shape default
+).
+\end_layout
+
+\begin_layout Description
+Capítulo 3: Apresenta a fundamentação teórica sobre Web Semântica, evidenciando
+ os principais conceitos que serão utilizados no desenvolvimento do trabalho
+ como, ontologias, buscas semânticas, 
+\shape italic
+Linked Open Data
+\shape default
+, entre outros.
+\end_layout
+
+\begin_layout Description
+Capítulo 4: Este capítulo apresenta os trabalhos relacionados, evidenciando
+ o uso de ontologias, busca semântica e as principais investigações quanto
+ ao estado da arte para o desenvolvimento de 
+\shape italic
+Gazetteers
+\shape default
+.
+\end_layout
+
+\begin_layout Description
+Capítulo 5: Descreve as tecnologias, ferramentas e ontologias que serão
+ utilizadas para o desenvolvimento deste trabalho bem como a aplicação de
+ cada uma no mesmo.
+\end_layout
+
+\begin_layout Description
+Capítulo 6: Apresenta os experimentos realizados até o momento como, por
+ exemplo, análise dos dados utilizados, mapeamento de registros geográficos
+ para ontologias e protótipos criados.
+\end_layout
+
+\begin_layout Description
+Capítulo 7: Este capítulo mostra o cronograma a ser seguido, produções cientific
+as até o momento, as limitações encontradas e o plano de trabalho futuro
+ a ser seguido para construção do 
+\shape italic
+Gazetteer
+\shape default
+ Colaborativo.
+\end_layout
+
+\end_body
+\end_document
