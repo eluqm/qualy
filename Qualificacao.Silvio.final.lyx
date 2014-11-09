@@ -409,7 +409,7 @@ filename "chapters/4_Related_work.lyx"
 \end_layout
 
 \begin_layout Chapter
-Ferramentas
+TOOLS
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Ferramentas"

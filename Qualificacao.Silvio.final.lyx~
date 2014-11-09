@@ -325,7 +325,7 @@ filename "chapters/1_introduction.lyx"
 \end_layout
 
 \begin_layout Chapter
-Recuperação de Informação Geográfica 
+posiblemente hablar de cancer y grading sistem
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:RIG"
@@ -437,7 +437,7 @@ filename "chapters/5_Ferramentas.lyx"
 \end_layout
 
 \begin_layout Chapter
-Experimentos
+perimentos
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:experimentos"
