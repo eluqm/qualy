@@ -325,7 +325,7 @@ filename "chapters/1_introduction.lyx"
 \end_layout
 
 \begin_layout Chapter
-posiblemente hablar de cancer y grading sistem
+Informática Biomedica
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:RIG"
@@ -353,7 +353,7 @@ filename "chapters/2_RIG.lyx"
 \end_layout
 
 \begin_layout Chapter
-Web Semântica
+Web Semântica e ontologias
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Web_Semantica"
@@ -371,6 +371,17 @@ filename "chapters/3_Web Semantica.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Reasoning
 \end_layout
 
 \begin_layout Standard
@@ -409,7 +420,7 @@ filename "chapters/4_Related_work.lyx"
 \end_layout
 
 \begin_layout Chapter
-Ferramentas
+TOOLS
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Ferramentas"
@@ -437,7 +448,7 @@ filename "chapters/5_Ferramentas.lyx"
 \end_layout
 
 \begin_layout Chapter
-perimentos
+Experimentos
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:experimentos"
