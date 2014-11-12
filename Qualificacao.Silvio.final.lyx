@@ -304,7 +304,7 @@ setcounter{page}{1}
 \end_layout
 
 \begin_layout Chapter
-Introdução
+Introduction
 \end_layout
 
 \begin_layout Standard
@@ -325,7 +325,7 @@ filename "chapters/1_introduction.lyx"
 \end_layout
 
 \begin_layout Chapter
-Informática Biomedica
+Biomedical Informatics
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:RIG"
@@ -353,7 +353,7 @@ filename "chapters/2_RIG.lyx"
 \end_layout
 
 \begin_layout Chapter
-Web Semântica e ontologias
+Semantic web and ontologies
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Web_Semantica"
@@ -385,10 +385,6 @@ Reasoning
 \end_layout
 
 \begin_layout Standard
-trabajos relacionas perú
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -396,7 +392,7 @@ trabajos relacionas perú
 \end_layout
 
 \begin_layout Chapter
-Trabalhos Relacionados 
+Related Works 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Trabalhos_Relacionados"
@@ -424,7 +420,7 @@ filename "chapters/4_Related_work.lyx"
 \end_layout
 
 \begin_layout Chapter
-TOOLS
+Tools
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Ferramentas"
@@ -452,7 +448,7 @@ filename "chapters/5_Ferramentas.lyx"
 \end_layout
 
 \begin_layout Chapter
-Experimentos
+Experiments 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:experimentos"
@@ -480,7 +476,7 @@ filename "chapters/7_Experimentos.lyx"
 \end_layout
 
 \begin_layout Chapter
-Plano de Trabalho
+Work plan
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:conclusao"
@@ -508,7 +504,7 @@ filename "chapters/6_conclusao.lyx"
 \end_layout
 
 \begin_layout Chapter
-Referências
+References
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:referencias"
