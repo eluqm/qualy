@@ -129,13 +129,6 @@ Gazetteers
 Volunteered Geographic Information
 \shape default
 , foi realizado um mapeamento sistemático.
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Kurtz2014"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
