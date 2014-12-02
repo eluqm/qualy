@@ -100,7 +100,7 @@ eqs-within-sections
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
-	filename capaicmc/capa.pdf
+	filename capaicmc/capa.doc.pdf
 
 \end_inset
 
@@ -117,7 +117,7 @@ x
 \begin_layout Standard
 \begin_inset External
 	template PDFPages
-	filename capaicmc/rosto.pdf
+	filename capaicmc/rosto.doc.pdf
 
 \end_inset
 
