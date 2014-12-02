@@ -512,6 +512,13 @@ name "chap:referencias"
 \end_inset
 
 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Adcock2014"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

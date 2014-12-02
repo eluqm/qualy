@@ -115,10 +115,253 @@
 \begin_body
 
 \begin_layout Section
-Introdução
+Introduction
 \end_layout
 
 \begin_layout Standard
+In order to check the recent work in the literature in this area, a systematic
+ mapping was performed.
+ To perform this mapping, the terms "staging cancer", "semantic image annotation
+s" and ''Image metadata reasoning'' were used to search for works, as a
+ result, 120 articles were found.
+ After an analysis of the publication dates and title of the articles, 60
+ studies published, between 2003 and 2014, were selected for analysis of
+ the abstracts.
+ This number was reduced to 23 works.
+ Among these 23 articles, an analysis of the content of each was performed,
+ looking for the use of semantic annotations, ontologies, reasoning, and
+ grading cancer methods.
+ 11 works were chosen because they have similarities with the proposed work.
+ Below, these works are described and compared to the proposed work: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dameron2006"
+
+\end_inset
+
+ shows that the grading of tumors can be performed automatically using OWL-DL,
+ this paper takes a case study for grading lung tumors and uses the FMA
+ ontology, TNM staging criteria and reasoning process.
+ Also, the authors highlight some of the limitation of Description Logic-based
+ (DL) classification, for the task of grading.
+ Finally, patients conditions are simulated by instances of classes for
+ experiments.
+ But….
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Marquet2007"
+
+\end_inset
+
+ In order to grading glioma tumors an ontology based on the NCI Thesaurus
+ ontology was developed.
+ The reference grading system used was the World Health Organization (WHO).
+ Then, A class-based reasoning from pathological reports of patients based
+ in histological descriptions was used.
+ But...
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Levy2009"
+
+\end_inset
+
+ a methodology and tools were developed for transform the Annotation and
+ Image Markup(AIM) information model into OWL instances.
+ Then, an ontology-based reasoning mechanism(OWL-SWRL) was developed to
+ work with these instances for classification and automated calculation
+ of tumor burden.
+ But....
+ 
+\end_layout
+
+\begin_layout Itemize
+The proposed work in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Tutac2008"
+
+\end_inset
+
+ introduces an approach that use OWL-DL in order to generate correspondence
+ between medical concepts related to the classification of breast cancer
+ based in the Nottingham Grading System (NGS) and computer vision concepts.
+ The authors created a rule-based method to automatically generate the NGS.
+ In addition, these medical concepts related to NGS are transformed into
+ computer vision concepts.
+ Subsequently, these computer vision concepts are modeled as Protegé concepts
+ to define rules which are finally used for a semantic indexing of images
+ of cancer breast patients.
+ But...
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "zillner:towards"
+
+\end_inset
+
+ OWL-DL ontology was designed to performing automatic staging of lymphoma
+ patients using semantic annotations of patient record.
+ These annotations are stored in an ontology by annotation tool that is
+ part of MEDICO-ontology project.
+ In addition, for classification of lymphoma patients the authors captured
+ the rules of the Ann Arbor Staging System into an ontology.
+ But..
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Tutac2010"
+
+\end_inset
+
+ … But…
+\end_layout
+
+\begin_layout Itemize
+The proposed work in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Zillner2012"
+
+\end_inset
+
+ introduces an application that uses medical image annotations and reasoning
+ technologies in order to stage lymphoma patients automatically based in
+ relative position of lymphoma.
+ Firstly, an ontology-based knowledge was used to verify or falsify the
+ spatial configurations of lymphoma, this process is known as spatio-anatomical
+ reasoning 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Manuel"
+
+\end_inset
+
+.
+ Subsequently, the authors establish alignments between concepts of RADLEX
+ and FMA in order to create the Patient-ontology.
+ These ontologies are used in the MEDICO-ontology.
+ Finally, Patient ontology and the Ann Arbor ontology are aligned for execute
+ the reasoning process for staging lymphoma patients.
+ The semantic annotations are stored within a dedicated annotation ontology
+ mentioned by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "zillner:towards"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Oberkampf"
+
+\end_inset
+
+.
+ But … 
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Meriem2012"
+
+\end_inset
+
+ present a methodology to improve clinical models and usability of the low-level
+ image analysis algorithms, for instance, standard computation of scores
+ following the Nottingham Grading System NGS for breast cancer grading.
+ Firstly, they designed a breast cancer ontology BCO based on two languages,
+ OWL-LD and SWRL for reasoning part, in addition, the Wide Field Markup
+ Language WFML was used to describe annotated histopathological images.
+ Finally, the query language SPARQL is used for querying in Java.
+ But… 
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Oberkampf"
+
+\end_inset
+
+...
+ But … 
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kurtz2014"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Seifert"
+
+\end_inset
+
+ propose an image retrieval framework based on semantic features, the authors
+ use the semantic similarity between terms(semantic annotations) of the
+ medical image using the structure of the Radlex to evaluate the semantic
+ proximity between terms of interest.
+ This automatic approach provide real-time support to radiologist by showing
+ them similar images with associated diagnoses.
+ But… 
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Racoceanu2014"
+
+\end_inset
+
+...
+ But...
+ 
+\end_layout
+
+\begin_layout Standard
+In addition.
+ These works are described briefly in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trabalho_relacionado"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 Com intuito de se verificar na literatura recente os trabalhos na área de
  RIG que envolvem a construção e disponibilização de 
 \shape italic
@@ -129,9 +372,16 @@ Gazetteers
 Volunteered Geographic Information
 \shape default
 , foi realizado um mapeamento sistemático.
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kurtz2014"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Para realizar o esse mapeamento, os termos 
 \shape italic
 
@@ -168,7 +418,7 @@ Gazetteer
  Semântico e VIG eram abordados, esse número foi reduzido para 38 trabalhos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Dentre os esses 38 trabalhos, foi realizada uma análise do conteúdo abordado
  por cada um, evidenciando a utilização de ontologias, contexto da biodiversidad
 e e práticas de VIG, sendo que sete trabalhos foram escolhidos por terem
@@ -389,7 +639,7 @@ que ontologia? vc nao falou de nenhuma ontologia
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Ao comparar o trabalho proposto com esses sete trabalhos, as seguintes diferença
 s foram evidenciadas:
 \end_layout
@@ -601,7 +851,17 @@ O KIDGS utiliza ontologias para desambiguar as localidades e para o processo
  SPARQL para requisitar esses dados.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand citet
+key "zillner:towards"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 A tabela 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -627,65 +887,96 @@ Gazetteers
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float table
 wide false
-sideways true
+sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox*{0.9
+\backslash
+textwidth}{0.5
+\backslash
+totalheight}{
+\end_layout
+
+\end_inset
+
+
 \begin_inset Tabular
-<lyxtabular version="3" rows="9" columns="5">
-<features rotate="0" tabularvalignment="middle">
+<lyxtabular version="3" rows="12" columns="5">
+<features rotate="0" tabularvalignment="top">
 <column alignment="center" valignment="top" width="20text%">
-<column alignment="center" valignment="top" width="15text%">
-<column alignment="center" valignment="top" width="20text%">
-<column alignment="center" valignment="top" width="15text%">
-<column alignment="center" valignment="top" width="20text%">
+<column alignment="left" valignment="top" width="15text%">
+<column alignment="left" valignment="top" width="20text%">
+<column alignment="left" valignment="top" width="25text%">
+<column alignment="left" valignment="top" width="10text%">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Trabalho
+Title-Author(year) 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Utiliza Ontologias
+Cancer Type
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Utiliza VGI
+Data Input 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Buscas Semânticas
+- Clinical knowledge source 
+\end_layout
+
+\begin_layout Plain Layout
+-Method of grading or staging
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\emph on
-Linked Open Data
+Results 
 \end_layout
 
 \end_inset
@@ -696,10 +987,14 @@ Linked Open Data
 \begin_inset Text
 
 \begin_layout Plain Layout
-Framework proposto por 
+Image metadata reasoning for improved clinical decision support.
+ 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Davis2013"
+key "Zillner2012"
 
 \end_inset
 
@@ -708,96 +1003,42 @@ key "Davis2013"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+Lymphoma
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Apenas descreve um modelo de implementação para VGI
+-automatic tagging of medical image using OWL ontologies
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+- Ontology-based representation of Ann Arbor System
+\end_layout
+
+\begin_layout Plain Layout
+-Staging(reasoning using OWL-DL)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\shape italic
-Gazetteer
-\shape default
- proposto por 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "MouraJr:2012:NoHi"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Somente para desambiguação
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Não
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Não
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Não
+- No 
 \end_layout
 
 \end_inset
@@ -808,10 +1049,14 @@ Não
 \begin_inset Text
 
 \begin_layout Plain Layout
-OntoGazetteer 
+Towards the Ontology-based Classification of Lymphoma Patients using Semantic
+ Image Annotations.
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Machado2011"
+key "zillner:towards"
 
 \end_inset
 
@@ -820,38 +1065,42 @@ key "Machado2011"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Somente para desambiguação
+Lymphoma
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+-semantic annotation of patient records by tool support(mapped to OWL) 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+-Ontology-based representation of Ann Arbor System
+\end_layout
+
+\begin_layout Plain Layout
+-Staging(reasoning using OWL-DL) 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+- No 
 \end_layout
 
 \end_inset
@@ -862,10 +1111,13 @@ Não
 \begin_inset Text
 
 \begin_layout Plain Layout
-FODGS 
+Knowledge-Guided Semantic Indexing of Breast Cancer Histopathology Images.
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Peng2010"
+key "Tutac2008"
 
 \end_inset
 
@@ -874,38 +1126,42 @@ key "Peng2010"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sim, mas não realiza desambiguação
+Breast 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+- image recognition (pathology images) - automatic tagging
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Em parte, não permite utilizar coordenadas geográficas
+- Ontology-based representation of Nottingham Grading System (NGS)
+\end_layout
+
+\begin_layout Plain Layout
+-Grading (reasoning using OWL-DL, SWRL)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Em parte, dados como censo ainda estão em bases relacionais
+- Yes
 \end_layout
 
 \end_inset
@@ -916,10 +1172,14 @@ Em parte, dados como censo ainda estão em bases relacionais
 \begin_inset Text
 
 \begin_layout Plain Layout
-Trabalho proposto por 
+Spatial representation and reasoning in breast cancer grading ontology.
+ 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Gil2010"
+key "Tutac2010"
 
 \end_inset
 
@@ -928,38 +1188,42 @@ key "Gil2010"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+Breast
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+-automatic tagging (pathology images) 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+- Ontology-based Spatial representation of Nottingham Grading System (NGS)
+\end_layout
+
+\begin_layout Plain Layout
+-Grading (reasoning using OWL-DL, SWRL) 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+-No
 \end_layout
 
 \end_inset
@@ -970,10 +1234,14 @@ Não
 \begin_inset Text
 
 \begin_layout Plain Layout
-DIGMAP 
+Interpretation breast cancer imaging by using ontology.
+ 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Manguinhas2008"
+key "Meriem2012"
 
 \end_inset
 
@@ -982,38 +1250,42 @@ key "Manguinhas2008"
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Somente para desambiguação
+Breast
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+- WFML annotations mapped to owl (pathology images)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+- Ontology-based representation of Nottingham Grading System (NGS)
+\end_layout
+
+\begin_layout Plain Layout
+-Grading (reasoning using OWL-DL, SWRL) 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+-Yes 
 \end_layout
 
 \end_inset
@@ -1024,10 +1296,14 @@ Não
 \begin_inset Text
 
 \begin_layout Plain Layout
-KIDGS 
+Semantic reasoning with image annotations for tumor assessment.
+ 
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Liu2009"
+key "Levy2009"
 
 \end_inset
 
@@ -1036,39 +1312,285 @@ key "Liu2009"
 
 \end_inset
 </cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Liver
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ - AIM image annotations mapped to owl
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-No grading or staging system 
+\end_layout
+
+\begin_layout Plain Layout
+-Reasoning using OWL, SWRL, SQWRL
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-No 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sim
+Grading glioma tumors using OWL-DL and NCI Thesaurus.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Marquet2007"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Glioma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Pathologic reports (owl classes filed manually)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Ontology-based representation of World Health Organization Grading System
+ (WHO)
+\end_layout
+
+\begin_layout Plain Layout
+-Grading (reasoning using OWL-DL)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ -No 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Não
+Grading lung tumors using OWL-DL based reasoning.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dameron2006"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lung
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+- Simulated data patient conditions were represented using classes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Ontology-based representation of TNM Classification of Malignant Tumours
+ Staging System(TNM)
+\end_layout
+
+\begin_layout Plain Layout
+-Staging(reasoning using OWL -DL)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ -No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Em parte, não permite utilizar coordenadas geográficas
+Interpreting Patient Data using Medical Background Knowledge 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Oberkampf"
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Em parte, pois não segue todos os princípios, apenas seus dados estão em
- RDF
+Lymphoma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-semantic annotations (mapped to owl)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-No grading system 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Yes 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A hierarchical knowledge-based approach for retrieving similar medical images
+ described with semantic annotations.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kurtz2014"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-manual semantic annotations from ePAD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-No representation of Staging System
+\end_layout
+
+\begin_layout Plain Layout
+-Classification(Ontological similarity between terms) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-Yes
 \end_layout
 
 \end_inset
@@ -1079,47 +1601,58 @@ Em parte, pois não segue todos os princípios, apenas seus dados estão em
 \begin_inset Text
 
 \begin_layout Plain Layout
+Towards semantic-driven high-content image analysis: An operational instantiatio
+n for mitosis detection in digital histopathology.
+\end_layout
 
-\shape italic
-Gazetteer
-\shape default
- proposto neste trabalho
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Racoceanu2014"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sim
+Breast
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sim
+-WFML annotations mapped to owl (pathology images)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sim
+-Ontology-based representation of Nottingham Grading System (NGS)
+\end_layout
+
+\begin_layout Plain Layout
+-Staging(reasoning using OWL-DL) 
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Sim
+
 \end_layout
 
 \end_inset
@@ -1130,10 +1663,28 @@ Sim
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comparativo entre os trabalhos relacionados.
+comparison between related work.
  
 \begin_inset CommandInset label
 LatexCommand label
@@ -1166,6 +1717,10 @@ name "sec:Estado-da-Arte"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 Sistemas de Informação Geográfica (SIG
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1182,7 +1737,7 @@ description "Sistemas de Informação Geográfica"
  são necessárias fontes de dados confiáveis.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Alguns desses problemas são abordados na literatura e a soluções propostas
  envolvem recursos como 
 \shape italic
@@ -1201,7 +1756,7 @@ Gazetteers
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Coleta e Integração
@@ -1275,61 +1830,11 @@ key "MouraDavi:2013:DeOpPe"
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
 \begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../figures/triplas_RDF.png
-	scale 60
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Quantidade de triplas na 
-\shape italic
-Web of Data
-\shape default
- em 2011.
- Fonte: 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "MouraDavi:2013:DeOpPe"
-
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tripla_RDF_4"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 
 \series bold
 Recuperação, Busca e Navegação
@@ -1380,7 +1885,7 @@ Gazetteers
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Resolução de entidades e desambiguação
@@ -1423,7 +1928,7 @@ key "MouraDavi:2013:DeOpPe"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Dados Temporais
@@ -1466,7 +1971,7 @@ key "MouraDavi:2013:DeOpPe"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Data Fusion e redundância
@@ -1510,7 +2015,7 @@ key "MouraDavi:2013:DeOpPe"
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Nesse contexto, o 
 \shape italic
 Gazetteer
@@ -1528,16 +2033,21 @@ Gazetteers
 \shape italic
 Gazetteer
 \shape default
- é utilizado a Lei de Linus.
+ é utilizado a Lei de Linus
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 
 \series bold
-Precisão de dados utilizando VIG 
+ 
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Precisão-de-dados"
+name "sec:Precisão-de-dados-1"
 
 \end_inset
 
@@ -1545,6 +2055,10 @@ name "sec:Precisão-de-dados"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 Tendo em vista a coleta e a natureza distribuída dos dados coletados por
  voluntários, é extremamente importante validar o quão bom é a qualidade
  das informações que são recolhidas através das atividades geográficas voluntári
@@ -1563,7 +2077,7 @@ key "Haklay2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Com objetivo de se verificar a qualidade de coordenadas, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1578,7 +2092,7 @@ key "Haklay08"
  coordenadas, ou seja, são similares.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Segundo 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1600,7 +2114,7 @@ description "Open Street Maps"
  dados a qualidade torna-se confiável.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Uma forma de explorar a questão da garantia da qualidade em projetos VGI,
  como o OSM, é olhar para projetos semelhantes, embora não na área de informação
  geográfica, como, por exemplo, projetos de código aberto que permitem pessoas
@@ -1616,7 +2130,7 @@ key "Haklay2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 No contexto da área de qualidade de software, em que a Lei de Linus tem
  origem, diversos projetos de código livre adotam sua utilização, como,
  por exemplo, o Apache Web Server.
@@ -1647,7 +2161,7 @@ key "Haklay2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Assim é possível traçar um paralelo da Lei de Linus, para verificar a precisão
  do posicionamento de informações geográficas.
  A lógica para esta Lei é: Se somente existe um contribuinte em uma área,
@@ -1664,7 +2178,7 @@ key "Haklay2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Para verificar a validade da aplicação da Lei de Linus, no contexto de VGI,
  
 \begin_inset CommandInset citation
@@ -1690,7 +2204,7 @@ as de ambos são similares.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Após uma abordagem mais detalhada sobre a viabilidade da Lei de Linus, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1716,7 +2230,7 @@ reference "osm_linus_law"
 , onde mais de 93% dos pontos têm mais de 70% de precisão.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Embora esse valor seja elevado, a qualidade não é mias dependente do número
  de contribuintes após um determinado número.
  As coordenadas precisas são editadas por um número de 5 a 20 colaboradores,
@@ -1732,107 +2246,15 @@ reference "erro_contribuidores"
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
 \begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../figures/OMS_LinusLaw.png
-	scale 50
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Número de contribuintes e precisão posicional.
- Fonte: 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Haklay2010"
-
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "osm_linus_law"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../figures/erro_contribuidores.png
-	scale 50
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Número de contribuidores por erro na precisão posicional.
- Fonte:
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Haklay2010"
-
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "erro_contribuidores"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Conforme relatado por 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1851,14 +2273,14 @@ es passa de 13 colaboradores essa melhora se estabiliza e há uma pequena
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Conclui-se estão que é possível considerar a Lei de Linus como um indicador
  espacial de qualidade dos dados, sem a necessidade do uso de um conjunto
  de referência, como, por exemplo, bases de dados geográficas do IBGE, para
  validar a qualidade dos dados fornecidos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 O 
 \shape italic
 Gazetteer
@@ -1870,11 +2292,20 @@ Gazetteer
  e GBIF de forma automática, descrito na seção 6.3.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Considerações Finais
+Final Considerations
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 Este capítulo abordou os principais trabalhos relacionados ao desenvolvimento
  de Gazetteers na área de Recuperação de Informação Geográfica, descrevendo
  as similaridades e divergências entre o trabalho proposto e os sete trabalhos
@@ -1889,7 +2320,7 @@ Gazetteers
  na literatura como um indicador espacial de qualidade).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 O 
 \shape italic
 Gazetteer
@@ -1909,6 +2340,11 @@ Linked Open Data
  Espera-se que, com a prática de VIG, a qualidade, completude e atualização
  das informações sobre as localidades das coleções biológicas sejam aprimoradas.
  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
