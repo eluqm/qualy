@@ -71,6 +71,10 @@
 \begin_body
 
 \begin_layout Abstract
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 O Brasil é considerado o país da megadiversidade por abrigar diversas espécies
  de flora e fauna.
  Preservar essa diversidade é extremamente importante, pois a manutenção
@@ -109,6 +113,11 @@ Gazetteer
 Linked Data
 \shape default
 .
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

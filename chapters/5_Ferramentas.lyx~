@@ -140,10 +140,6 @@ Protégé
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 O Protégé é um ambiente para criação e edição de ontologias desenvolvido
  pela Universidade de Stanford.
  Ele permite a construção de ontologias, formulários de entrada de dados
@@ -158,7 +154,7 @@ key "Rubin2007"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Atualmente, o Protégé possui uma versão Web que permite usuários, compartilhar,
  procurar e editar ontologias utilizando um navegador Web.
  O WebProtégé provê um paradigma gráfico similar ao Protégé GUI.
@@ -173,7 +169,7 @@ key "Rubin2007"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Por ser um sistema open-source, ele permite que desenvolvedores criem novos
  plugins capazes de aumentar significativamente o conjunto de funcionalidades
  da ferramenta.
@@ -209,7 +205,7 @@ A versão atual do Protégé, 4.X, é baseada na biblioteca OWL-API (OWL 2),
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Neste trabalho, o Protégé será utilizado para criar e editar as classes,
  propriedades e atributos da ontologia que será utilizada para representar
  as informações referentes aos locais de coleta das coleções biológicas
@@ -225,11 +221,6 @@ triplestore
 para serem disponibilizados por meio de serviços SPARQL
 \shape italic
 .
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -285,10 +276,6 @@ Strabon
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 O Strabon é uma
 \shape italic
  triplestore
@@ -303,7 +290,7 @@ triplestore
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A utilização do Sesame como base permite implementar uma vasta gama de funcional
 idades e possibilita a utilização de SGBDs, como o PostGIS e MonetDB, como
  backends para explorar uma variedade de funções espaciais.
@@ -331,7 +318,7 @@ key "Bereta2013"
 :
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -422,20 +409,11 @@ key "Bereta2013"
 .
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Subsection
 uSeekM
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 O uSeekM é uma biblioteca que pode ser adicionada a base de dados semânticas
  que usam as 
 \shape italic
@@ -497,7 +475,7 @@ key "uSeekM"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 O uSeekM possui os seguintes 
 \shape italic
 Sail wrappers
@@ -572,7 +550,7 @@ para se comunicar com a SmartSailWrapper
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 As funcionalidades fornecidas pelo uSeekM incluem a implementação de GeoSPARQL
  permitindo a indexação, busca e computação de geometrias, integradas dentro
  da linguagem de consulta SPARQL, proporcionando suporte para todas 
@@ -597,18 +575,13 @@ triplestore
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para armazenamento das triplas em RDF, o uSeekM utiliza o banco de dados
  PostgreSQL juntamente com a extensão Postgis.
  Isso permite ao uSeekM realizar as consultas geoespaciais 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "uSeekM"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -625,10 +598,6 @@ API Jena
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Uma vez definido a 
 \shape italic
 triplestore
@@ -639,7 +608,7 @@ triplestore
  SPARQL.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Jena é uma API
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -669,7 +638,7 @@ key "Carroll2003"
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A API Jena suporta as linguagens RDF/RDFS e OWL, incluindo também um motor
  de inferência, que pode ser construído a parte e acoplado a API.
  Além disso, a API permite várias estratégias para armazenamento de dados
@@ -683,7 +652,7 @@ key "Flor2014"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A Jena foi originalmente desenvolvida pela companhia Hewlett-Packard, em
  2000, possuindo uma licença open source para o desenvolvimento de aplicações.
  Ela é extensivamente utilizada em um vasto número de aplicações da Web
@@ -697,7 +666,7 @@ key "Flor2014"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Neste trabalho, utilizaremos a Jena para construir as triplas RDF, armazená-las
  em disco, utilizando uma 
 \shape italic
@@ -707,11 +676,6 @@ triplestore,
  dados.
  Essa API irá se comunicar com a interface do usuário por meio de um aplicação
  Web desenvolvida em GWT.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section

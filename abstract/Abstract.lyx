@@ -78,6 +78,12 @@ Resumo
 \begin_layout Abstract
 
 \lang brazilian
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+
+\lang brazilian
 O BBBrasil é considerado o país da megadiversidade por abrigar diversas
  espécies de flora e fauna.
  Preservar essa diversidade é extremamente importante, pois a manutenção
@@ -124,6 +130,11 @@ Linked Open Data
 .
  Resultados preliminares, publicados em artigos em conferências internacionais,
  serão discutidos.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

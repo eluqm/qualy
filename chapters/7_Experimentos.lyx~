@@ -99,14 +99,10 @@ End
 \begin_body
 
 \begin_layout Section
-Introduction
+Introdução
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Neste capítulo serão apresentados alguns resultados que já foram alcançados
  com o desenvolvimento do 
 \shape italic
@@ -134,16 +130,18 @@ Gazetteer
  para o desenvolvimento do trabalho.
 \end_layout
 
+\begin_layout Section
+Análise dos dados utilizados referente aos repositórios SpeciesLink e GBIF
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Análise-dos-dados"
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Para realizar este trabalho foram utilizados conjuntos de dados, referentes
  a coletas biológicas do estado do Amazonas, que estão disponíveis nos repositór
 ios biológicos do 
@@ -166,7 +164,7 @@ key "GBIF"
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Ao analisar os dados do SpeciesLink e GBIF, Tabela 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -195,7 +193,7 @@ reference "tabela_GBIF"
  foi recolhido e suas coordenadas geográficas (latitude e longitude).
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Outro ponto interessante verificado em relação a esses dados é, que entre
  os registros de coletas marcados com qualidade de informação 2 e 3, se
  verificou que 31,56% desses registros são referentes a coletas muito antigas,
@@ -216,7 +214,7 @@ key "Laurindo"
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Como um dos objetivos deste trabalho é tratar os dados que contém informações
  geográficas imprecisas, a partir de coletas com registros confiáveis, foram
  utilizados os dados de qualidade 2 a 4 para desenvolver o 
@@ -237,7 +235,7 @@ Gazetteer
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 placement h
 wide false
@@ -521,7 +519,7 @@ name "Tabela_SpeciesLink"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 placement h
 wide false
@@ -805,7 +803,7 @@ name "tabela_GBIF"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Ao se analisar os dados do SpeciesLink e GBIF foi possível observar vários
  registros imprecisos como os exibidos na Figura 
 \begin_inset CommandInset ref
@@ -828,7 +826,7 @@ reference "GBIF_erro"
  Colômbia e Peru.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Esses valores errôneos aparecem ao longo do mapa distribuídos de forma horizonta
 l ou vertical em relação ao Amazonas, como visualizado na Figura 
 \begin_inset CommandInset ref
@@ -845,7 +843,7 @@ reference "speciesLink_erro"
  estão dentro do município da coleta).
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Além dessa imprecisão, ao se analisar os dados do SpeciesLink e GBIF de
  forma mais minuciosa, foi possível observar que várias localidades apresentavam
  informações de latitude e longitude imprecisas como, por exemplo, a situação
@@ -870,7 +868,7 @@ b.
  em vermelho nas figuras.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -913,7 +911,7 @@ name "speciesLink_erro"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -956,7 +954,7 @@ name "GBIF_erro"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 
 \lang english
 \begin_inset Float figure
@@ -1069,22 +1067,17 @@ name "fig:duckeA"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Tendo em vista a quantidade de erros presentes e a falta de coordenadas
  geográficas nos registros do SpeciesLink e GBIF, foi desenvolvido um método
  para aprimorar essas coordenadas, esse método é descrito na seção seguinte.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Section
+Método para aprimorar coordenadas geográficas
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 A partir dos dados tratados pela etapa anterior, foi construído um 
 \shape italic
 script
@@ -1095,7 +1088,7 @@ script
  estradas foi gerada.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Essa lista foi composta por 45 topônimos, onde cada um contém uma expressão
  regular associada para extrair as informações da base de dados.
  Por exemplo, foi possível recuperar registros que indicam uma reserva utilizand
@@ -1133,7 +1126,7 @@ key "Machado2011"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Após recuperar os registros de um dado local, os mesmos foram agrupados
  usando o algoritmo de agrupamento Star
 \begin_inset CommandInset citation
@@ -1148,7 +1141,7 @@ key "Aslam2004"
  de modo que todos os objetos de um cluster ficam conectados a um centroide.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Em conjunto com o algoritmo de agrupamento, foi utilizada uma lista de 
 \shape italic
 stop words
@@ -1158,7 +1151,7 @@ stop words
  contém termos como, por exemplo, "solo arenoso" ou "terra firme".
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para verificar a similaridade entre as localidades e agrupá-las, foi utilizado
  o coeficiente de similaridade de Jaccard 
 \begin_inset CommandInset citation
@@ -1189,7 +1182,7 @@ key "Laurindo"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para utilizar o coeficiente de Jaccard, um limiar de similaridade entre
  as localidades foi definido manualmente.
  A partir de testes iniciais verificou-se que, quanto mais próximo de 1
@@ -1209,11 +1202,11 @@ reference "escrita_dados"
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1255,7 +1248,7 @@ name "escrita_dados"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para amenizar a imprecisão das coordenadas geográficas mencionadas na seção
  
 \begin_inset CommandInset ref
@@ -1274,7 +1267,7 @@ reference "sec:Análise-dos-dados"
  presente no Geonames é inserida nos dados do SpeciesLink e do GBIF.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A escolha do repositório Geonames se deve ao fato desse 
 \shape italic
 Gazetteer
@@ -1298,7 +1291,7 @@ key "Kessler2012"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Após a atualização das coordenadas, o método de aprimoramento de coordenadas
  toma como base os diversos grupos existentes e uma sumarização dos valores
  que se repetem frequentemente é feita, como mostrado na Figura 
@@ -1312,7 +1305,7 @@ reference "sumariza"
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para satisfazer esse método de sumarização, inicialmente é verificado se
  a localidade possui um polígono nos dados do IBGE, em caso afirmativo,
  os pontos que estão fora do polígono são descartados e então a mediana
@@ -1335,7 +1328,7 @@ reference "sumariza"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A escolha desta abordagem, se deve ao fato de que um valor que ocorre com
  mais frequência em um grupo tende a ser o valor correto para uma localidade.
  Essa abordagem estende a proposta da Lei de Linus, descrita por 
@@ -1366,11 +1359,11 @@ reference "agrup_dados"
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1496,11 +1489,11 @@ name "tabela_coord"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1544,7 +1537,7 @@ name "sumariza"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Como relatado na seção 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1579,7 +1572,7 @@ O método a que vc está se referindo ano é o seu? Ou é o de alguém? Se é
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1624,14 +1617,14 @@ name "coord_correta"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Outra contribuição deste trabalho para melhorar a acurácia dos dados do
  SpeciesLink e do GBIF, é a atualização os registros que não contém informações
  geográficas, por meio de registros que possuem e foram validados pela técnica
  de sumarização.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Os repositórios SpeciesLink e GBIF contem 24,85% e 16,60% de registros com
  coordenadas geográficas (longitude e latitude), para o estado do Amazonas.
  Após aplicar a técnica de sumarização de coordenadas descrita neste trabalho,
@@ -1658,7 +1651,7 @@ idade.
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -1707,7 +1700,7 @@ name "sumi_result"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Estes dados evidenciam que, de fato, a construção do 
 \shape italic
 Gazetteer
@@ -1721,23 +1714,18 @@ Gazetteer
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Além de verificar a quantidade de dados que foram aprimorados, também é
  necessário verificar se essas localidades agrupadas pertencem aos centroides
  corretos e contém informações geográficas precisas.
  Para isso foi realizada uma verificação dos locais agrupados.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+Verificação dos locais agrupados
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Para verificar a precisão dos locais do 
 \shape italic
 Gazetteer,
@@ -1762,7 +1750,7 @@ reference "escrita_dados"
  realmente era o correto.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Ao se realizar a análise desses grupos coletados, foi possível verificar
  que a coerência das localidades associadas foi bem significativa, em média
  84% das coordenadas estão associadas corretamente e que nenhum dos limiares
@@ -1790,11 +1778,11 @@ Pode colocar alguns numeros no texto? O que vc se refere como bem significativa?
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1835,7 +1823,7 @@ name "agrup_dados"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Embora se tenha conseguido valores significativos para esse agrupamento
  de localidades, após uma análise detalhada desses grupos, foi possível
  verificar que, embora algumas localidades apresentem maior similaridade
@@ -1851,11 +1839,11 @@ reference "agrup_imp1"
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -1932,14 +1920,14 @@ name "agrup_imp1"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A ocorrência desse fator levou a redução do valor de localidades associadas
  corretamente, pois locais distintos eram agrupados em um mesmo grupo.
  Esse fenômeno é ocasionado pelo fato da técnica de agrupamento por similaridade
  entre palavras não conseguir determinar a semântica de um local.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Analisando esse fato, pode-se perceber que levar em consideração apenas
  a similaridade não é uma boa abordagem para referenciar localidades, pois
  ela despreza a semântica que está sendo passada naquele valor.
@@ -1950,7 +1938,7 @@ Gazetteer
  irão incluir o uso de ontologias para auxiliar na Resolução de Topônimos.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Além da verificação interna entre as localidades agrupadas, também foi realizada
  uma análise dos nomes representados pelos centroides.
  Essa análise tem como intuito verificar se os centroides estão corretos
@@ -1959,7 +1947,7 @@ Além da verificação interna entre as localidades agrupadas, também foi reali
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Inicialmente o 
 \shape italic
 Gazetteer
@@ -1991,7 +1979,7 @@ reference "centroides"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -2125,7 +2113,7 @@ name "quant_lugares"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -2228,7 +2216,7 @@ name "centroides"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 O motivo da ocorrência desse fenômeno é o fato de vários registros terem
  grafias diferentes, que vão desde erros ortográficos, para descrever localidade
 s, a descrições heterogêneas se referindo a locais semelhantes.
@@ -2253,7 +2241,7 @@ ref correta?
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Devido à frequente ocorrência desse fato na amostra coletada, a taxa de
  grupos associados corretamente foi muito penalizada e seus valores ficaram
  abaixo dos resultados obtidos pelas localidades associadas corretamente,
@@ -2272,7 +2260,7 @@ reference "agrup_dados"
  grupos por suas coordenadas geográficas.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Embora o número de grupos para representar todas as localidades possa ser
  aprimorado, ainda foi possível contribuir com o aprimoramento das informações
  geográficas presentes nos repositórios SpeciesLink e GBIF.
@@ -2286,7 +2274,7 @@ Gazetteer
  com várias informações imprecisas e difíceis de serem analisadas.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Vale ressaltar que ao se trabalhar com dados reais, que foram coletados
  e registrados por humanos, os mesmos estão sujeitos a grandes variações
  e imprecisões, aumentando a complexidade ao se comparar os resultados deste
@@ -2298,7 +2286,7 @@ Gazetteers
  vindo de bancos de dados).
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Após a construção do 
 \shape italic
 Gazetteer
@@ -2316,16 +2304,15 @@ triplestore
  Esse mapeamento é descrito na próxima seção.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Section
+Mapeamento dos dados e disponibilização do 
+\shape italic
+Endpoint
+\shape default
+ GeoSPARQL
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Inicialmente, os dados geográficos frutos deste experimento foram mapeados
  usando as ontologias LinkedGeoData e GeoSPARQL.
  O uso dessas ontologias se deve ao fato de ambas já terem sido validadas
@@ -2360,7 +2347,7 @@ Gazetteer
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Essas duas ontologias existem separadamente e para conectá-las foi utilizada
  ferramenta de edição de ontologias, Protégé 4, Figura 
 \begin_inset CommandInset ref
@@ -2390,7 +2377,7 @@ reference "ont_protege"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Assim, ao se unificar as duas ontologias, é possível mapear as informações
  geográficas, latitude e longitude para o 
 \shape italic
@@ -2406,11 +2393,11 @@ reference "asWKT_map"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2453,7 +2440,7 @@ name "asWKT_map"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para mapear as informações do 
 \shape italic
 Gazetteer
@@ -2480,7 +2467,7 @@ data property asWKT,
  presente na ontologia GeoSPARQL.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Após representar os dados do 
 \shape italic
 Gazetteer
@@ -2512,11 +2499,11 @@ triplestore
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -2559,7 +2546,7 @@ name "RepreUniao"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -2608,7 +2595,7 @@ name "ont_protege"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Após o mapeamento dos dados do 
 \shape italic
 Gazetteer,
@@ -2640,7 +2627,7 @@ endpoints
  GeoSPARQL.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 O armazenamento dos dados numa 
 \shape italic
 triplestore
@@ -2663,7 +2650,7 @@ key "Heath2011"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Com intuito de verificar a possibilidade de realizar a expansão de consultas
  geográficas proposta por 
 \begin_inset CommandInset citation
@@ -2700,7 +2687,7 @@ endpoints
  SPARQL.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Inicialmente, foi realizada uma análise de 
 \shape italic
 endpoints
@@ -2723,7 +2710,7 @@ endpoints
  que possuem informações sobre os repositórios Geonames e Wikipédia.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Junto a essa análise, também foi verificado se os 
 \shape italic
 endpoints
@@ -2737,7 +2724,7 @@ geo:sfwithin
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A busca por essas fontes de dados, resultou em três 
 \shape italic
 endpoints
@@ -2785,7 +2772,7 @@ GeoSPARQL
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Ao se iniciar as consultas semânticas, foi notado que o 
 \shape italic
 endpoint
@@ -2805,14 +2792,14 @@ endpoints,
  outros, ele foi descartado do experimento.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para realizar as queries, uma amostra de 60 localidades da base de dados
  inicial do SpeciesLink e GBIF foi selecionada.
  Dessa amostra, foi criada uma base de dados confiável sobre quais registros
  são relevantes para uma determinada informação.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Após a construção dessa base de dados, as consultas foram submetidas aos
  
 \shape italic
@@ -2846,7 +2833,7 @@ key "Amanqui2013"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -2889,7 +2876,7 @@ name "semantic_search"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 No entanto, devido ao fato desses repositórios não conterem todos os locais
  pesquisados a revocação dos dados foi de, no máximo, 0,54.
  Demonstrando assim que a criação de outro 
@@ -2919,7 +2906,7 @@ triplestore
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Outro motivo que torna válida a criação do 
 \shape italic
 Gazetteer
@@ -2948,7 +2935,7 @@ endpoint
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A disponibilização de um 
 \shape italic
 endpoint
@@ -2978,7 +2965,7 @@ key "Amanqui2013"
 e útil para consultas complexas como essa.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float algorithm
 wide false
 sideways false
@@ -3073,7 +3060,7 @@ name "consulta1"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Outro exemplo de consulta que possui significado semântico, é a consulta
  exibida no Algoritmo 
 \begin_inset CommandInset ref
@@ -3087,7 +3074,7 @@ reference "consulta2"
  de 1000 metros de alguma represa.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float algorithm
 wide false
 sideways false
@@ -3204,12 +3191,16 @@ name "consulta2"
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Os resultados obtidos neste trabalho foram publicados, no artigo 
 \shape italic
 A Gazetteer for Biodiversity Data as a Linked Open Data Solution
@@ -3238,7 +3229,7 @@ ref!
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Durante o processo de desenvolvimento do 
 \shape italic
 Gazetteer
@@ -3251,16 +3242,13 @@ triplestores
  avalia-las, foram realizados os testes descritos na próxima seção.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Section
+Avaliação das 
+\shape italic
+triplestores
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Com intuito de verificar a performance das 
 \shape italic
 triplestores
@@ -3282,7 +3270,7 @@ key "journals/corr/abs-1305-5653"
  GeoSPARQL não topologicas, junções espaciais e seleções espaciais.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para realizar este teste, uma base de dados contendo 40 mil pontos sobre
  localidades referentes ao repositório do Geonames foi selecionada, essa
  base pode ser encontrada no link, 
@@ -3337,7 +3325,7 @@ http://biomac.icmc.usp.br:8080/useekm-workbench/repositories/SYSTEM/query
  .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Com intuito de testar a disponibilidade do serviço GeoSPARQL nessas 
 \shape italic
 triplestores
@@ -3378,7 +3366,7 @@ https://github.com/silviodc/Triple_Store_Test.git
  com melhorias para o mesmo.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A máquina utilizada para executar os experimentos possui as seguintes configuraç
 ões, processador: Intel Xeon X5560 2.80GHz com 8 cores e 8 MB de cache, 8
  GB memória e disco rígido de 1 TB com 7200 rpm.
@@ -3386,7 +3374,7 @@ A máquina utilizada para executar os experimentos possui as seguintes configura
  todos utilizando o Tomcat 6.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para medir o tempo de resposta para cada consulta, foi usado o tempo necessário
  desde o envio de uma consulta por requisições HTTP até o retorno dos resultados
  para o 
@@ -3398,7 +3386,7 @@ Web Client
  foi definido.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para iniciar os testes foram implementadas 6 consultas com funções GeoSPARQL
  dividas em 3 categorias:
 \end_layout
@@ -3445,7 +3433,7 @@ triplestore
  está contido ou intercepta o polígono informado manualmente.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Cada uma das implementações, referente as consultas utilizadas, está descrita
  no Apêndice 
 \begin_inset CommandInset ref
@@ -3466,16 +3454,13 @@ triplestore
  é realizada.
 \end_layout
 
-\end_inset
-
-
+\begin_layout Subsection
+Comparação de buscas Geoespaciais entre 
+\shape italic
+triplesotres
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 O primeiro conjunto de consultas testadas foram as não topológicas, 
 \shape italic
 queries
@@ -3504,7 +3489,7 @@ key "journals/corr/abs-1305-5653"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Nas consultas referentes as junções espaciais, a 
 \shape italic
 triplestore
@@ -3528,7 +3513,7 @@ reference "temp_query"
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Por fim, no conjunto de consultas referente a seleções espaciais, as
 \shape italic
  triplestores
@@ -3548,7 +3533,7 @@ triplestore
  nativa do Sesame e isso acarreta num pouco mais de sobrecarga.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
@@ -3968,7 +3953,7 @@ name "temp_query"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Além da verificação das consultas, foi realizado um estudo sobre a arquitetura
  e funcionalidades implementadas pelas três 
 \emph on
@@ -3979,7 +3964,7 @@ triplestores
 s a RDFS+OWL (OWL 2, OWL 2 RL ou LD) ou algum suporte a regras.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Ao se verificar a 
 \emph on
 triplestore
@@ -4039,7 +4024,7 @@ A API Jena não consegue se comunicar diretamente com seu serviço SPARQL,
  sendo necessário realizar modificações.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Ao se verificar a 
 \emph on
 triplestore
@@ -4083,7 +4068,7 @@ A inserção de arquivos contendo triplas precisa ser realizada localmente,
 A API Jena pode se comunicar diretamente com seu serviço SPARQL.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Ao se verificar a 
 \emph on
 triplestore
@@ -4118,7 +4103,7 @@ A criação de grafos não pode ser feita remotamente, ou seja, ao inserir
 Sua versão 2.7.6 ainda não é totalmente estável em sistemas UNIX.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Com estes resultados, é possível verificar que todas as 
 \shape italic
 triplestores
@@ -4139,8 +4124,18 @@ triplestore
 \shape default
  BigData (que possui suporte básico para OWL).
  Caso isso seja possível, ambos serão adotados para o desenvolvimento deste
- trabalho
+ trabalho.
 \end_layout
+
+\begin_layout Section
+Protótipo para o 
+\shape italic
+Gazetteer
+\shape default
+ Colaborativo 
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Protótipo"
 
 \end_inset
 
@@ -4148,10 +4143,6 @@ triplestore
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Devido ao fato de iniciativas voluntárias de VGI serem desenvolvidas por
  um determinado grupo que possui um escopo especifico em uma determinada
  área de interesse, é importante garantir que os sistemas VGI atendam a
@@ -4193,14 +4184,14 @@ s, pois, se as informações fornecidas num web site não forem atuais, os
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Com intuito de atender a esses requisitos, vamos criar um protótipo de telas
  para ser validado junto aos biólogos.
  A seguir serão descritas as principais telas, referentes a inserção, buscas,
  validação de coordenadas e informações de Linked Open Data.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A tela inicial do 
 \shape italic
 Gazetteer
@@ -4218,7 +4209,7 @@ reference "tela_insert"
  pesquisadas por meio do campo de escolha de qualidade.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A qualidade escolhida permitirá retornar informações geográficas de acordo
  com o tipo de usuário que disponibilizou a mesma, como, por exemplo, biólogos
  do INPA, usuários com grande aceitação de seus registros ou dados do IBGE.
@@ -4226,7 +4217,7 @@ A qualidade escolhida permitirá retornar informações geográficas de acordo
  biólogos.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Na Figura 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -4241,7 +4232,7 @@ reference "tela_insert"
  as localidades.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Ao lado esquerdo, o usuário encontra um botão para recuperar localidades
  que não possuem coordenadas geográficas.
  Quando o sistema recuperar essas informações, as mesmas serão listadas
@@ -4250,7 +4241,7 @@ Ao lado esquerdo, o usuário encontra um botão para recuperar localidades
  coordenadas geográficas em conjunto com o mapa de navegação.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Na parte inferior esquerda, são exibidos os campos para o usuário contribuir
  com uma nova localidade ou aprimorar algum registro já existente na base
  de dados.
@@ -4265,7 +4256,7 @@ Linked Open Data
  do mapa.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Por fim, no lado direito inferior, são apresentadas as GeoTags, que podem
  ser utilizadas para facilitar o processo de busca por localidades e as
  informações estatísticas dos lugares contidas no 
@@ -4273,7 +4264,7 @@ Por fim, no lado direito inferior, são apresentadas as GeoTags, que podem
 Gazetteer.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -4321,7 +4312,7 @@ name "tela_insert"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A próxima tela, apresentada na Figura 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -4336,7 +4327,7 @@ reference "tela_busca"
  e na tabela de localidades.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Uma vez que os dados estão na tabela de informações, o usuário pode selecionar
  alguma localidade.
  Ao selecionar o registro, as informações referentes a essa fazenda são
@@ -4346,7 +4337,7 @@ Uma vez que os dados estão na tabela de informações, o usuário pode selecion
  de pessoas que concordam com a informação exibida.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 No lado inferior esquerdo, é exibido um gráfico que mostra o número de contribui
 ções ao longo do tempo pela quantidade de pessoas que concordam com aquela
  informação.
@@ -4358,7 +4349,7 @@ triplestore
 , o gráfico exibido não contém essas informações.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -4406,7 +4397,7 @@ name "tela_busca"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Caso alguma fazenda selecionada possua informações geográficas, a tela apresenta
 da na Figura 
 \begin_inset CommandInset ref
@@ -4421,7 +4412,7 @@ reference "vali_coordenada"
  se eles concordam ou discordam da informação presente no Gazetteer.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Caso a porcentagem de pessoas que concordam seja acima de 70%, os usuários
  somente podem concordar ou discordar da informação.
  Se, em algum momento, essa porcentagem estiver abaixo de 70% os usuários
@@ -4430,7 +4421,7 @@ Caso a porcentagem de pessoas que concordam seja acima de 70%, os usuários
  coordenada geográfica válida.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para implementar essa funcionalidade, serão atribuídos pesos aos usuários,
  por exemplo, as sugestões de um voluntário comum recebem peso 1, as de
  um biólogo do INPA recebem peso 3 e as de um usuário cartógrafo do IBGE
@@ -4438,7 +4429,7 @@ Para implementar essa funcionalidade, serão atribuídos pesos aos usuários,
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A escolha dos pesos de valor 3 para os biólogos do INPA e 5 para cartógrafos
  do IBGE, se deve ao fato de que essas informações são mais confiáveis que
  as informações fornecidas por um usuário comum, assim, para invalidar uma
@@ -4450,7 +4441,7 @@ A escolha dos pesos de valor 3 para os biólogos do INPA e 5 para cartógrafos
  de dados oficiais do IBGE, só podem ser mudadas manualmente.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -4498,7 +4489,7 @@ name "vali_coordenada"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A última tela do protótipo, Figura 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -4533,7 +4524,7 @@ Linked Open Data
  Por fim, na parte inferior é exibido qual o tipo de geometria de um local.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Essa funcionalidade é importante para representar a qualidade das conexões
  de 
 \shape italic
@@ -4557,7 +4548,7 @@ Gazetteers
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -4601,16 +4592,11 @@ name "vali_lod"
 
 \end_layout
 
-\end_inset
-
-
+\begin_layout Section
+Arquitetura proposta para desenvolvimento do trabalho
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Ao considerar os trabalhos recentes na área de RIG, que envolvem o desenvolvimen
 to de 
 \shape italic
@@ -4639,7 +4625,7 @@ Data
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para implementar as funcionalidades presente nessas camadas, grande parte
  dos 
 \shape italic
@@ -4651,7 +4637,7 @@ Gazetteers
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Esta seção tem como objetivo apresentar a arquitetura proposta para o desenvolvi
 mento deste 
 \shape italic
@@ -4677,7 +4663,7 @@ reference "arq_atual"
  qualidade e aprimorar localidades.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Em conjunto com esse mecanismo, é utilizada uma ontologia que permite mapear
  os dados para o formato RDF e assim armazená-los numa 
 \emph on
@@ -4695,7 +4681,7 @@ triplestore
  estrutura utilizada.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4742,7 +4728,7 @@ name "arq_atual"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Verificando essa necessidade e utilizando relatos já listados na literatura
  por outros trabalhos, a arquitetura do Gazetteer Colaborativo, apresentada
  na Figura 
@@ -4759,7 +4745,7 @@ reference "arq_VIG"
  Semântica.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways true
@@ -4805,7 +4791,7 @@ name "arq_VIG"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A camada de apresentação contém uma interface Web que possibilita a interação
  entre usuários por meio de mapas digitais, descritos na seção 
 \begin_inset CommandInset ref
@@ -4827,7 +4813,7 @@ Gazetteer
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Para inserir localidades, informações tais como, tag, localidade, usuário,
  data e coordenadas geográficas.
  Essas informações são enviadas a camada de negócios para serem tratadas,
@@ -4844,13 +4830,13 @@ strings
  camada de negócios.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A camada de negócios, ao receber tais dados, é responsável por diversas
  tarefas que são realizadas por seus principais componentes, explicados
  a seguir: 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -4938,7 +4924,7 @@ triplestore
  na camada de dados.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status collapsed
 
@@ -4958,7 +4944,7 @@ arabic{enumi}.}
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A camada de dados, por sua vez, tem como função armazenar os dados do 
 \shape italic
 Gazetteer
@@ -4974,7 +4960,7 @@ triplestore
  tempo, como, por exemplo, um município que foi dividido.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Informações geográficas referentes aos locais 
 \begin_inset Quotes eld
 \end_inset
@@ -5005,7 +4991,7 @@ triplestore
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 A implementação da arquitetura proposta neste trabalho demanda muito esforço.
  Diversas implementações poderiam ser realizadas de maneira coletiva e simultane
 amente, e o resultado de tais implementações, ou seja, os módulos, poderiam
@@ -5022,20 +5008,11 @@ reference "chap:conclusao"
 .
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Final considerations
+Considerações Finais
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Neste capitulo, foram descritos os resultados obtidos com o desenvolvimento
  deste trabalho até o momento.
  Inicialmente, uma análise dos dados dos repositórios SpeciesLink e GBIF
@@ -5048,7 +5025,7 @@ Neste capitulo, foram descritos os resultados obtidos com o desenvolvimento
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Outra contribuição do trabalho, até o momento, é a disponibilização dos
  dados do 
 \shape italic
@@ -5071,7 +5048,7 @@ triplestore
  para o aprimoramento desses sistemas.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Com intuito de aprimorar o 
 \shape italic
 Gazetteer
@@ -5087,7 +5064,7 @@ Gazetteer
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Por fim, foi descrita uma proposta de arquitetura para o desenvolvimento
  da versão final deste 
 \shape italic
@@ -5100,11 +5077,6 @@ Linked Open Data
 \shape default
 .
  
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

@@ -381,7 +381,7 @@ filename "chapters/3_Web Semantica.lyx"
 \end_layout
 
 \begin_layout Chapter
-Reasoning
+Inference 
 \end_layout
 
 \begin_layout Standard
@@ -414,27 +414,6 @@ filename "chapters/4_Related_work.lyx"
 
 \begin_layout Standard
 \begin_inset Newpage cleardoublepage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-Tools
-\begin_inset CommandInset label
-LatexCommand label
-name "chap:Ferramentas"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "chapters/5_Ferramentas.lyx"
-
 \end_inset
 
 
@@ -508,13 +487,6 @@ References
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:referencias"
-
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Adcock2014"
 
 \end_inset
 

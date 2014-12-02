@@ -354,53 +354,6 @@ Bio Ontologies
 \end_layout
 
 \begin_layout Standard
-Large volumes of digital data on medical and biological knowledge overload
- researchers in these areas.
- They have the difficult task of managing terabytes of information with
- semantic content in large data repositories which use increasingly sophisticate
-d management technologies.
- Biomedical researchers can work with a huge amount of data, which cannot
- be interpreted without the aid of computers 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Serique2012"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-Researchers must also aggregate and integrate all these information.
- To do so, they need tools that enable knowledge discovery paradigm in this
- rich data.
- So they started to use ontologies to describe the structure of its complex
- domains and relate their data to the sharing and interoperability of biomedical
- information 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Serique2012"
-
-\end_inset
-
-.
- Many sciences, such as the Biomedical Informatics are using the technologies
- semantics to promote understanding of data, interoperability and control
- entropy through the use and development of new semantic tools, able to
- retrieve and organize semantically distributed data through collaborative
- analysis and supported, for the most part, for Web Applications, in the
- next section, we will describe some Bio Ontologies used in biomedicine.
-\end_layout
-
-\begin_layout Subsubsection
-FMA
-\end_layout
-
-\begin_layout Subsubsection
-Radlex
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Comment
 status open
 

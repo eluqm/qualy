@@ -138,31 +138,11 @@ key "Tutac2010"
 \end_layout
 
 \begin_layout Standard
-Interest in applying Semantic Web technologies to the life sciences continues
- to accelerate.
- Biomedical research is increasingly an online activity as scientists combine
- and explore different types of data in cyberspace, putting together complementa
-ry views on problems that lead to new insights and discoveries.
- An e-Science paradigm is thus emerging; the biomedical community is looking
- for tools to help access, query, and ana- lyze a myriad of data in cyberspace.
- Specifically, the biomedical community is beginning to embrace technologies
- such as ontologies to integrate scientific knowledge 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Rubin2011"
 
-\end_inset
-
-, standard syntaxes, and semantics to make biomedical knowledge explicit,
- and the Semantic Web to establish virtual collaborations.
- These technologies are showing promise in tackling the information challenges
- in biomedicine, and a variety of applications are quickly appearing.
- Al- though researchers can now access a broad diversity of biomedical data,
- a critical type of data images is much more difficult to leverage.
 \end_layout
 
 \begin_layout Section
-...
+Utilização de VGI no contexto da biodiversidade
 \end_layout
 
 \begin_layout Standard
@@ -447,6 +427,10 @@ Para auxiliar a prática de VIG e fornecer mecanismos para suprir as necessidade
 
 \end_layout
 
+\begin_layout Section
+Recuperação de Informação Geográfica
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Comment
 status open
@@ -674,6 +658,12 @@ a de forma precisa.
 
 \end_layout
 
+\begin_layout Section
+
+\shape italic
+Gazetteers
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Comment
 status open
@@ -750,6 +740,11 @@ Volunteered Geographic Information
 \end_layout
 
 \begin_layout Section
+
+\shape italic
+Volunteered Geographic Information
+\shape default
+
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "VGI"
@@ -869,6 +864,10 @@ Gazetteer
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+GeoTAGs 
 \end_layout
 
 \begin_layout Standard
@@ -1016,6 +1015,10 @@ Além da utilização de GeoTAGs para inserir e recuperar nomes de lugares,
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+GeoParsing
 \end_layout
 
 \begin_layout Standard
@@ -1179,6 +1182,10 @@ as.
 
 \end_layout
 
+\begin_layout Section
+GeoCoding
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Comment
 status open
@@ -1279,6 +1286,10 @@ Para se realizar a conversão dos nomes de localidades para a sua respectiva
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Resolução de Topônimos
 \end_layout
 
 \begin_layout Standard
@@ -1572,6 +1583,10 @@ A utilização de dicionários toponímicos (Gazetteers), para a resolução des
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Estratégias para Resolução de Topônimos
 \end_layout
 
 \begin_layout Standard

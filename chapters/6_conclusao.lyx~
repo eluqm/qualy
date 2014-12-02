@@ -75,14 +75,10 @@
 \begin_body
 
 \begin_layout Section
-Methodology
+Metodologia
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Nesta seção será descrita a metodologia a ser seguida para o desenvolvimento
  deste trabalho e construção do 
 \shape italic
@@ -279,24 +275,14 @@ o que foi listada na etapa 5?
 \end_layout
 
 \end_deeper
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Activities and Schedule
+Atividades previstas e Cronograma
 \end_layout
 
 \begin_layout Standard
 \paragraph_spacing onehalf
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-\paragraph_spacing onehalf
-As seguintes atividades estão previstas, com início em de 2013 e duração
- de 24 meses, conforme o cronograma a seguir: 
+As seguintes atividades estão previstas, com início em Agosto de 2013 e
+ duração de 24 meses, conforme o cronograma a seguir: 
 \end_layout
 
 \begin_layout Description
@@ -391,7 +377,7 @@ A13 - Redação e submissão de artigos com os resultados obtidos.
 A14 - Defesa.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \paragraph_spacing onehalf
 A Tabela 
 \begin_inset CommandInset ref
@@ -404,7 +390,7 @@ reference "tab:Cronograma."
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Float table
 placement H
 wide false
@@ -2147,20 +2133,11 @@ name "tab:Cronograma."
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Activities completed
+Atividades concluídas até o momento
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Quanto a metodologia proposta para desenvolvimento do Gazetteer, os passos
  1 ao 7 já foram concluídos, necessitando apenas alguns ajustes e integração
  das novas funcionalidades que serão implementadas nos passos 8 e 9.
@@ -2169,20 +2146,9 @@ Quanto a metodologia proposta para desenvolvimento do Gazetteer, os passos
  já vem sendo realizada desde o início do projeto.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Scientific papers
+Produções Científicas até o momento
 \end_layout
-
-\begin_layout Enumerate
-
-\emph on
-\begin_inset Note Comment
-status open
 
 \begin_layout Enumerate
 CARDOSO S.
@@ -2221,20 +2187,11 @@ AMANQUI, F.
 Qualis CAPES A2.
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Difficulties
+Dificuldades e Limitações
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 Até o presente momento, foi evidenciado como dificuldade para desenvolvimento
  do projeto, a busca por uma 
 \shape italic
@@ -2249,11 +2206,6 @@ triplestore
  Parliament realiza ambas funções, mas, devido a problemas de performance,
  o tempo demasiado longo para se realizar buscas com ela impede a sua utilização
  no projeto.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body
