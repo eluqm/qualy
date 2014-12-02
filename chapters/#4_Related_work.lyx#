@@ -149,7 +149,7 @@ key "Dameron2006"
  (DL) classification, for the task of grading.
  Finally, patients conditions are simulated by instances of classes for
  experiments.
- But….
+ But, this work no present explicit results in real datasets.
 \end_layout
 
 \begin_layout Itemize
@@ -165,7 +165,8 @@ key "Marquet2007"
  The reference grading system used was the World Health Organization (WHO).
  Then, A class-based reasoning from pathological reports of patients based
  in histological descriptions was used.
- But...
+ But, the reports of patients were filled manually, the authors do not present
+ explicit results.
 \end_layout
 
 \begin_layout Itemize
@@ -181,7 +182,8 @@ key "Levy2009"
  Then, an ontology-based reasoning mechanism(OWL-SWRL) was developed to
  work with these instances for classification and automated calculation
  of tumor burden.
- But....
+ Althought, this work uses AIM as model of information they do not staging
+ cancer, but, this work form part of the principle the our proposal, because,
  
 \end_layout
 
@@ -348,6 +350,13 @@ key "Racoceanu2014"
 \begin_layout Standard
 In addition.
  These works are described briefly in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "trabalho_relacionado"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1699,7 +1708,6 @@ name "trabalho_relacionado"
 \end_layout
 
 \begin_layout Section
-Estado da Arte 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Estado-da-Arte"
@@ -1710,6 +1718,10 @@ name "sec:Estado-da-Arte"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 Sistemas de Informação Geográfica (SIG
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
@@ -1726,7 +1738,7 @@ description "Sistemas de Informação Geográfica"
  são necessárias fontes de dados confiáveis.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Alguns desses problemas são abordados na literatura e a soluções propostas
  envolvem recursos como 
 \shape italic
@@ -1745,7 +1757,7 @@ Gazetteers
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Coleta e Integração
@@ -1819,61 +1831,11 @@ key "MouraDavi:2013:DeOpPe"
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
 \begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../figures/triplas_RDF.png
-	scale 60
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Quantidade de triplas na 
-\shape italic
-Web of Data
-\shape default
- em 2011.
- Fonte: 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "MouraDavi:2013:DeOpPe"
-
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tripla_RDF_4"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 
 \series bold
 Recuperação, Busca e Navegação
@@ -1924,7 +1886,7 @@ Gazetteers
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Resolução de entidades e desambiguação
@@ -1967,7 +1929,7 @@ key "MouraDavi:2013:DeOpPe"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Dados Temporais
@@ -2010,7 +1972,7 @@ key "MouraDavi:2013:DeOpPe"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \series bold
 Data Fusion e redundância
@@ -2054,7 +2016,7 @@ key "MouraDavi:2013:DeOpPe"
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Nesse contexto, o 
 \shape italic
 Gazetteer
@@ -2072,16 +2034,20 @@ Gazetteers
 \shape italic
 Gazetteer
 \shape default
- é utilizado a Lei de Linus.
+ é utilizado a Lei de Linus
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 
 \series bold
-Precisão de dados utilizando VIG 
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Precisão-de-dados"
+name "sec:Precisão-de-dados-1"
 
 \end_inset
 
@@ -2089,6 +2055,10 @@ name "sec:Precisão-de-dados"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 Tendo em vista a coleta e a natureza distribuída dos dados coletados por
  voluntários, é extremamente importante validar o quão bom é a qualidade
  das informações que são recolhidas através das atividades geográficas voluntári
@@ -2107,7 +2077,7 @@ key "Haklay2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Com objetivo de se verificar a qualidade de coordenadas, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2122,7 +2092,7 @@ key "Haklay08"
  coordenadas, ou seja, são similares.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Segundo 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2144,7 +2114,7 @@ description "Open Street Maps"
  dados a qualidade torna-se confiável.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Uma forma de explorar a questão da garantia da qualidade em projetos VGI,
  como o OSM, é olhar para projetos semelhantes, embora não na área de informação
  geográfica, como, por exemplo, projetos de código aberto que permitem pessoas
@@ -2160,7 +2130,7 @@ key "Haklay2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 No contexto da área de qualidade de software, em que a Lei de Linus tem
  origem, diversos projetos de código livre adotam sua utilização, como,
  por exemplo, o Apache Web Server.
@@ -2191,7 +2161,7 @@ key "Haklay2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Assim é possível traçar um paralelo da Lei de Linus, para verificar a precisão
  do posicionamento de informações geográficas.
  A lógica para esta Lei é: Se somente existe um contribuinte em uma área,
@@ -2208,7 +2178,7 @@ key "Haklay2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Para verificar a validade da aplicação da Lei de Linus, no contexto de VGI,
  
 \begin_inset CommandInset citation
@@ -2234,7 +2204,7 @@ as de ambos são similares.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Após uma abordagem mais detalhada sobre a viabilidade da Lei de Linus, 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2260,7 +2230,7 @@ reference "osm_linus_law"
 , onde mais de 93% dos pontos têm mais de 70% de precisão.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Embora esse valor seja elevado, a qualidade não é mias dependente do número
  de contribuintes após um determinado número.
  As coordenadas precisas são editadas por um número de 5 a 20 colaboradores,
@@ -2276,107 +2246,15 @@ reference "erro_contribuidores"
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
 \begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../figures/OMS_LinusLaw.png
-	scale 50
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Número de contribuintes e precisão posicional.
- Fonte: 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Haklay2010"
-
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "osm_linus_law"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\noindent
-\align center
-\begin_inset Graphics
-	filename ../figures/erro_contribuidores.png
-	scale 50
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Número de contribuidores por erro na precisão posicional.
- Fonte:
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Haklay2010"
-
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "erro_contribuidores"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Conforme relatado por 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2395,14 +2273,14 @@ es passa de 13 colaboradores essa melhora se estabiliza e há uma pequena
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Conclui-se estão que é possível considerar a Lei de Linus como um indicador
  espacial de qualidade dos dados, sem a necessidade do uso de um conjunto
  de referência, como, por exemplo, bases de dados geográficas do IBGE, para
  validar a qualidade dos dados fornecidos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 O 
 \shape italic
 Gazetteer
@@ -2414,11 +2292,58 @@ Gazetteer
  e GBIF de forma automática, descrito na seção 6.3.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Considerações Finais
+Final Considerations
 \end_layout
 
 \begin_layout Standard
+In contrast with 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zillner2012"
+
+\end_inset
+
+ that describe a systems “closed”, where their methods cannot be verified.
+ Our approach will use WHO 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marquet2007"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zillner2008"
+
+\end_inset
+
+ classification and different metadata from images[15][13].
+ Besides that, few tools adopting AIM have been developed to enable quantitative
+ imaging in decision support systems 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rubin2011"
+
+\end_inset
+
+ that is part of goal of the work we will do.
+ Also, the external knowledge used for enhancing the semantic annotation
+ and the application focus are different.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 Este capítulo abordou os principais trabalhos relacionados ao desenvolvimento
  de Gazetteers na área de Recuperação de Informação Geográfica, descrevendo
  as similaridades e divergências entre o trabalho proposto e os sete trabalhos
@@ -2433,7 +2358,7 @@ Gazetteers
  na literatura como um indicador espacial de qualidade).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 O 
 \shape italic
 Gazetteer
@@ -2453,6 +2378,11 @@ Linked Open Data
  Espera-se que, com a prática de VIG, a qualidade, completude e atualização
  das informações sobre as localidades das coleções biológicas sejam aprimoradas.
  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

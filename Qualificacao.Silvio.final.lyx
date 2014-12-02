@@ -584,32 +584,5 @@ options "hc-de"
 
 \end_layout
 
-\begin_layout Chapter
-\start_of_appendix
-Consultas utilizadas para testar as 
-\shape italic
-triplestore
-\shape default
-s.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "chap:Apendice_A"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "appendices/apendice.lyx"
-
-\end_inset
-
-
-\end_layout
-
 \end_body
 \end_document

@@ -1706,7 +1706,6 @@ name "trabalho_relacionado"
 \end_layout
 
 \begin_layout Section
-Estado da Arte 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Estado-da-Arte"
@@ -2044,7 +2043,6 @@ Gazetteer
 \begin_layout Section
 
 \series bold
- 
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Precisão-de-dados-1"
