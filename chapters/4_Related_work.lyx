@@ -231,7 +231,15 @@ key "Tutac2010"
 
 \end_inset
 
- … But…
+ El proposito principal es el de guiar la exploración de imagenes en un
+ microscopio virtual y ayudar en el proceso de 'grading' de imágenes histológica
+s de cancer de mama.
+ Para satisfacer esos requermientos, ellos extendieron una ontologia de
+ cancer de mama desarrollada en (Tutac 2008)incluyendo a la ontologia conocimien
+to espacial usando OWL-DL, ellos utilizaron una teoría formal para desarrollar
+ las relaciones espaciales del breast cancer grading, y posteriormente muestran
+ como hacer razonamiento apartir de esas relaciones.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -306,7 +314,12 @@ key "Oberkampf"
 \end_inset
 
 ...
- But … 
+ But …los autores proponen una ontologia que representa formalmente enfermedades
+, sintomas y sus relaciones.
+ ellos realizan inferencia sobre enfermedades basados en anotaciones de
+ pacientes, el articulo describe el proceso para representar conocimiento
+ medico en una ontologia 'Disease symptom ontology' , finalmente mediante
+ un prototipo ellos evaluan su modelo 
 \end_layout
 
 \begin_layout Itemize

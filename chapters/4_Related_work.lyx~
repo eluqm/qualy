@@ -149,7 +149,7 @@ key "Dameron2006"
  (DL) classification, for the task of grading.
  Finally, patients conditions are simulated by instances of classes for
  experiments.
- But….
+ But, this work no present explicit results in real datasets.
 \end_layout
 
 \begin_layout Itemize
@@ -165,7 +165,8 @@ key "Marquet2007"
  The reference grading system used was the World Health Organization (WHO).
  Then, A class-based reasoning from pathological reports of patients based
  in histological descriptions was used.
- But...
+ But, the reports of patients were filled manually, the authors do not present
+ explicit results.
 \end_layout
 
 \begin_layout Itemize
@@ -181,8 +182,8 @@ key "Levy2009"
  Then, an ontology-based reasoning mechanism(OWL-SWRL) was developed to
  work with these instances for classification and automated calculation
  of tumor burden.
- But....
- 
+ Althought, this work uses AIM as model of information they do not staging
+ cancer, but, this work form part of the principle the our proposal.
 \end_layout
 
 \begin_layout Itemize
@@ -230,7 +231,15 @@ key "Tutac2010"
 
 \end_inset
 
- … But…
+ … But…el proposito principal es el de guiar la exploración de imagenes
+ en un microscopio virtual y ayudar en el proceso de 'grading' de imágenes
+ histológicas de cancer de mama.
+ Para satisfacer esos requermientos, ellos extendieron una ontologia de
+ cancer de mama desarrollada en (Tutac 2008)incluyendo a la ontologia conocimien
+to espacial, ellos utilizaron una teoría formal para desarrollar las relaciones
+ espaciales del breast cancer grading, y posteriormente muestran como hacer
+ razonamiento apartir de esas relaciones.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -2297,6 +2306,44 @@ Gazetteer
 
 \begin_layout Section
 Final Considerations
+\end_layout
+
+\begin_layout Standard
+In contrast with 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zillner2012"
+
+\end_inset
+
+ that describe a systems “closed”, where their methods cannot be verified.
+ Our approach will use WHO 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marquet2007"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zillner2008"
+
+\end_inset
+
+ classification and different metadata from images[15][13].
+ Besides that, few tools adopting AIM have been developed to enable quantitative
+ imaging in decision support systems 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Rubin2011"
+
+\end_inset
+
+ that is part of goal of the work we will do.
+ Also, the external knowledge used for enhancing the semantic annotation
+ and the application focus are different.
+ 
 \end_layout
 
 \begin_layout Standard
