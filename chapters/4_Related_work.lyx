@@ -115,7 +115,7 @@
 \begin_body
 
 \begin_layout Section
-Introduction
+Introdução 
 \end_layout
 
 \begin_layout Standard
@@ -133,230 +133,6 @@ s" and ''Image metadata reasoning'' were used to search for works, as a
  grading cancer methods.
  11 works were chosen because they have similarities with the proposed work.
  Below, these works are described and compared to the proposed work: 
-\end_layout
-
-\begin_layout Itemize
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Dameron2006"
-
-\end_inset
-
- shows that the grading of tumors can be performed automatically using OWL-DL,
- this paper takes a case study for grading lung tumors and uses the FMA
- ontology, TNM staging criteria and reasoning process.
- Also, the authors highlight some of the limitation of Description Logic-based
- (DL) classification, for the task of grading.
- Finally, patients conditions are simulated by instances of classes for
- experiments.
- But, this work no present explicit results in real datasets.
-\end_layout
-
-\begin_layout Itemize
-In 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Marquet2007"
-
-\end_inset
-
- In order to grading glioma tumors an ontology based on the NCI Thesaurus
- ontology was developed.
- The reference grading system used was the World Health Organization (WHO).
- Then, A class-based reasoning from pathological reports of patients based
- in histological descriptions was used.
- But, the reports of patients were filled manually, the authors do not present
- explicit results.
-\end_layout
-
-\begin_layout Itemize
-In 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Levy2009"
-
-\end_inset
-
- a methodology and tools were developed for transform the Annotation and
- Image Markup(AIM) information model into OWL instances.
- Then, an ontology-based reasoning mechanism(OWL-SWRL) was developed to
- work with these instances for classification and automated calculation
- of tumor burden.
- Althought, this work uses AIM as model of information they do not staging
- cancer, but, this work form part of the principle the our proposal.
-\end_layout
-
-\begin_layout Itemize
-The proposed work in 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Tutac2008"
-
-\end_inset
-
- introduces an approach that use OWL-DL in order to generate correspondence
- between medical concepts related to the classification of breast cancer
- based in the Nottingham Grading System (NGS) and computer vision concepts.
- The authors created a rule-based method to automatically generate the NGS.
- In addition, these medical concepts related to NGS are transformed into
- computer vision concepts.
- Subsequently, these computer vision concepts are modeled as Protegé concepts
- to define rules which are finally used for a semantic indexing of images
- of cancer breast patients.
- But...
-\end_layout
-
-\begin_layout Itemize
-In 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "zillner:towards"
-
-\end_inset
-
- OWL-DL ontology was designed to performing automatic staging of lymphoma
- patients using semantic annotations of patient record.
- These annotations are stored in an ontology by annotation tool that is
- part of MEDICO-ontology project.
- In addition, for classification of lymphoma patients the authors captured
- the rules of the Ann Arbor Staging System into an ontology.
- But..
-\end_layout
-
-\begin_layout Itemize
-In 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Tutac2010"
-
-\end_inset
-
- El proposito principal es el de guiar la exploración de imagenes en un
- microscopio virtual y ayudar en el proceso de 'grading' de imágenes histológica
-s de cancer de mama.
- Para satisfacer esos requermientos, ellos extendieron una ontologia de
- cancer de mama desarrollada en (Tutac 2008)incluyendo a la ontologia conocimien
-to espacial usando OWL-DL, ellos utilizaron una teoría formal para desarrollar
- las relaciones espaciales del breast cancer grading, y posteriormente muestran
- como hacer razonamiento apartir de esas relaciones.
- 
-\end_layout
-
-\begin_layout Itemize
-The proposed work in 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Zillner2012"
-
-\end_inset
-
- introduces an application that uses medical image annotations and reasoning
- technologies in order to stage lymphoma patients automatically based in
- relative position of lymphoma.
- Firstly, an ontology-based knowledge was used to verify or falsify the
- spatial configurations of lymphoma, this process is known as spatio-anatomical
- reasoning 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Manuel"
-
-\end_inset
-
-.
- Subsequently, the authors establish alignments between concepts of RADLEX
- and FMA in order to create the Patient-ontology.
- These ontologies are used in the MEDICO-ontology.
- Finally, Patient ontology and the Ann Arbor ontology are aligned for execute
- the reasoning process for staging lymphoma patients.
- The semantic annotations are stored within a dedicated annotation ontology
- mentioned by 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "zillner:towards"
-
-\end_inset
-
- and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Oberkampf"
-
-\end_inset
-
-.
- But … 
-\end_layout
-
-\begin_layout Itemize
-In 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Meriem2012"
-
-\end_inset
-
- present a methodology to improve clinical models and usability of the low-level
- image analysis algorithms, for instance, standard computation of scores
- following the Nottingham Grading System NGS for breast cancer grading.
- Firstly, they designed a breast cancer ontology BCO based on two languages,
- OWL-LD and SWRL for reasoning part, in addition, the Wide Field Markup
- Language WFML was used to describe annotated histopathological images.
- Finally, the query language SPARQL is used for querying in Java.
- But… 
-\end_layout
-
-\begin_layout Itemize
-In 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Oberkampf"
-
-\end_inset
-
-...
- But …los autores proponen una ontologia que representa formalmente enfermedades
-, sintomas y sus relaciones.
- ellos realizan inferencia sobre enfermedades basados en anotaciones de
- pacientes, el articulo describe el proceso para representar conocimiento
- medico en una ontologia 'Disease symptom ontology' , finalmente mediante
- un prototipo ellos evaluan su modelo 
-\end_layout
-
-\begin_layout Itemize
-In 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Kurtz2014"
-
-\end_inset
-
- and 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Seifert"
-
-\end_inset
-
- propose an image retrieval framework based on semantic features, the authors
- use the semantic similarity between terms(semantic annotations) of the
- medical image using the structure of the Radlex to evaluate the semantic
- proximity between terms of interest.
- This automatic approach provide real-time support to radiologist by showing
- them similar images with associated diagnoses.
- But… 
-\end_layout
-
-\begin_layout Itemize
-In 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Racoceanu2014"
-
-\end_inset
-
-...
- But...
- 
 \end_layout
 
 \begin_layout Standard
@@ -1001,11 +777,6 @@ Results
 \begin_inset Text
 
 \begin_layout Plain Layout
-Image metadata reasoning for improved clinical decision support.
- 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Zillner2012"
@@ -1063,8 +834,7 @@ Lymphoma
 \begin_inset Text
 
 \begin_layout Plain Layout
-Towards the Ontology-based Classification of Lymphoma Patients using Semantic
- Image Annotations.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1125,7 +895,7 @@ Lymphoma
 \begin_inset Text
 
 \begin_layout Plain Layout
-Knowledge-Guided Semantic Indexing of Breast Cancer Histopathology Images.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1186,8 +956,7 @@ Breast
 \begin_inset Text
 
 \begin_layout Plain Layout
-Spatial representation and reasoning in breast cancer grading ontology.
- 
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1248,7 +1017,6 @@ Breast
 \begin_inset Text
 
 \begin_layout Plain Layout
-Interpretation breast cancer imaging by using ontology.
  
 \end_layout
 
@@ -1310,8 +1078,7 @@ Breast
 \begin_inset Text
 
 \begin_layout Plain Layout
-Semantic reasoning with image annotations for tumor assessment.
- 
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1372,7 +1139,7 @@ Liver
 \begin_inset Text
 
 \begin_layout Plain Layout
-Grading glioma tumors using OWL-DL and NCI Thesaurus.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1434,7 +1201,7 @@ Glioma
 \begin_inset Text
 
 \begin_layout Plain Layout
-Grading lung tumors using OWL-DL based reasoning.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1496,7 +1263,7 @@ Lung
 \begin_inset Text
 
 \begin_layout Plain Layout
-Interpreting Patient Data using Medical Background Knowledge 
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1553,8 +1320,7 @@ Lymphoma
 \begin_inset Text
 
 \begin_layout Plain Layout
-A hierarchical knowledge-based approach for retrieving similar medical images
- described with semantic annotations.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1615,11 +1381,6 @@ key "Kurtz2014"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Towards semantic-driven high-content image analysis: An operational instantiatio
-n for mitosis detection in digital histopathology.
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Racoceanu2014"
@@ -1657,7 +1418,7 @@ Breast
 \end_layout
 
 \begin_layout Plain Layout
--Staging(reasoning using OWL-DL) 
+-Grading(reasoning using OWL and N3Logic) 
 \end_layout
 
 \end_inset
@@ -1666,7 +1427,7 @@ Breast
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-No
 \end_layout
 
 \end_inset

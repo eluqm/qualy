@@ -231,14 +231,14 @@ key "Tutac2010"
 
 \end_inset
 
- … But…el proposito principal es el de guiar la exploración de imagenes
- en un microscopio virtual y ayudar en el proceso de 'grading' de imágenes
- histológicas de cancer de mama.
- Para satisfacer esos requermientos, ellos extendieron una ontologia de
- cancer de mama desarrollada en (Tutac 2008)incluyendo a la ontologia conocimien
-to espacial, ellos utilizaron una teoría formal para desarrollar las relaciones
- espaciales del breast cancer grading, y posteriormente muestran como hacer
- razonamiento apartir de esas relaciones.
+ El proposito principal es el de guiar la exploración de imagenes dentro
+ de un microscopio virtual y ayudar en el proceso de 'grading' apartir de
+ imágenes histológicas de cancer de mama.
+ Para satisfacer esos requerimientos, ellos extendieron la ontologia de
+ cancer de mama desarrollada en (Tutac 2008) incluyendo a esta ontologia
+ conocimiento espacial usando OWL-DL, ellos utilizaron una teoría formal
+ para desarrollar las relaciones espaciales del breast cancer grading, y
+ posteriormente muestran como hacer razonamiento apartir de esas relaciones.
  
 \end_layout
 
@@ -313,8 +313,13 @@ key "Oberkampf"
 
 \end_inset
 
-...
- But … 
+ los autores proponen una ontologia que representa formalmente enfermedades,
+ sintomas y sus relaciones.
+ ellos realizan inferencia sobre enfermedades basados en anotaciones de
+ pacientes, el articulo describe el proceso para representar conocimiento
+ medico en una ontologia 'Disease symptom ontology' , finalmente mediante
+ un prototipo ellos evaluan su modelo.
+ But …
 \end_layout
 
 \begin_layout Itemize
@@ -349,8 +354,17 @@ key "Racoceanu2014"
 
 \end_inset
 
-...
- But...
+ se describe un prototipo como conductor de todo un protocolo de análisis
+ de imágenes, este prototipo fue desarrollado sobre el framework del proyecto
+ 'Cognitive Microscopy' MICO con el objetivo de mejorar el análisis (Whole
+ Slide Image)WSI de imagenes histológicas y llegar a ser una segunda opinion
+ confiable para grading de cancer de mama.
+ El prototipo está compuesto de 2 componentes principales, un 'semantic
+ core' y un conjunto de algoritmos para procesamiento de imágenes.
+ Semantic Core a la ves tiene dos componentes principales que son un motor
+ de reasoning y una ontología, usando OWL y N3logic respectivamente, este
+ último es una extensión del modelo de datos RDF tal que el mismo lenguaje
+ puede ser usado para representar lógica y datos.
  
 \end_layout
 
@@ -996,11 +1010,6 @@ Results
 \begin_inset Text
 
 \begin_layout Plain Layout
-Image metadata reasoning for improved clinical decision support.
- 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Zillner2012"
@@ -1058,8 +1067,7 @@ Lymphoma
 \begin_inset Text
 
 \begin_layout Plain Layout
-Towards the Ontology-based Classification of Lymphoma Patients using Semantic
- Image Annotations.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1120,7 +1128,7 @@ Lymphoma
 \begin_inset Text
 
 \begin_layout Plain Layout
-Knowledge-Guided Semantic Indexing of Breast Cancer Histopathology Images.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1181,8 +1189,7 @@ Breast
 \begin_inset Text
 
 \begin_layout Plain Layout
-Spatial representation and reasoning in breast cancer grading ontology.
- 
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1243,7 +1250,6 @@ Breast
 \begin_inset Text
 
 \begin_layout Plain Layout
-Interpretation breast cancer imaging by using ontology.
  
 \end_layout
 
@@ -1305,8 +1311,7 @@ Breast
 \begin_inset Text
 
 \begin_layout Plain Layout
-Semantic reasoning with image annotations for tumor assessment.
- 
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1367,7 +1372,7 @@ Liver
 \begin_inset Text
 
 \begin_layout Plain Layout
-Grading glioma tumors using OWL-DL and NCI Thesaurus.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1429,7 +1434,7 @@ Glioma
 \begin_inset Text
 
 \begin_layout Plain Layout
-Grading lung tumors using OWL-DL based reasoning.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1491,7 +1496,7 @@ Lung
 \begin_inset Text
 
 \begin_layout Plain Layout
-Interpreting Patient Data using Medical Background Knowledge 
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1548,8 +1553,7 @@ Lymphoma
 \begin_inset Text
 
 \begin_layout Plain Layout
-A hierarchical knowledge-based approach for retrieving similar medical images
- described with semantic annotations.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1610,8 +1614,7 @@ key "Kurtz2014"
 \begin_inset Text
 
 \begin_layout Plain Layout
-Towards semantic-driven high-content image analysis: An operational instantiatio
-n for mitosis detection in digital histopathology.
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1652,7 +1655,7 @@ Breast
 \end_layout
 
 \begin_layout Plain Layout
--Staging(reasoning using OWL-DL) 
+-Grading(reasoning using OWL and N3Logic) 
 \end_layout
 
 \end_inset
@@ -1661,7 +1664,7 @@ Breast
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+-No
 \end_layout
 
 \end_inset
