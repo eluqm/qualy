@@ -222,10 +222,6 @@ reference "WEB1"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
@@ -259,11 +255,6 @@ key "bernerslee2001"
 \begin_inset CommandInset label
 LatexCommand label
 name "WEB1"
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 

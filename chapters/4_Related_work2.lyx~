@@ -129,8 +129,9 @@ key "Marquet2007"
  The reference grading system used was the World Health Organization (WHO).
  Then, A class-based reasoning from pathological reports of patients based
  in histological descriptions was used.
- But, the reports of patients were filled manually, the authors do not present
- explicit results.
+ But, en contraste con este proyecto, the reports of patients were filled
+ manually, the authors do not present explicit results en base de datos
+ reales.
 \end_layout
 
 \begin_layout Itemize
@@ -148,6 +149,7 @@ key "Levy2009"
  of tumor burden.
  Althought, this work uses AIM as model of information they do not staging
  cancer, but, this work form part of the principle the our proposal.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -167,7 +169,11 @@ key "Tutac2008"
  Subsequently, these computer vision concepts are modeled as Protegé concepts
  to define rules which are finally used for a semantic indexing of images
  of cancer breast patients.
- But...
+ aunque la propuesta de de [tutac] es desarrollada en el ambito del analisis
+ de imagenes histological para idexacion y no para clasificacion de pacientes,
+ el enfoque presentado es importante en el desarrollo de este proyecto de
+ maestria por describir de manera clara las reglas utilizadas para el grading
+ de cancer de mama.
 \end_layout
 
 \begin_layout Itemize
@@ -184,7 +190,14 @@ key "zillner:towards"
  part of MEDICO-ontology project.
  In addition, for classification of lymphoma patients the authors captured
  the rules of the Ann Arbor Staging System into an ontology.
- But..
+ Pero en comparacion a nuestra propuesta, en el trabajo de [ziller] se mejoraron
+ las anotaciones semanticas que describen las imagenes medicas mediante
+ la representacion de Ann Arbor Staging System en una ontologia, apartir
+ de esas anotaciones puede ser realizado tareas como clasificacion de pacientes
+ con cancer de limfoma, la clasidicacion de pacientes mediante esas anotaciones
+ con conocimiento clinico implicito no es descrito en ese articulo, ademas
+ no son presentados resultados explicitos ni una evaluacion con datos reales.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -199,10 +212,15 @@ key "Tutac2010"
  de un microscopio virtual y ayudar en el proceso de 'grading' apartir de
  imágenes histológicas de cancer de mama.
  Para satisfacer esos requerimientos, ellos extendieron la ontologia de
- cancer de mama desarrollada en (Tutac 2008) incluyendo a esta ontologia
+ cancer de mama desarrollada en (Tutac 2008) incorporando a esta ontologia
  conocimiento espacial usando OWL-DL, ellos utilizaron una teoría formal
  para desarrollar las relaciones espaciales del breast cancer grading, y
  posteriormente muestran como hacer razonamiento apartir de esas relaciones.
+ pero el trabajo de [tutac] no realiza ninguna evaluacion de su modelo con
+ datos reales de pacientes con cancer de mama, y gran parte de su contenido
+ está orientado a describir la representacion y razonamiento que es incorporado
+ a la ontologia desarrollada en [] con el proposito de resolver ambiguedades
+ en el analisis de imagenes histologicas para grading de cancer de mama.
  
 \end_layout
 
@@ -228,10 +246,10 @@ key "Manuel"
 
 .
  Subsequently, the authors establish alignments between concepts of RADLEX
- and FMA in order to create the Patient-ontology.
- These ontologies are used in the MEDICO-ontology.
- Finally, Patient ontology and the Ann Arbor ontology are aligned for execute
- the reasoning process for staging lymphoma patients.
+ and FMA in order to create the 'Patient-ontology'.
+ These ontologies are part of the MEDICO-ontology.
+ Finally, Patient ontology and the Ann Arbo staging system ontology are
+ aligned for execute the reasoning process for staging lymphoma patients.
  The semantic annotations are stored within a dedicated annotation ontology
  mentioned by 
 \begin_inset CommandInset citation
@@ -248,7 +266,14 @@ key "Oberkampf"
 \end_inset
 
 .
- But … 
+ PERO las anotaciones que describen las imagenes medicas(semantic annotations)
+ se realizan de manera automatica mediante algoritmos de procesamiento de
+ imagen, y no manualmente, se encontraron contradicciones al realizar una
+ evaluacion clinica a la aplicacion apartir de registros reales de pacientes,
+ finalmente le sistema de staging Ann Arbo utilizado está relacionado con
+ el cancer de linfoma, al contrario de la propuesta de este trabajo que
+ pretende integrar el sistema de staging TNM , que abarca mas tipos de cancer.
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -269,11 +294,12 @@ key "Meriem2012"
  to describe annotated histopathological images.
  Finally, the query language SPARQL is used for querying in Java.
  Ademas de que el trabajo de [meriem2012] utiliza imagenes histopathologicas,
- sólamente son descritos algunas reglas de reasoning usadas para grading
- de cancer mama, por otra parte, los autores mencionaan un poco sobre razonamien
-to basado en relaciones espaciales de la imagen, finalmente son usados algoritmo
-s de extraccion de caracteristicas para describir las imagenes histologicas
- mediante anotaciones.
+ sólamente son descritos algunas reglas para reasoning necesarias para el
+ grading de cancer mama, por otra parte, los autores mencionan solo un poco
+ sobre razonamiento basado en relaciones espaciales en la imagen y sus posibles
+ aplicaciones para resolver problemas de ambiguedad en el analisis de imagenes,
+ finalmente son usados algoritmos de extraccion de caracteristicas para
+ describir las imagenes histologicas mediante anotaciones.
  
 \end_layout
 

@@ -364,12 +364,6 @@ name "chap:Web_Semantica"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand input
-filename "chapters/3_Web Semantica.lyx"
-
-\end_inset
-
 
 \end_layout
 

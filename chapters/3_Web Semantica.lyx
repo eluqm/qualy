@@ -231,18 +231,18 @@ reference "WEBE1"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Graphics
-	filename /Users/edson/qualy/figures/WebSemanticArchitecture.png
+	filename C:/Users/edson/qualy/figures/WebSemanticArchitecture.png
 	scale 60
 	rotateOrigin center
 
@@ -274,7 +274,8 @@ name "WEBE1"
 
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
 
