@@ -91,7 +91,7 @@ End
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Visando melhorar a forma de representação da Web atual, também denominada
@@ -163,52 +163,29 @@ Gazetteer
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Ficou bem seco, incluindo o fato de voce falar de tecnologias que ainda
- nao foram presentadas (isso ficaria melhor no fim).
- 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Retirei a parte seca: Para definir as localidades e auxiliar no processo
- de desambiguação do 
-\shape italic
-Gazetteer
-\shape default
- será utilizada uma ontologia.
- Os dados resultantes do processo de extração de localidades serão mapeados
- para o formato RDF e então disponibilizados em um 
-\shape italic
-endpoint
-\shape default
- GeoSPARQL que possibilitará a disseminação dos dados seguindo padrões de
- 
-\shape italic
-Linked Open Data
-\shape default
- e a realização de buscas semânticas geoespaciais.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
-Introduction
+Introdução
 \end_layout
 
 \begin_layout Standard
+Neste capitulo são apresentados conceitos relacionado com a Web Semântica
+ e ontologias.
+ As Bio ontologias são discutidas por serem a base da estruturação dos conteúdos
+ semânticos, podendo interagir e se relacionar com terminologias médicas,
+ como o RadLex e AIM.
+ Este capítulo está organizado da seguinte maneira, na Seção 3.1 serão expostos
+ conceitos referentes à Ontologias.
+ Na seção 3.2, a Web Semântica será discutida.
+ A Web Ontology Language (OWL) é exposta na seção 3.3.
+ Em seguida, na seção 3.4 apresentaremos as principais ontologias e termologias
+ envolvidas nas pesquisas deste trabalho.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 In 2000, during a conference on XML, Tim Berners Lee proposed a model layered
  architecture for the Semantic Web , known as the "wedding cake"
 \begin_inset CommandInset citation
@@ -230,9 +207,14 @@ reference "WEBE1"
  
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -241,14 +223,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename C:/Users/edson/qualy/figures/WebSemanticArchitecture.png
-	scale 60
-	rotateOrigin center
-
-\end_inset
-
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -285,7 +259,7 @@ name "WEBE1"
 \end_layout
 
 \begin_layout Section
-Web Ontology Language - OWL 
+Ontologias
 \end_layout
 
 \begin_layout Standard
@@ -318,11 +292,71 @@ key "Racoceanu2014"
 .
 \end_layout
 
-\begin_layout Section
-Ontologies 
+\begin_layout Standard
+Gruber (1993) define o termo ontologia como uma especificação formal e explicita
+ de uma conceitualização compartilhada de um domínio de interesse e de informaçõ
+es de como os indivíduos são agrupados e se encaixam em um determinado domínio.
+ Noy e McGuinness (2001) afirmam que as ontologias surgiram como artefatos
+ para representar, organizar e compartilhar conhecimento em um determinado
+ domínio.
 \end_layout
 
 \begin_layout Standard
+De forma geral, uma ontologia é especificada por meio de componentes básicos
+ que são as classes, relações, axiomas e instâncias, além de ser expressa
+ por meio de uma linguagem de construção (Almeida e Bax, 2003).
+ Os componentes básicos de uma ontologia são definidos por meio de uma linguagem
+ de representação.
+ Diferentes linguagens para ontologias proporcionam diferentes facilidades
+ (Horridge et al., 2004).
+ Na Web Semântica, o papel das ontologias é de explicitar o vocabulário
+ utilizado e de servir como padrão para o compartilhamento de informação
+ de modo significativo entre agentes, softwares e aplicações (Breitman,
+ 2005).
+ Já Maedche e Staab (2001) definem ontologias como esquemas de metadados,
+ fornecendo um vocabulário controlado e conceitos, cada um com semântica
+ explicitamente definida e com semântica processável por maquinas.
+ 
+\end_layout
+
+\begin_layout Section
+Web Semântica 
+\end_layout
+
+\begin_layout Standard
+Em 2001 foi publicada, na revista Scientific America, o artigo “The Web
+ Semantic: a new form of Web content that is meaningful to computers will
+ unleash a revolution of new possibilities” (Berners-Lee et al., 2001).
+ Nesse artigo, os autores comentaram a respeito do futuro, onde a Web Semântica
+ iria ter um papel fundamental na realização das tarefas do cotidiano das
+ pessoas.
+\end_layout
+
+\begin_layout Standard
+Em face do crescimento exponencial do volume de dados digitais, as soluções
+ de software existentes não fornecem qualquer significado ou entendimento
+ desses dados.
+ Hoje, muitos desenvolvedores da Web Semântica, arquitetos e visionários
+ estão trabalhando para dar sentido a um mundo confuso de dados digitais
+ (Pollock, 2009).
+ A Web Semântica, uma extensão da Web atual, é uma representação capaz de
+ associar significados explícitos aos conteúdos dos documentos disponíveis
+ na Internet, sendo que, sua principal meta, é possibilitar que programas
+ processem e interpretem automaticamente esses documentos (Berners-Lee et
+ al., 2001).
+ O sucesso da Web atual se deve a liberdade como as pessoas publicam seus
+ conteúdos.
+ Essa liberdade é também apoiada pela Web Semântica.
+ Ao invés de impor a cada usuário ou instituição da Web um modelo único
+ de organização, irá surgir um conjunto de modelos em paralelo de organização,
+ podendo ou não estar relacionados entre si.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 There are various definitions of an ontology.
  Merriam Webster’s dictionary defines Ontology as a branch of philosophy
  which studies what exists in all areas of reality.
@@ -350,11 +384,211 @@ key "Kurtz2014"
  
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
+Web Ontology Language – OWL
+\end_layout
+
+\begin_layout Standard
+Embora a proposta inicial da Web Semântica fosse utilizar o RDF, essa linguagem
+ demonstrou limitações em poder de expressividade (Horrocks et al., 2003).
+ O W3C lançou em 2004 a linguagem OWL, como resultado da formação do Web
+ Ontology Working Group.
+ A linguagem OWL se divide em três variantes que tem graus crescentes de
+ expressividade: OWL Lite, OWL DL e OWL Full (Patel-Schneider et al., 2004)
+ Ontologias em OWL foram desenvolvidas em várias áreas, como e-Science,
+ medicina, biologia, geografia, astronomia, defesa e nas indústrias automobilíst
+ica e aeronáutica (Grau et al., 2008).
+ Apesar do sucesso da OWL foram encontradas algumas deficiências na linguagem.
+ Em resposta aos comentários e requisições dos usuários da OWL, surgiram
+ a OWL 1.1, uma revisão incremental da linguagem e, depois de extensivas
+ discussões, a OWL 2 (abril de 2008).
+ A OWL 2 foi considerada um passo substancial para a evolução da linguagem
+ (Grau et al., 2008).
+ A linguagem OWL 2 criou três novos perfis: OWL 2 EL, OWL 2 QL e OWL RL,
+ cada um oferece um poder de expressividade diferente e para diferentes
+ cenários de aplicação.
+\end_layout
+
+\begin_layout Section
 Bio Ontologies
 \end_layout
 
 \begin_layout Standard
+Grandes volumes de dados digitais sobre conhecimento médico e biológico
+ sobrecarregam os pesquisadores dessas áreas.
+ Eles têm a difícil tarefa de gerenciar terabytes de informação, com conteúdos
+ semânticos, em grandes repositórios de dados que usam tecnologias de gerenciame
+nto cada vez mais sofisticadas.
+ Pesquisadores da área biomédica podem trabalhar com uma enorme quantidade
+ de dados, que não se pode ser interpretada sem o auxílio de computadores
+ (Shah e Musen, 2007).
+\end_layout
+
+\begin_layout Standard
+Os pesquisadores também devem agregar e integrar toda estas informação.
+ Para tanto, eles precisam de ferramentas que permitam a descoberta de conhecime
+nto nesse paradigma rico em dados.
+ Portanto, eles começaram a utilizar ontologias para descrever a estrutura
+ de seus domínios complexos e relacionar com os seus dados para o compartilhamen
+to e interoperabilidade das informações Biomédicas (Rubin 2008c).
+ Muitas ciências, a exemplo da Informática Biomédica, estão utilizando as
+ tecnologias semânticas para promover o entendimento de dados, interoperabilidad
+e e controle da entropia através do uso e desenvolvimento de novas ferramentas
+ semânticas, capazes de recuperar e organizar, semanticamente, dados distribuído
+s através de análises colaborativas e apoiadas, em sua grande parte, por
+ Aplicações Web.
+\end_layout
+
+\begin_layout Subsection
+Foundational Model of Anatomy – FMA 
+\end_layout
+
+\begin_layout Standard
+Outra Bio Ontologia importante no escopo deste estudo é a FMA.
+ De modo geral, a anatomia é o estudo das estruturas físicas dos organismos
+ biológicos.
+ Descrever e capturar de forma computável as termologias e ontologias que
+ envolvem entidades anatômicas é uma tarefa não trivial.
+ A falta de uma representação generalizada da anatomia leva os desenvolvedores
+ de terminologias e ontologias, tanto da área de medicina clinica quanto
+ de biologia, a representar a anatomia a partir dos seus próprios pontos
+ de vista.
+ Isso gera um obstáculo para correlacionar os termos anatômicos entre si,
+ devido a heterogeneidade das representações anatômicas.
+\end_layout
+
+\begin_layout Standard
+A FMA vem sendo desenvolvida para oferecer uma ontologia de referencia,
+ destinada ao uso por qualquer ferramenta computacional que necessite de
+ informações anatômicas.
+ A estrutura ontológica da FMA fornece uma maquina de inferência, permitindo
+ que ferramentas computacionais possam inferir sobre dados biomédicos (Rosse
+ e Mejino, 2007).
+ Com sua natureza fundacional, a FMA fornece uma base, não só para a evolução
+ de aplicações, como também para outras ontologias de referência em áreas
+ da ciência como fisiologia, patologia, biologia e neurociência.
+ Especificamente, a FMA representa um corpo coerente de conhecimentos declarativ
+os sobre a anatomia humana (Mejino et al.,2008) (Gu et al., 2009).
+ No entanto, seu quadro ontológico pode ser aplicado e estendido para outras
+ espécies.
+ A FMA tem sido desenvolvida e mantida pelo Structural Informatics Group
+ da University of Washington (Gu et al., 2009).
+\end_layout
+
+\begin_layout Subsection
+RadLex
+\end_layout
+
+\begin_layout Standard
+O RadLex é a mais importante Bio Ontologia do escopo deste trabalho.
+ Ela surgiu da necessidade de disseminar o conhecimento radiológico entre
+ os radiologistas.
+ De forma geral, os radiologistas utilizam constantemente imagens médicas,
+ relatórios de imagens e registros médicos, que se encontram on-line.
+ Para tanto, eles necessitam de uma linguagem unificada para organizar e
+ recuperar estes dados.
+\end_layout
+
+\begin_layout Standard
+Por muitas décadas, o American College of Radiology (ACR) desenvolveu o
+ Index for Radiological Diagnoses, conhecido como o Índice ACR.
+ Ele tem características atraentes para indexação de imagens.
+ Para tanto, utiliza um sistema de dois códigos numéricos, separados por
+ pontos.
+ O primeiro é para a localização da anatomia e o segundo para a entidade
+ patológica: Por exemplo, o código ACR 642.3212 significa 642 = “adenocarcinoma
+ primário” e 3212 = “língula” (Langlotz, 2006).
+\end_layout
+
+\begin_layout Standard
+Como o Índice ACR possui apenas milhares de índices, fica fácil para as
+ pessoas se lembrarem, todavia, comparado as novas terminologias e ontologias,
+ como o SNOMED-CT e FMA, fica evidente que ele oferece poucos termos específicos.
+ 
+\end_layout
+
+\begin_layout Standard
+Com o surgimento do mundo digital, a necessidade de criar sistemas de indexação
+ informatizados levou a RSNA a desenvolver a ontologia RadLex (RNSA, 2012),
+ como resposta as lacunas encontradas em outras terminologias radiológicas,
+ criando assim uma única e completa terminologia.
+ A ontologia RadLex é uma forma unificada de reunir os termos usados em
+ radiologia; ela é projetada para atender as necessidade dos radiologistas
+ (Langlotz, 2006).
+\end_layout
+
+\begin_layout Standard
+O RadLex está disponível para download no National Center for Biomedical
+ Computing’s Bioportal (http://bioportal.bioontology.org/ontologies/40885).
+\end_layout
+
+\begin_layout Subsection
+Annotation Imaging Markup – AIM
+\end_layout
+
+\begin_layout Standard
+As modernas imagens médicas contêm uma vasta quantidade de informação no
+ formato padrão DICOM.
+ No entanto, essas informações são relacionadas apenas a metadados sobre
+ as imagens.
+ As informações mais importantes relacionadas as imagens ficam codificadas
+ nos seus pixels.
+ Elas contêm um rico conteúdo que, porém, não está explícito ou acessível
+ às máquinas.
+ Essas informações são interpretadas por observadores humanos, como os radiologi
+stas, e não são capturadas ou relacionadas às imagens de uma forma estruturada
+ (Rubin et al., 2008a).
+\end_layout
+
+\begin_layout Standard
+O projeto AIM, que atualmente encontra-se em sua segunda versão, trata de
+ um modelo de informação que oferece uma infra-estrutura de apoio para a
+ criação de uma coleção de anotações médicas de imagens (que podem ser lidas
+ por máquinas).
+ Ele é resultado do cumprimento de novas exigências da comunidade de imagens
+ médicas e vem conseguindo atingir os requisitos estabelecidos pela caBIG
+ In Vivo Imaging Workspace (Rubin et al., 2008a).
+ O projeto é centrado no modelo AIM de anotação e marcação de imagens DICOM.
+ As anotações e marcações de imagens são consideradas como um objeto de
+ informação da imagem, porém não estão ligadas fisicamente as mesmas.
+ Esse modelo de informação, no entanto, é compatível com outros formatos
+ de imagens além do DICOM.
+ 
+\end_layout
+
+\begin_layout Standard
+O modelo AIM de informação, ou AIM schema, é descrito em (Rubin et al., 2008a)
+ usando um diagrama de classe UML.
+ O modelo é usado para expressar a captura de informações contidas nas imagens
+ médicas através de anotações e marcações de informações relevantes.
+ Uma anotação pode ser explicativa ou uma descrição de informação, gerada
+ por seres humanos ou por máquinas, que se relaciona diretamente com o conteúdo
+ de uma imagem ou várias imagens de referência.
+ As anotações tornam-se uma coleção de descrições de conteúdo que podem
+ ser usadas para fins de mineração de dados semânticos.
+ Uma marcação de imagem é composta de símbolos gráficos ou descrições textuais
+ associados a uma imagem.
+\end_layout
+
+\begin_layout Standard
+Marcações podem ser usadas para descrever uma informação textual e as regiões
+ de interesse visual.
+ Informações nas anotações e marcações são usadas para preencher o schema
+ AIM, através de funções da biblioteca de software AIM, com a finalidade
+ de geração de objetos DICOM SR, documentos XML AIM e documentos no formato
+ HL7 CDA.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 Large volumes of digital data on medical and biological knowledge overload
  researchers in these areas.
  They have the difficult task of managing terabytes of information with
@@ -371,7 +605,7 @@ key "Serique2012"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Researchers must also aggregate and integrate all these information.
  To do so, they need tools that enable knowledge discovery paradigm in this
  rich data.
@@ -393,17 +627,14 @@ key "Serique2012"
  next section, we will describe some Bio Ontologies used in biomedicine.
 \end_layout
 
-\begin_layout Subsubsection
-FMA
-\end_layout
+\end_inset
 
-\begin_layout Subsubsection
-Radlex
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Para atingir os objetivos da Web Semântica, onde os dados devem ser 
@@ -595,7 +826,7 @@ Linked Open Data
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 O termo “ontologia” em sua origem significa o estudo da existência 
@@ -1574,7 +1805,7 @@ Reasoners
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Segundo 
@@ -1671,7 +1902,7 @@ key "KeBler:2009:ANG:1653771.1653787"
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Para se realizar buscas Semânticas na Web, geralmente é utilizada a linguagem
@@ -1944,7 +2175,7 @@ Well-Known Text
 
 \shape italic
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -2660,12 +2891,12 @@ name "WEB7"
 \end_layout
 
 \begin_layout Section
-Final Considerations
+Considerações Finais
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Este capítulo apresentou os conceitos necessários para compreender o uso

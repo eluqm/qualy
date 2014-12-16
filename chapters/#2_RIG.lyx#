@@ -115,6 +115,84 @@ Gazetteer
 \end_layout
 
 \begin_layout Standard
+A Informática Biomédica tem sido, ao longo das últimas décadas, um campo
+ emergente.
+ No entanto, ainda não existe uma definição universal para “Informática”
+ nos campos da medicina, saúde ou biomédicina.
+ Sumarizando estas discussões, a Informática Biomédica pode ser considerada
+ como a Ciência da Informação aplicada no estudo do contexto da biomedicina
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Serique2012"
+
+\end_inset
+
+.
+ De fato, os computadores têm mudado a maneira como as pessoas interagem,
+ processam, armazenam e recuperam informações na área de saúde.
+ A área da Informática Biomédica surgiu para atender as aplicações da TI
+ (Tecnologia da Informação) na área da saúde 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bulu"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Mais recentemente, a adoção de Registros Médicos Eletrônicos (
+\emph on
+Eletronic Medical Record
+\emph default
+ - EMR) tornou as informações dos pacientes mais rapidamente acessíveis
+ aos médicos com a adoção de sistemas de informação para resolverem problemas
+ específicos de cada setor, como os Sistemas de Informações Hospitalares
+ (
+\emph on
+Hospital Information System
+\emph default
+ - HIS), Sistemas de Arquivamento de Imagens e Comunicação (
+\emph on
+Picture Archiving and Communication System
+\emph default
+ - PACS) e Sistemas de Informação Radiológica (
+\emph on
+Radiology Information System
+\emph default
+ - RIS).
+ Por sua vez, a Informática Radiológica (sub-área da informática biomédica)
+ é uma área da Radiologia responsável pela melhoria da eficiência, precisão
+ e confiabilidade dos serviços radiológicos dentro da área médica (Branstetter
+ IV, 2007) (Huang, 2010).
+ Embora os serviços de arquivamento e sistemas de comunicação sejam o foco
+ principal da Informática Radiológica, existem outras maneiras pelas as
+ quais a tecnologia pode melhorar a eficiência do trabalho do Radiologista
+ e até de todo departamento de radiologia, como os sistemas de documentação
+ dos cuidados dos paciente (utilizados pelas enfermeiras) e os sistemas
+ de agendamento e coordenação entre os médicos e os radiologista.
+ As ramificações da informática podem ser sentidas em todo o departamento
+ de radiologia.
+\end_layout
+
+\begin_layout Standard
+Neste capítulo são apresentados conceitos relacionados aos EMR e a Informática
+ Radiológica.
+ Na Seção 2.1 são apresentados os conceitos gerais referentes aos EMRs.
+ Em seguida, na Seção 2.2, são apresentados os HISs.
+ Na seção 2.3, são discutidos os PACSs.
+ Por fim, na seção 2.4, na Seção 2.4, será abordada a padronização de dados
+ e de comunicação na área da Informática Radiológica.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 The Biomedical Informatics can be regarded as information science applied
  to the study of the context of biomedicine
 \begin_inset CommandInset citation
@@ -137,17 +215,29 @@ key "Tutac2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+Interest in applying Semantic Web technologies to the life sciences continues
+ to accelerate.
+ Biomedical research is increasingly an online activity as scientists combine
+ and explore different types of data in cyberspace, putting together complementa
+ry views on problems that lead to new insights and discoveries.
+ An e-Science paradigm is thus emerging; the biomedical community is looking
+ for tools to help access, query, and ana- lyze a myriad of data in cyberspace.
+ Specifically, the biomedical community is beginning to embrace technologies
+ such as ontologies to integrate scientific knowledge 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rubin2011"
 
+\end_inset
+
+, standard syntaxes, and semantics to make biomedical knowledge explicit,
+ and the Semantic Web to establish virtual collaborations.
+ These technologies are showing promise in tackling the information challenges
+ in biomedicine, and a variety of applications are quickly appearing.
+ Al- though researchers can now access a broad diversity of biomedical data,
+ a critical type of data images is much more difficult to leverage.
 \end_layout
-
-\begin_layout Section
-Utilização de VGI no contexto da biodiversidade
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
 
 \begin_layout Plain Layout
 Informação Geográfica Voluntária atualmente é uma área em constante crescimento,
@@ -427,10 +517,6 @@ Para auxiliar a prática de VIG e fornecer mecanismos para suprir as necessidade
 
 \end_layout
 
-\begin_layout Section
-Recuperação de Informação Geográfica
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Comment
 status open
@@ -658,12 +744,6 @@ a de forma precisa.
 
 \end_layout
 
-\begin_layout Section
-
-\shape italic
-Gazetteers
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Comment
 status open
@@ -740,11 +820,7 @@ Volunteered Geographic Information
 \end_layout
 
 \begin_layout Section
-
-\shape italic
-Volunteered Geographic Information
-\shape default
-
+Considerações Finais A
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "VGI"
@@ -864,10 +940,6 @@ Gazetteer
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-GeoTAGs 
 \end_layout
 
 \begin_layout Standard
@@ -1015,10 +1087,6 @@ Além da utilização de GeoTAGs para inserir e recuperar nomes de lugares,
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-GeoParsing
 \end_layout
 
 \begin_layout Standard
@@ -1182,10 +1250,6 @@ as.
 
 \end_layout
 
-\begin_layout Section
-GeoCoding
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Comment
 status open
@@ -1286,10 +1350,6 @@ Para se realizar a conversão dos nomes de localidades para a sua respectiva
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Resolução de Topônimos
 \end_layout
 
 \begin_layout Standard
@@ -1583,10 +1643,6 @@ A utilização de dicionários toponímicos (Gazetteers), para a resolução des
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Estratégias para Resolução de Topônimos
 \end_layout
 
 \begin_layout Standard

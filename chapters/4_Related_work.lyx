@@ -147,6 +147,296 @@ reference "trabalho_relacionado"
 
 \end_layout
 
+\begin_layout Itemize
+En 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Racoceanu2014"
+
+\end_inset
+
+ es descrito un prototipo que tiene la función de controlar todo un protocolo
+ de análisis de imágenes, este prototipo fue desarrollado sobre el framework
+ 'Cognitive Microscopy' (MICO) con el objectivo de melhorar a análise de
+ imagens histológicas Whole Slide Image (WSI) y llegar a ser una segunda
+ opinion confiable para el grading de cancer de mama.
+ El prototipo está compuesto de 2 componentes principales, un 'semantic
+ core' y un conjunto de algoritmos para procesamiento de imágenes.
+ el Semantic Core tiene dos componentes, principales que son un motor de
+ reasoning y una ontología, usando OWL y N3logic respectivamente, donde
+ N3logic es una extension del modelo de datos RDF tal que el mismo lenguaje
+ puede ser usado para representar lógica y datos.
+ pero, en el trabajo de [racoceanu] los autores utilizan algoritmos para
+ la extraccion automatica de anotaciones para describir las imagenes histologica
+s Em nossa proposta, as anotações semânticas são realizados manualmente
+ e, portanto, estão sujeitos a erros.
+ Ademas, los autores no dejan explícita la ontologia ni las reglas utilizadas
+ para realizar grading de cancer de mama, no son presentados resultados
+ explicitos, pero cabe resaltar que este trabajo es considerado en esta
+ revision bibliografica debido al enfoque de caracter general para 
+\emph on
+screaning
+\emph default
+ automatico que este describe.
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kurtz2014"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Seifert"
+
+\end_inset
+
+ propose an image retrieval framework based on semantic annotations from
+ images of the liver, this framework incorporates the semantic correlations
+ among the terms used to describe these images.
+ The authors use the semantic similarity between terms(semantic annotations)
+ that describe the lesions of liver by using the structure of the Radlex
+ ontology to evaluate the semantic proximity between these terms of interest.
+ This automatic approach provides real-time support to radiologist by showing
+ them similar images with associated diagnoses.
+ en el trabajo de [kurttx] no se utiliza ontologias para representar un
+ sistema de staging de cancer, se utiliza similaridad entre imagenes para
+ clasificar lesiones, pero cabe resaltar que las imagenes utilizadas son
+ descritas mediante anotaciones semanticas basadas en observaciones manuales
+ realizadas por radiologistas.
+ mediante la herramienta ePAD[], esta herramienta formará parte inicial
+ de nuestro proyecto.
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Oberkampf"
+
+\end_inset
+
+ os autores propõem uma ontologia que representa formalmente doenças, sintomas
+ e seus respectivos relacionamentos.
+ ellos realizan inferencia sobre enfermedades basados en anotaciones de
+ pacientes, el articulo describe el proceso para representar conocimiento
+ medico en una ontologia llamada 'Disease symptom ontology', finalmente
+ mediante un prototipo ellos evaluan ese modelo.
+ en el trabajo de [oberkamf] no realiza staging de cancer, los autores detallan
+ apenas el proceso para modelar conocimiento mediante ontologias para interpreta
+r las anotaciones generadss por los reportes de pacientes.
+ ademas de eso, los datos utilizados pertenecen a MEDICO project por lo
+ tanto no estan disponibles para verificar sus resultados.
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Meriem2012"
+
+\end_inset
+
+ propose a methodology to improve the clinical models and usability of the
+ low-level image analysis algorithms, for example in the clinical model
+ that performs the score of breast cancer, this score is based on the Nottingham
+ Grading System (NGS).
+ It is needed to perform the breast cancer grading.
+ Firstly, they designed a breast cancer ontology (BCO) based on two languages,
+ OWL-LD and SWRL, in addition, the Wide Field Markup Language WFML was used
+ to describe annotated histopathological images.
+ Finally, the query language SPARQL is used for querying in Java.
+ Ademas de que el trabajo de [meriem2012] utiliza imagenes histopathologicas,
+ sólamente son descritos algunas reglas para reasoning necesarias para el
+ grading de cancer mama, por otra parte, los autores mencionan solo un poco
+ sobre razonamiento basado en relaciones espaciales en la imagen y sus posibles
+ aplicaciones para resolver problemas de ambiguedad en el analisis de imagenes,
+ finalmente son usados algoritmos de extraccion de caracteristicas para
+ describir las imagenes histologicas mediante anotaciones.
+ 
+\end_layout
+
+\begin_layout Itemize
+The proposed work in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Zillner2012"
+
+\end_inset
+
+ introduces an application that uses medical image annotations and reasoning
+ technologies in order to stage lymphoma patients automatically based in
+ relative position of lymphoma.
+ Firstly, an ontology-based knowledge was used to verify or falsify the
+ spatial configurations of lymphoma, this process is known as spatio-anatomical
+ reasoning 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Manuel"
+
+\end_inset
+
+.
+ Subsequently, the authors establish alignments between concepts of RADLEX
+ and FMA in order to create the 'Patient-ontology'.
+ These ontologies are part of the MEDICO-ontology.
+ Finally, Patient ontology and the Ann Arbo staging system ontology are
+ aligned for execute the reasoning process for staging lymphoma patients.
+ The semantic annotations are stored within a dedicated annotation ontology
+ mentioned by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "zillner:towards"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Oberkampf"
+
+\end_inset
+
+.
+ PERO las anotaciones que describen las imagenes medicas(semantic annotations)
+ se realizan de manera automatica mediante algoritmos de procesamiento de
+ imagen, y no manualmente.
+ Ademas, contradicciones fueron encontradas realizando una evaluacion clinica
+ al trabajo de [ziller] apartir de registros reales de pacientes, finalmente,
+ el sistema de staging Ann Arbo está relacionado con el cancer de linfoma,
+ al contrario de la propuesta de este trabajo que pretende integrar el sistema
+ de staging TNM , que abarca algunos tipos de cancer.
+ 
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Tutac2010"
+
+\end_inset
+
+ El proposito principal es el de guiar la exploración de imagenes dentro
+ de un microscopio virtual y ayudar en el proceso de 'grading' apartir de
+ imágenes histológicas de cancer de mama.
+ Para satisfacer esos requerimientos, los autores extendieron la ontologia
+ de cancer de mama desarrollada en (Tutac 2008) incorporándole conocimiento
+ espacial usando OWL-DL, ellos se basaron en una teoría formal para desarrollar
+ las relaciones espaciales del breast cancer grading y posteriormente ellos
+ describen como hacer reasoning apartir de esas relaciones.
+ pero el trabajo de [tutac] no realiza ninguna evaluacion de su modelo con
+ datos reales de pacientes con cancer de mama.
+ Ademas, gran parte de su contenido está orientado a describir la representacion
+ y razonamiento de las relaciones espacial incorporadas a la ontologia desarroll
+ada en [] con el proposito de resolver ambiguedades en el analisis de imagenes
+ histologicas para grading de cancer de mama.
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "zillner:towards"
+
+\end_inset
+
+ OWL-DL ontology was designed to performing automatic staging of lymphoma
+ patients using semantic annotations.
+ These annotations are stored in an ontology by the annotation tool that
+ is part of MEDICO-ontology project.
+ In addition, for classification of lymphoma patients the authors captured
+ the rules of the Ann Arbor Staging System into an ontology.
+ Pero en contraste con nuestra propuesta, el trabajo de [ziller] solamente
+ mejoró anotaciones semanticas usadas para describir imagenes medicas por
+ medio de la representacion de Ann Arbor Staging System en una ontologia,
+ apartir de esas anotaciones puede ser realizado tareas como, la clasificacion
+ de pacientes con cancer de limfoma.
+ La clasificación de pacientes apartir de anotaciones semanticas que fueron
+ mejoradas con conocimiento clinico agregado, no es descrito en [ziller],
+ ademas de eso, no son presentados resultados explícitos y tampoco una evaluació
+n con datos reales.
+ 
+\end_layout
+
+\begin_layout Itemize
+The proposed work in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Tutac2008"
+
+\end_inset
+
+ introduces an approach that uses OWL-DL in order to generate correspondence
+ between medical concepts related to the classification of breast cancer
+ based in the Nottingham Grading System (NGS) and computer vision concepts.
+ The authors created a rule-based method to automatically generate the NGS.
+ Where, the medical concepts related to NGS are transformed into computer
+ vision concepts.
+ Subsequently, these computer vision concepts are modeled as Protegé concepts
+ to define rules which finally, are used for a semantic indexing of images
+ of cancer breast patients.
+ aunque la propuesta de de [tutac] es desarrollada en el ambito del analisis
+ de imagenes histological para indexacion y no para clasificacion de pacientes,
+ el enfoque presentado es importante en el desarrollo de este proyecto de
+ maestria por describir de manera clara las reglas utilizadas para el grading
+ de cancer de mama.
+\end_layout
+
+\begin_layout Itemize
+In 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Levy2009"
+
+\end_inset
+
+ a methodology and tools were developed for transform the Annotation and
+ Image Markup(AIM) information model into OWL instances.
+ Then, an ontology-based reasoning mechanism(OWL-SWRL) was developed to
+ work with these instances in order to automatically, classify and calculate
+ the tumor burden.
+ Although, [levy] uses AIM as model of information.
+ They do not staging of cancer.
+ but, the methodology presented in [levy] forms part of the principle the
+ our proposal.
+ 
+\end_layout
+
+\begin_layout Itemize
+[#Marquet2007] In order to grading of glioma tumors an ontology based on
+ the NCI Thesaurus ontology was developed.
+ The reference grading system used was the World Health Organization (WHO).
+ Then, class-based reasoning was used starting from pathology reports with
+ histological descriptions of patients.
+ But, en comparacion con la propuesta de este proyecto, those reports of
+ patient were filled manually, the authors do not present explicit results
+ using datos reales.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Dameron2006"
+
+\end_inset
+
+shows that the grading of tumors can be performed automatically using OWL-DL,
+ this work focuses on the grading of the lung tumors.
+ the authors use the FMA ontology to describe anatomical entities in order
+ to represent some of The TNM Classification of Malignant Tumours (TNM)
+ staging criteria and reasoning.
+ Also, the authors highlight some of the limitation of Description Logic-based
+ (DL) classification, for the task of grading.
+ Finally, patients conditions are simulated by instances of classes for
+ the experiments.
+ But, this work no present explicit results using real datasets.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Comment
 status open
@@ -2075,6 +2365,11 @@ Final Considerations
 \end_layout
 
 \begin_layout Standard
+e imagenes que son descritas por anotaciones semanticas de forma manual
+ mediante 
+\end_layout
+
+\begin_layout Standard
 In contrast with 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2098,15 +2393,9 @@ key "Zillner2008"
 \end_inset
 
  classification and different metadata from images[15][13].
- Besides that, few tools adopting AIM have been developed to enable quantitative
- imaging in decision support systems 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Rubin2011"
-
-\end_inset
-
- that is part of goal of the work we will do.
+ Besides that, only few tools adopting AIM have been developed to enable
+ image clasification in decision support systems [Rubin2011].
+ el modelo de datos AIM will be used such basic of proposal.
  Also, the external knowledge used for enhancing the semantic annotation
  and the application focus are different.
  

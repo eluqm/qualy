@@ -75,18 +75,40 @@
 \begin_body
 
 \begin_layout Section
-Context
+Contextualização 
 \end_layout
 
 \begin_layout Standard
-Los avances en la tecnología médica generan enormes cantidades de información
- no textual, como por ejemplo las imágenes medicas.
- Las imagenes médicas juegan un papel importante en tareas clinicas como
- la selección, diagnóstico, planificación del tratamiento y seguimiento
- de pacientes(ref ziller).
- Aplicaciones de asistencia por computador en la interpretacion de imágenes
- médicas han sido ampliamente desarrolladas.
- 
+Existe um interesse crescente na aplicação de tecnologias da Web Semântica
+ em biomedicina, como estos métodos podem tornar os dados de biomedicina
+ explícitos e computáveis.
+ A comunidade biomédica está em busca de ferramentas para ajudar-lhes com
+ o acesso, consulta e análise da vasta quantidade de dados gerados pelos
+ avanços do uso da tecnologia na médicina 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marquet2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+O uso da essa tecnologia na médicina gera enormes quantidades de informações
+ do tipo não-texto, tais como imagens médicas.
+ As imagens médicas desempenham um papel importante nas tarefas clínicas,
+ tais como seleção, diagnóstico, planejamento do tratamento e acompanhamento
+ de pacientes com câncer 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Levy2009"
+
+\end_inset
+
+.
+ Aplicações informáticas para a interpretação de imagens médicas têm sido
+ amplamente desenvolvidos.
 \end_layout
 
 \begin_layout Standard

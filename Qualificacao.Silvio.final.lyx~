@@ -23,7 +23,7 @@ eqs-within-sections
 \end_modules
 \maintain_unincluded_children false
 \language brazilian
-\language_package babel
+\language_package default
 \inputencoding default
 \fontencoding global
 \font_roman default
@@ -304,7 +304,7 @@ setcounter{page}{1}
 \end_layout
 
 \begin_layout Chapter
-Introduction
+Introdução 
 \end_layout
 
 \begin_layout Standard
@@ -325,7 +325,7 @@ filename "chapters/1_introduction.lyx"
 \end_layout
 
 \begin_layout Chapter
-Biomedical Informatics
+Informática Biomédica
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:RIG"
@@ -380,15 +380,11 @@ filename "chapters/3_Web Semantica.lyx"
 
 \end_layout
 
-\begin_layout Chapter
-Inference 
-\end_layout
-
-\begin_layout Section
-Introduction
-\end_layout
-
 \begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Plain Layout
 Broadly speaking, inference on the Semantic Web can be characterized by
  discovering new relationships.
  On the Semantic Web, data is modeled as a set of (named) relationships
@@ -409,7 +405,7 @@ key "Oberkampf"
  via vocabularies or rule sets.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Both of these approaches draw upon knowledge representation techniques.
  In general, ontologies concentrate on classification methods, putting an
  emphasis on defining 'classes', 'subclasses', on how individual resources
@@ -424,7 +420,7 @@ Both of these approaches draw upon knowledge representation techniques.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Inference on the Semantic Web is one of the tools of choice to improve the
  quality of data integration on the Web, by discovering new relationships,
  automatically analysing the content of the data, or managing knowledge
@@ -451,12 +447,9 @@ encies in the (integrated) data.
  to choose.
 \end_layout
 
-\begin_layout Section
-Inference into medical applications
-\end_layout
+\end_inset
 
-\begin_layout Section
-Final Considerations
+
 \end_layout
 
 \begin_layout Standard
@@ -502,7 +495,7 @@ filename "chapters/4_Related_work2.lyx"
 \end_layout
 
 \begin_layout Chapter
-Experiments 
+Experimentos 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:experimentos"
@@ -530,7 +523,7 @@ filename "chapters/7_Experimentos.lyx"
 \end_layout
 
 \begin_layout Chapter
-Work plan
+Plano de Trabalho 
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:conclusao"
@@ -558,7 +551,7 @@ filename "chapters/6_conclusao.lyx"
 \end_layout
 
 \begin_layout Chapter
-References
+Referências
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:referencias"

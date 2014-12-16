@@ -115,6 +115,105 @@ Gazetteer
 \end_layout
 
 \begin_layout Standard
+A Informática Biomédica tem sido, ao longo das últimas décadas, um campo
+ emergente.
+ No entanto, ainda não existe uma definição universal para “Informática”
+ nos campos da medicina, saúde ou biomédicina.
+ Sumarizando estas discussões, a Informática Biomédica pode ser considerada
+ como a Ciência da Informação aplicada no estudo do contexto da biomedicina
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Serique2012"
+
+\end_inset
+
+.
+ De fato, os computadores têm mudado a maneira como as pessoas interagem,
+ processam, armazenam e recuperam informações na área de saúde.
+ A área da Informática Biomédica surgiu para atender as aplicações da TI
+ (Tecnologia da Informação) na área da saúde 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bulu"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Mais recentemente, a adoção de Registros Médicos Eletrônicos (
+\emph on
+Eletronic Medical Record
+\emph default
+ - EMR) tornou as informações dos pacientes mais rapidamente acessíveis
+ aos médicos com a adoção de sistemas de informação para resolverem problemas
+ específicos de cada setor, como os Sistemas de Informações Hospitalares
+ (
+\emph on
+Hospital Information System
+\emph default
+ - HIS), Sistemas de Arquivamento de Imagens e Comunicação (
+\emph on
+Picture Archiving and Communication System
+\emph default
+ - PACS) e Sistemas de Informação Radiológica (
+\emph on
+Radiology Information System
+\emph default
+ - RIS).
+ Por sua vez, a Informática Radiológica (sub-área da informática biomédica)
+ é uma área da Radiologia responsável pela melhoria da eficiência, precisão
+ e confiabilidade dos serviços radiológicos dentro da área médica (Branstetter
+ IV, 2007) (Huang, 2010).
+ Embora os serviços de arquivamento e sistemas de comunicação sejam o foco
+ principal da Informática Radiológica, existem outras maneiras pelas as
+ quais a tecnologia pode melhorar a eficiência do trabalho do Radiologista
+ e até de todo departamento de radiologia, como os sistemas de documentação
+ dos cuidados dos paciente (utilizados pelas enfermeiras) e os sistemas
+ de agendamento e coordenação entre os médicos e os radiologista.
+ As ramificações da informática podem ser sentidas em todo o departamento
+ de radiologia.
+\end_layout
+
+\begin_layout Standard
+Neste capítulo são apresentados conceitos relacionados aos EMR e a Informática
+ Radiológica.
+ Na Seção 2.1 são apresentados os conceitos gerais referentes aos EMRs.
+ Em seguida, na Seção 2.2, são apresentados os HISs.
+ Na seção 2.3, são discutidos os PACSs, na Seção 2.4, será abordada a padronização
+ de dados e de comunicação na área da Informática Radiológica.
+ Por fim, na seção 2.5, será descrita ferramenta para anotações semântica
+ ePAD.
+\end_layout
+
+\begin_layout Section
+Eletronic Medical Record – EMR
+\end_layout
+
+\begin_layout Section
+Hospital Information System – HIS
+\end_layout
+
+\begin_layout Section
+Picture Archiving and Communication System – PACS
+\end_layout
+
+\begin_layout Section
+Padronização de dados e de comunicação
+\end_layout
+
+\begin_layout Section
+ePAD
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
 The Biomedical Informatics can be regarded as information science applied
  to the study of the context of biomedicine
 \begin_inset CommandInset citation
@@ -137,7 +236,7 @@ key "Tutac2010"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Interest in applying Semantic Web technologies to the life sciences continues
  to accelerate.
  Biomedical research is increasingly an online activity as scientists combine
@@ -160,14 +259,6 @@ key "Rubin2011"
  Al- though researchers can now access a broad diversity of biomedical data,
  a critical type of data images is much more difficult to leverage.
 \end_layout
-
-\begin_layout Section
-...
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
 
 \begin_layout Plain Layout
 Informação Geográfica Voluntária atualmente é uma área em constante crescimento,
@@ -750,6 +841,7 @@ Volunteered Geographic Information
 \end_layout
 
 \begin_layout Section
+Considerações Finais 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "VGI"
@@ -1860,10 +1952,6 @@ Gazetteer
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section
-Final Considerations
 \end_layout
 
 \begin_layout Standard

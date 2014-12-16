@@ -1372,23 +1372,6 @@ que descrevem um sistema 'fechado', onde seus métodos não pode ser verificada,
 The TNM Classification of Malignant Tumours 
 \emph default
 (TNM) e imagens que são descritos por anotações semânticas manualmente
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Rubin2014"
-
-\end_inset
-
-.
- Além disso, apenas algumas ferramentas que adotam AIM foram desenvolvidos
- para permitir classificação da imagem em sistemas de apoio à decisão [
- Rubin2011 ] .
- o modelo de dados 
-\emph on
-AIM
-\emph default
- será utilizado como o início do trabalho proposto.
- Além disso, o conhecimento externo utilizado para aumentar a anotação semântica
- e o foco de aplicação são diferentes.
 \end_layout
 
 \end_body
