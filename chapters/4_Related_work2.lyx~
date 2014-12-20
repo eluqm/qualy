@@ -116,7 +116,7 @@ The TNM Classification of Malignant Tumours
 \emph default
 (TNM).
  Além disso, os autores destacam alguns da limitação de Descrição baseada
- em Lógica (DL), para a tarefa de classificação.
+ em Lógica (DL), para a tarefa de classificação dos tumores de pulmao.
  Finalmente, as condições dos pacientes são simuladas por instâncias de
  classes para os experimentos e 
 \emph on
@@ -605,7 +605,7 @@ key "Racoceanu2014"
 \emph on
 grading
 \emph default
- de câncer de mama, não são apresentados resultados explícitos.
+ de câncer de mama e também não são apresentados resultados explícitos.
  Mas deve-se notar que este trabalho é considerado nesta revisão da literatura
  devido à abordagem de carácter geral para 
 \emph on
@@ -1316,7 +1316,7 @@ Breast
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-ASszxccxz 
+Comparativo entre os trabalhos relacionados
 \begin_inset CommandInset label
 LatexCommand label
 name "trabalho_relacionado2"

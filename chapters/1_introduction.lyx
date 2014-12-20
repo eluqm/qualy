@@ -406,9 +406,9 @@ key "Zillner2010"
 
 \begin_layout Standard
 O uso de tecnologias da Web Semântica no desenvolvimento deste projeto possibili
-ta auxiliar na resolução de diversos problemas presentes na área, tais como
- a representação formal de conhecimento sobre a classificação clínica de
- tumores de câncer, este conhecimento clínico é referido como 
+ta auxiliar na resolução de diversos problemas presentes na área, como por
+ ejemplo el problema de una representação formal de conhecimento -este conhecime
+nto clínico é referido como 
 \emph on
 staging system
 \emph default
@@ -426,13 +426,16 @@ key "Dameron2006"
 
 \end_inset
 
- e posteriormente, para executar também o 
+- para a classificação clínica de tumores de câncer apartir de imagenes
+ medicas.
+ las tecnologias de web semantica Tambien nos permitira realizar 
 \emph on
 reasoning
 \emph default
- a partir deste conhecimento, melhorando anotações semânticas em imagens
- médica, assim, prestar apoio como uma segunda opinião para os médicos na
- avaliação e progresso de um paciente com câncer.
+ a partir deste conhecimento representado en ontologias, mejorar anotações
+ semânticas em imagenes médicas, todo esto con el fin de prestar apoio como
+ uma segunda opinião para os médicos na avaliação e progresso de um paciente
+ com câncer.
 \end_layout
 
 \begin_layout Standard

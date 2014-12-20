@@ -2393,15 +2393,9 @@ key "Zillner2008"
 \end_inset
 
  classification and different metadata from images[15][13].
- Besides that, few tools adopting AIM have been developed to enable quantitative
- imaging in decision support systems 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "Rubin2011"
-
-\end_inset
-
- that is part of goal of the work we will do.
+ Besides that, only few tools adopting AIM have been developed to enable
+ image clasification in decision support systems [Rubin2011].
+ el modelo de datos AIM will be used such basic of proposal.
  Also, the external knowledge used for enhancing the semantic annotation
  and the application focus are different.
  

@@ -116,7 +116,7 @@ The TNM Classification of Malignant Tumours
 \emph default
 (TNM).
  Além disso, os autores destacam alguns da limitação de Descrição baseada
- em Lógica (DL), para a tarefa de classificação.
+ em Lógica (DL), para a tarefa de classificação dos tumores de pulmao.
  Finalmente, as condições dos pacientes são simuladas por instâncias de
  classes para os experimentos e 
 \emph on
@@ -219,10 +219,9 @@ key "Tutac2008"
 \end_inset
 
  é desenvolvido no campo da análise de imagens histológicas para a indexação
- e não de classificação de pacientes.
- A abordagem apresentada é importante no desenvolvimento desta proposta,
- porque descreve claramente as regras utilizadas para a classificação do
- câncer de mama.
+ e não para a classificação de pacientes, a abordagem apresentada é importante
+ no desenvolvimento desta proposta, porque descreve claramente as regras
+ utilizadas para a classificação do câncer.
 \end_layout
 
 \begin_layout Itemize
@@ -349,9 +348,9 @@ key "Zillner2012"
 \emph on
 reasoning
 \emph default
-, a fim de classificar pacientes com linfoma automaticamente com base na
+, a fim de classificar automaticamente pacientes com linfoma com base na
  posição relativa de linfoma.
- Um conhecimento baseado em ontologia foi utilizado para verificar ou falsificar
+ conhecimento baseado em ontologia foi utilizado para verificar ou falsificar
  as configurações espaciais de linfoma, este processo é conhecido como
 \emph on
  spatio-anatomical reasoning 
@@ -422,8 +421,7 @@ key "Meriem2012"
  propõem uma metodologia para melhorar os modelos clínicos e usabilidade
  dos algoritmos de análise de imagem de baixo nível, por exemplo, no modelo
  clínico que realiza a pontuação de câncer de mama, essa pontuação é baseada
- no Nottingham Grading System(NGS).
- Ele é necessário para realizar o 
+ no Nottingham Grading System(NGS) é necessária para realizar o 
 \emph on
 grading
 \emph default
@@ -491,7 +489,7 @@ key "Oberkampf"
 staging
 \emph default
  de câncer, o autores detalham o processo apenas para modelar conhecimento
- através de ontologias para interpretar anotações generadss por relatorios
+ através de ontologias para interpretar anotações gerado por relatorios
  de pacientes.
  Além disso, os dados utilizados pertencem ao projeto MEDICO, portanto,
  não estão disponíveis para verificar seus resultados.
@@ -538,7 +536,7 @@ key "Seifert"
 
 \end_inset
 
- não ontologias são usadas para representar um sistema de 
+ ontologias não são usadas para representar um sistema de 
 \emph on
 staging
 \emph default
@@ -605,11 +603,11 @@ key "Racoceanu2014"
 \emph on
 grading
 \emph default
- de câncer de mama, não são apresentados resultados explícitos.
+ de câncer de mama e também não são apresentados resultados explícitos.
  Mas deve-se notar que este trabalho é considerado nesta revisão da literatura
  devido à abordagem de carácter geral para 
 \emph on
-screaning
+screening
 \emph default
  automático que ele descreve.
 \end_layout

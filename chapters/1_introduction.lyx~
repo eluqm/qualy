@@ -437,7 +437,7 @@ reasoning
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 An image is worth a thousand words is often said and even more true is the
@@ -485,34 +485,6 @@ dible contar con apoyo a la decisión automatizada en el futuro y contar
  tanto como sea posible de forma automatizada [ 2 ] para aumentar la eficiencia
  en radiología y asegurar la calidad a través de diferentes personas asegurándos
 e de que cada uno entiende los informes de otras personas
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-asdasdsadasdasdasdasdasdasdadasdasdasdasdasdasdasdsada 
-\end_layout
-
-\begin_layout Plain Layout
-la representacion espacial de TNM no se encontró en la literatura , es por
- eso que se propone el desarrollo de una ontologia con soporte espacial
- de staging TNM pudiendo ser de uso general para staging de cancer como
- de colon de pulmon .
- etc.
- 
-\end_layout
-
-\begin_layout Plain Layout
-usar AIM puede facilitar la comuncacion entre ontologias externas para poder
- realizar una conexcion con opendata o linked data en biomedicina, por ejemplo,
- podrian sugerir algunos sintomas relacionados con medicina , etc 
 \end_layout
 
 \end_inset
@@ -660,19 +632,6 @@ Capitulo 5: Apresenta os experimentos realizados até o momento
 Capítulo 6: Este capítulo mostra o cronograma a ser seguido, produções cientific
 as até o momento, as limitações encontradas e o plano de trabalho futuro.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Este trabalho está estruturado da seguinte forma ....
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body
