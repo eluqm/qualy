@@ -75,12 +75,16 @@
 \begin_body
 
 \begin_layout Section
+Resumo
+\end_layout
+
+\begin_layout Section
 Contextualização 
 \end_layout
 
 \begin_layout Standard
 Existe um interesse crescente na aplicação de tecnologias da Web Semântica
- em biomedicina, como estos métodos podem tornar os dados de biomedicina
+ em biomedicina e como estas tecnologias podem tornar os dados de biomedicina
  explícitos e computáveis.
  A comunidade biomédica está em busca de ferramentas para ajudar-lhes com
  o acesso, consulta e análise da vasta quantidade de dados gerados pelos
@@ -107,15 +111,11 @@ key "Levy2009"
 \end_inset
 
 .
- Aplicações informáticas para a interpretação de imagens médicas têm sido
- amplamente desenvolvidos.
-\end_layout
-
-\begin_layout Standard
-A maioria destas aplicações estão focados na extração de características
- visuais com a ajuda de algoritmos de processamento de imagem, mas, estes
- algoritmos poderiam apresentar problemas quando uma consulta abstracta
- e ambígua é feita 
+ Um número considerável de aplicações informáticas para a interpretação
+ de imagens médicas têm sido amplamente desenvolvidos, a maioria destas
+ aplicações estão focados na extração de características visuais com a ajuda
+ de algoritmos de processamento de imagem, mas, estes algoritmos poderiam
+ apresentar problemas quando uma consulta abstracta e ambígua é feita 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Wennerberg2011"
@@ -124,31 +124,31 @@ key "Wennerberg2011"
 
 .
  Esses algoritmos estão enfrentando problemas encontrados ao manusear interpreta
-ções abstratas de imagens, como um resultado da semântica dentro da imagem
- não é considerada nestes algoritmos.
+ções abstratas de imagens, porque a semântica dentro da imagem não é considerada
+ nestes algoritmos.
  
 \end_layout
 
 \begin_layout Standard
 Em geral, a semântica é o estudo do significado das coisas e no contexto
  de Oncologia e Radiologia, a semântica é o estudo do significado do conteúdo
- dos laudos de radiologia, bem como o conteúdo eo significado das imagens
+ dos laudos de radiologia bem como o conteúdo eo significado das imagens
  usadas em radiologia.
  
 \end_layout
 
 \begin_layout Standard
 Os resultados da análise destas imagens são essenciais na investigação e
- na prática clínica, tal como na avaliação da resposta do paciente a um
- tratamento de câncer pelo oncologista.
+ na prática clínica tal como na avaliação da resposta do paciente a um tratament
+o de câncer pelo oncologista.
  Neste contexto, tratamento e prognóstico do tumor do câncer depende em
- grande parte da fase em que este tumor (
+ grande parte da fase em que este tumor está localizado(
 \emph on
 cancer staging
 \emph default
-) está localizado.
+).
  No entanto, entre a definição e descrição do estado do tumor do câncer
- feita a partir de imagens, não é fácil determinar uma relação explícita,
+ feita a partir de imagens não é fácil determinar uma relação explícita,
  este problema é conhecido como 
 \emph on
 semantic gap
@@ -157,18 +157,37 @@ semantic gap
 \end_layout
 
 \begin_layout Standard
-Para preencher essa lacuna conhecido como 
+Para preencher essa lacuna conhecida como 
 \emph on
 semantic gap
 \emph default
-, entre as denominações e definições dos tipos de câncer (
+ entre as denominações e definições da fase em que o tumor está localizado,
+ é necessário representar formalmente essas definições e denominações.
+ Esta representação do conhecimento é naturalmente realizada quando um usuário
+ radiologista o oncologista interpreta imagens médicas.
+ 
+\end_layout
+
+\begin_layout Standard
+Além disso, embora imagens médicas fornecer uma riqueza de informaçao para
+ os médicos, estas informações não podem ser integrados automaticamente
+ em aplicações médicas avançadas tais como, apoio à decisão clínica para
+ tratar câncer.
+ Ter representações formais de graus de câncer (
 \emph on
 cancer staging
 \emph default
-) do tumor, é necessário representar formalmente o conhecimento.
- Este é naturalmente realizada quando um usuário humano( radiologista o
- oncologista) interpretam imagens médicas.
- Além disso, um computador não pode executar a tarefa da mesma forma.
+) são obrigatórios.
+ Esta informação é fundamental quando os médicos irão avaliar o progresso
+ individual de um paciente com câncer e decidir sobre novas medidas de tratament
+o
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zillner2013"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -184,9 +203,9 @@ key "Dameron2006"
 .
  A partir dessa premissa, foram propostos diferentes abordagens para representar
  o conhecimento semântico a partir de um ponto de vista formal e não-formal
- para gerar metadados (anotações semânticas) e, em seguida, construir ontologias
- biomédicas, uma representação formal do conhecimento tem a vantagem de
- 
+ para gerar metadados (anotações semânticas) e em seguida construir ontologias
+ biomédicas.
+ Uma representação formal do conhecimento tem a vantagem de 
 \emph on
 reasoning
 \emph default
@@ -194,30 +213,8 @@ reasoning
 \end_layout
 
 \begin_layout Standard
-Além disso, embora imagens médicas fornecer uma riqueza de informações para
- os médicos as informações do seu conteúdo não pode ser integrado automaticament
-e em aplicações médicas avançadas tais como, apoio à decisão clínica para
- tratar câncer.
- Tendo representações formais de graus de câncer (
-\emph on
-cancer staging
-\emph default
-) são obrigatórios, esta informação é fundamental quando os médicos irão
- avaliar o progresso individual de um paciente com câncer e decidir sobre
- novas medidas de tratamento
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Zillner2013"
-
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 La mayoría de los aplicaciones existentes se centran en la extracción de
@@ -390,7 +387,7 @@ Informações sobre o grau do câncer em um paciente é fundamental quando os
  médicos irão avaliar o progresso individual de esse paciente e decidir
  sobre novas medidas de tratamento.
  Para avaliar o grau de um tumor do cancer, descrição, localização, característi
-cas do tumor e possíveis metástases deve atender às necessidades de um 
+cas e possíveis metástases devem atender às necessidades de um 
 \emph on
 staging system
 \emph default
@@ -543,12 +540,12 @@ Staging
  é uma tarefa de classificação, onde a representação do conhecimento é necessári
 o, no caso deste trabalho , esse conhecimento será codificado em ontologias
  (OWL) e regras (SWRL) .
- 
+ asdsad
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Comment
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Automatically grading of cancer lesions in medical images is done using
