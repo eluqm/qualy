@@ -101,7 +101,7 @@ key "Marquet2007"
 \begin_layout Standard
 O uso da essa tecnologia na médicina gera enormes quantidades de informações
  do tipo não-texto, tais como imagens médicas.
- As imagens médicas desempenham um papel importante nas tarefas clínicas,
+ Estas imagens médicas desempenham um papel importante nas tarefas clínicas,
  tais como seleção, diagnóstico, planejamento do tratamento e acompanhamento
  de pacientes com câncer 
 \begin_inset CommandInset citation
@@ -386,12 +386,13 @@ Justificativa
 Informações sobre o grau do câncer em um paciente é fundamental quando os
  médicos irão avaliar o progresso individual de esse paciente e decidir
  sobre novas medidas de tratamento.
- Para avaliar o grau de um tumor do cancer, descrição, localização, característi
-cas e possíveis metástases devem atender às necessidades de um 
+ Para avaliar o grau, descrição, localização, características e possíveis
+ metástases de um tumor do cancer atender às necessidades de um 
 \emph on
 staging system
 \emph default
- (classificação de tumor) 
+ (classificação de tumor) torna-se essencial para sistemas de apoio à tomada
+ de decisão clínica 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Zillner2010"
@@ -399,13 +400,13 @@ key "Zillner2010"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
 O uso de tecnologias da Web Semântica no desenvolvimento deste projeto possibili
-ta auxiliar na resolução de diversos problemas presentes na área, como por
- ejemplo el problema de una representação formal de conhecimento -este conhecime
-nto clínico é referido como 
+ta auxiliar na resolução de problemas como por ejemplo el problema de una
+ representação formal de conhecimento clínico que es referido como 
 \emph on
 staging system
 \emph default
@@ -423,16 +424,11 @@ key "Dameron2006"
 
 \end_inset
 
-- para a classificação clínica de tumores de câncer apartir de imagenes
- medicas.
- las tecnologias de web semantica Tambien nos permitira realizar 
-\emph on
-reasoning
-\emph default
- a partir deste conhecimento representado en ontologias, mejorar anotações
- semânticas em imagenes médicas, todo esto con el fin de prestar apoio como
- uma segunda opinião para os médicos na avaliação e progresso de um paciente
- com câncer.
+ y la classificação clínica automatica de tumores de câncer apartir de imagenes
+ medicas mediante reasoning de ese conhecimento representado en ontologias.
+ con el fin de prestar apoio como uma segunda opinião para os médicos na
+ avaliação e progresso de um paciente com câncer.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -518,7 +514,8 @@ key "Rubin2014"
 \end_inset
 
 , para fornecer aos médicos uma segunda opinião sobre classificação de pacientes
- com câncer.
+ com câncer aumentando assim a eficiência em radiologia, oncologia e garantir
+ a qualidade através de pessoas diferentes.
  Atualmente, existem sistemas de classificação do câncer automáticos, no
  entanto eles não são de código aberto, os seus métodos não pode ser verificada,
  e eles também apresentam problemas de precisão 
@@ -540,7 +537,7 @@ Staging
  é uma tarefa de classificação, onde a representação do conhecimento é necessári
 o, no caso deste trabalho , esse conhecimento será codificado em ontologias
  (OWL) e regras (SWRL) .
- asdsad
+ justifica de alguna manera TNM 
 \end_layout
 
 \begin_layout Standard
@@ -620,8 +617,8 @@ Capítulo 3: Apresenta a fundamentação teórica sobre Web Semântica, evidenci
 
 \begin_layout Standard
 Capítulo 4: Este capítulo apresenta os trabalhos relacionados, evidenciando
- o uso de ontologias, busca semântica e as principais investigações quanto
- ao estado da arte relacionado ao trabalho 
+ o uso de ontologias, e as principais investigações quanto ao estado da
+ arte relacionado ao trabalho 
 \end_layout
 
 \begin_layout Standard
